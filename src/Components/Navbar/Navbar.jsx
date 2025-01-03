@@ -11,6 +11,7 @@ export default function Navbar() {
     const listdown = () => {
         setisopen(!isopen);
       };
+      
 
   return (
     <nav className='ma-navbar'>

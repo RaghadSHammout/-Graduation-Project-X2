@@ -1,8 +1,7 @@
 .ma-title {
     font-size: 38px;
     font-weight: 700;
-    line-height: 57px;
-    font-family: "Manrope", serif;
+    line-height: 87px;
     margin-bottom: 14px;
     color: var(  --White);
 }
@@ -10,6 +9,16 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    font-family: "Manrope", serif;
     color: var( --Gray);
+    padding: 0px;
+    margin: 0px;
+}
+.ma-title.ma-size {
+    font-size: 58px;
+}
+.ma-50{
+    margin-bottom: 50px;
+}
+.ma-80{
+    margin-bottom: 80px;
 }

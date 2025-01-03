@@ -1,6 +1,4 @@
-nav {
-    background-color: blue;
-  } 
+
 .ma-navbar{
     width: 100%;
     height: 120px;
@@ -8,6 +6,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 23px 8.4357%;
+    z-index: 1;
+    position: fixed;
   }
   .ma-navbar .ma-links {
     display: flex;
@@ -18,7 +18,6 @@ nav {
     border: 4px solid var( --Darkblack);
     border-radius: 12px;
     margin: 0px;
-   
   }
   .ma-navbar ul li a {
     color: var(--SilverGray);
@@ -48,7 +47,7 @@ nav {
     position: fixed;
     top: 8%;
     left: 60%;
- 
+    
 }
   .ma-navbar .ma-button {
   display: none;
