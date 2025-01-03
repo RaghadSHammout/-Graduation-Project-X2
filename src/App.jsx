@@ -3,7 +3,7 @@ import Home from './Pages/Home/Home';
 import MoviesAndShows from './Pages/MoviesAndShows/MoviesAndShows';
 import Subscription from './Pages/Subscription/Subscription';
 import Support from './Pages/Support/Support';
-
+import Footer from'./Components/Footer/Footer.jsx'
 export default function App() {
   return (
     <>
@@ -13,6 +13,7 @@ export default function App() {
         <Route path='/Subscription' element={<Subscription />} />
         <Route path='/Support' element={<Support />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
