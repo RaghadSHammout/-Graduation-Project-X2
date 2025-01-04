@@ -1,4 +1,27 @@
 .ma-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 87px;
+    margin-bottom: 14px;
+    color: var(  --White);
+}
+.ma-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var( --Gray);
+    padding: 0px;
+    margin: 0px;
+}
+.ma-title.ma-size {
+    font-size: 58px;
+}
+.ma-50{
+    margin-bottom: 50px;
+}
+.ma-80{
+    margin-bottom: 80px;
+}
   font-size: 38px;
   font-weight: 700;
   line-height: 87px;

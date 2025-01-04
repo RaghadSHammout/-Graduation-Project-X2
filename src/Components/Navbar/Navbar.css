@@ -1,3 +1,4 @@
+
 .ma-navbar{
     width: 100%;
     height: 120px;
@@ -11,6 +12,9 @@
   .ma-navbar .ma-links {
     display: flex;
     align-items: center;
+    list-style: none;
+    gap: 30px;
+
     justify-content: center;
     list-style: none;
     gap: 6px;
@@ -27,6 +31,7 @@
     line-height: 27px;
     font-family: "Manrope", serif;
   }
+  .ma-navbar ul li a:hover {
   .ma-navbar ul li a.active {
     color: var( --White);
     border: 1px solid var( --VeryDarkGray);
@@ -35,6 +40,7 @@
     border-radius: 8px;
   }
   .ma-navbar .ma-icon{
+    color:var( --White);
     color:var( --White) !important;
     display: flex;
     gap:30px ;
@@ -47,6 +53,7 @@
     justify-content: center;
     position: fixed;
     top: 8%;
+    left: 60%;
     left: 40%;
     
 }
@@ -54,6 +61,7 @@
   display: none;
 
   }
+  @media (max-width:1440px) {
   .ma-nav2 {
     background-color: var( --DeepBlack);
   }
@@ -66,6 +74,7 @@
       height: 98px;
       padding: 18px 5.555%;
     }}
+
   @media (min-width:950px) {
     .ma-navbar .ma-links.ma-link-open{
       display: none;
@@ -84,6 +93,7 @@
     .ma-navbar .ma-button {
     display: flex;
     }
+
     .ma-navbar .ma-logo img {
       width: 116.08px;
       height: 35px;
