@@ -1,0 +1,13 @@
+.ma-btn{
+    background-color: var( --Red);
+    color: var(--White);
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.ma-btn img {
+    margin-right: 4px;
+}
