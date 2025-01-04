@@ -3,17 +3,44 @@
     height: 100vh;
     background-image: url("../../assets/photos/Home page images/hero2.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
     display: flex;
     background-color: var(--DeepBlack);
 }
 .ma-hero .ma-box {
     display: flex;
-    align-items: end;
+    align-items: start;
     justify-content: center;
     width: 100%;
+    margin-top: 796px;
 }
 .ma-hero .ma-contant{
     width: 57.08333%;
     text-align: center;
 
+}
+@media (max-width:1440px) {
+    .ma-hero .ma-contant{
+        width: 79.1666%;
+    } 
+    .ma-hero .ma-box {
+        margin-top: 599px;
+    }
+}
+@media (max-width:850px) {
+    .ma-hero {
+        background-image: url("../../assets//photos/Home page images/hero390.png");
+    }}
+@media (max-width:390px) {
+    .ma-hero {
+        background-image: url("../../assets//photos/Home page images/hero390.png");
+    }
+    .ma-hero .ma-contant{
+        width:100%;
+    } 
+    .ma-hero .ma-box {
+        margin-top: 400px;
+
+    }
 }

@@ -22,3 +22,44 @@
 .ma-80 {
   margin-bottom: 80px;
 }
+
+.ma-80{
+    margin-bottom: 80px;
+}
+ @media (max-width:1440px) {
+    .ma-title.ma-size {
+        font-size: 48px;
+    } 
+    .ma-title {
+        margin-bottom: 10px;
+    } 
+    .ma-text {
+        line-height: 21px;
+        font-size: 14px;
+    } 
+    .ma-50 {
+        margin-bottom: 40px;
+    }
+    .ma-80 {
+        margin-bottom: 60px;
+    }
+}
+ @media (max-width:390px) {
+    .ma-title.ma-size {
+        font-size: 28px;
+    } 
+    .ma-title {
+        line-height: 42px
+    } 
+    .ma-text {
+        font-size: 14px;
+        line-height: 21px;
+    } 
+    .ma-50 {
+        margin-bottom: 30px;
+    }
+    .ma-80 {
+        margin-bottom: 40px;
+    }
+}
+
