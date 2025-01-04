@@ -11,3 +11,28 @@
 .ma-btn img {
     margin-right: 4px;
 }
+.ma-btn {
+  background-color: var(--Red);
+  color: var(--White);
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.ma-btn img {
+  margin-right: 4px;
+}
+@media(max-width:1440px){
+    .ma-btn{
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .ma-btn img {
+        width: 15.29px;
+        height: 16.45px;
+    }
+}
+
