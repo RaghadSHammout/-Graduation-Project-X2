@@ -11,3 +11,14 @@
 .ma-btn img {
     margin-right: 4px;
 }
+@media(max-width:1440px){
+    .ma-btn{
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .ma-btn img {
+        width: 15.29px;
+        height: 16.45px;
+    }
+}

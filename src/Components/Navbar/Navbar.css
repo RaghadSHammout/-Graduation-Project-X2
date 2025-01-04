@@ -1,4 +1,3 @@
-
 .ma-navbar{
     width: 100%;
     height: 120px;
@@ -12,12 +11,14 @@
   .ma-navbar .ma-links {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
-    gap: 30px;
+    gap: 6px;
     padding: 24px 40px;
     border: 4px solid var( --Darkblack);
     border-radius: 12px;
     margin: 0px;
+    background-color: var( --DeepBlack);
   }
   .ma-navbar ul li a {
     color: var(--SilverGray);
@@ -26,7 +27,7 @@
     line-height: 27px;
     font-family: "Manrope", serif;
   }
-  .ma-navbar ul li a:hover {
+  .ma-navbar ul li a.active {
     color: var( --White);
     border: 1px solid var( --VeryDarkGray);
     background-color:  var( --VeryDarkGray);
@@ -34,7 +35,7 @@
     border-radius: 8px;
   }
   .ma-navbar .ma-icon{
-    color:var( --White);
+    color:var( --White) !important;
     display: flex;
     gap:30px ;
     font-size: 25.5px;
@@ -46,18 +47,32 @@
     justify-content: center;
     position: fixed;
     top: 8%;
-    left: 60%;
+    left: 40%;
     
 }
   .ma-navbar .ma-button {
   display: none;
 
   }
+  .ma-nav2 {
+    background-color: var( --DeepBlack);
+  }
   @media (max-width:1440px) {
+    .ma-navbar .ma-logo img {
+      width: 165.83px;
+      height: 50px;
+    }
     .ma-navbar {
       height: 98px;
       padding: 18px 5.555%;
     }}
+  @media (min-width:950px) {
+    .ma-navbar .ma-links.ma-link-open{
+      display: none;
+    }}
+    .ma-navbar .ma-links {
+      display: flex;
+    }
   @media (max-width:950px) {
     .ma-navbar {
       height: 102px;
@@ -69,4 +84,14 @@
     .ma-navbar .ma-button {
     display: flex;
     }
+    .ma-navbar .ma-logo img {
+      width: 116.08px;
+      height: 35px;
+    }
+}
+@media (max-width:390px) { 
+  .ma-navbar ul li a {
+    font-size: 10px;
+  }
+  
 }
