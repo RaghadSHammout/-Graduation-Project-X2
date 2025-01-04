@@ -1,4 +1,3 @@
-import React from 'react'
 import './Button.css'
 import triangle from '../../assets/photos/Home page images/triangle.png'
 
