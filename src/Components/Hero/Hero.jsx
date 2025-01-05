@@ -5,6 +5,7 @@ import Title from '../Title/Title'
 import Button from '../Button/Button'
 import triangle from '../../assets/photos/Home page images/triangle.png'
 
+
 export default function Hero() {
   return (
     <div className='ma-hero'>
