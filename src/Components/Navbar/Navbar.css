@@ -11,29 +11,33 @@
   .ma-navbar .ma-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     gap: 6px;
-    padding: 24px 40px;
+    padding: 24px 10px;
     border: 4px solid var( --Darkblack);
     border-radius: 12px;
     margin: 0px;
     background-color: var( --DeepBlack);
   }
-  .ma-navbar ul li a {
+  .ma-navbar .ma-links li a {
     color: var(--SilverGray);
     font-size: 18px;
     text-decoration: none;
     line-height: 27px;
+    font-weight: 400;
     font-family: "Manrope", serif;
   }
-  .ma-navbar ul li a.active {
+  .ma-navbar .ma-links li a.active {
     color: var( --White);
     border: 1px solid var( --VeryDarkGray);
     background-color:  var( --VeryDarkGray);
     padding: 14px 24px;
     border-radius: 8px;
+    font-weight: 500;
   }
+  
+  
   .ma-navbar .ma-icon{
     color:var( --White) !important;
     display: flex;
@@ -70,9 +74,7 @@
     .ma-navbar .ma-links.ma-link-open{
       display: none;
     }}
-    .ma-navbar .ma-links {
-      display: flex;
-    }
+   
   @media (max-width:950px) {
     .ma-navbar {
       height: 102px;

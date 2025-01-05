@@ -7,36 +7,36 @@ import React, { useState , useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
-    const [isopen , setisopen]= useState(false)
-    const [scroll, setScroll] = useState(false);
+    const [maisopen , setmaisopen]= useState(false)
+    const [mascroll, masetScroll] = useState(false);
 
     const listdown = () => {
-        setisopen(!isopen);
+        setmaisopen(!maisopen);
       };
 
       useEffect(() => {
-        const handleScroll = () => {
+        const mahandleScroll = () => {
           if (window.scrollY > 50) {
-            setScroll(true); 
+            masetScroll(true); 
           } else {
-            setScroll(false);
+            masetScroll(false);
           }
         };
     
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', mahandleScroll);
     
       
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('scroll', mahandleScroll);
         };
       }, []); 
       
   return (
-    <nav className={`ma-navbar ${scroll ? 'ma-nav2' : ''}`}>
+    <nav className={`ma-navbar ${mascroll ? 'ma-nav2' : ''}`}>
         <div className='ma-logo'>
             <img src={logo} alt="" />
         </div>
-        <ul className={`ma-links ${isopen ? 'ma-link-open' : ''}`}>
+        <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
             <li>
                 <NavLink to={'/'}>Home</NavLink>
             </li>
