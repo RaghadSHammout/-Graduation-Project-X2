@@ -1,4 +1,4 @@
-.ma-navbar{
+.ma-navbar {
   width: 100%;
   height: 120px;
   display: flex;
@@ -15,10 +15,10 @@
   list-style: none;
   gap: 6px;
   padding: 24px 10px;
-  border: 4px solid var( --Darkblack);
+  border: 4px solid var(--Darkblack);
   border-radius: 12px;
   margin: 0px;
-  background-color: var( --DeepBlack);
+  background-color: var(--DeepBlack);
 }
 .ma-navbar .ma-links li a {
   color: var(--SilverGray);
@@ -29,39 +29,20 @@
   font-family: "Manrope", serif;
 }
 .ma-navbar .ma-links li a.active {
-  color: var( --White);
-  border: 1px solid var( --VeryDarkGray);
-  background-color:  var( --VeryDarkGray);
+  color: var(--White);
+  border: 1px solid var(--VeryDarkGray);
+  background-color: var(--VeryDarkGray);
   padding: 14px 24px;
   border-radius: 8px;
   font-weight: 500;
 }
-
-
-.ma-navbar .ma-icon{
-  color:var( --White) !important;
+.ma-navbar .ma-icon {
+  color: var(--White) !important;
   display: flex;
-  gap:30px ;
+  gap: 30px;
   font-size: 25.5px;
 }
-.ma-navbar .ma-links.ma-link-open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 8%;
-  left: 40%;
-  
-}
-.ma-navbar .ma-button {
-display: none;
-
-}
-.ma-nav2 {
-  background-color: var( --DeepBlack);
-}
-@media (max-width:1440px) {
+@media (max-width: 1440px) {
   .ma-navbar .ma-logo img {
     width: 165.83px;
     height: 50px;
@@ -69,31 +50,32 @@ display: none;
   .ma-navbar {
     height: 98px;
     padding: 18px 5.555%;
-  }}
-@media (min-width:950px) {
-  .ma-navbar .ma-links.ma-link-open{
+  }
+}
+@media (min-width: 950px) {
+  .ma-navbar .ma-links.ma-link-open {
     display: none;
-  }}
- 
-@media (max-width:950px) {
+  }
+}
+@media (max-width: 950px) {
   .ma-navbar {
     height: 102px;
-    padding:40px  4.102564% 14px 4.102564% ;
+    padding: 40px 4.102564% 14px 4.102564%;
   }
-  .ma-navbar .ma-links , .ma-navbar .ma-icon {
-  display: none;
+  .ma-navbar .ma-links,
+  .ma-navbar .ma-icon {
+    display: none;
   }
   .ma-navbar .ma-button {
-  display: flex;
+    display: flex;
   }
   .ma-navbar .ma-logo img {
     width: 116.08px;
     height: 35px;
   }
 }
-@media (max-width:390px) { 
-.ma-navbar ul li a {
-  font-size: 10px;
-}
-
+@media (max-width: 390px) {
+  .ma-navbar ul li a {
+    font-size: 10px;
+  }
 }
