@@ -1,0 +1,25 @@
+.bg-color {
+    background-color: var(--DarkGrayTwo);
+}
+.home-padding{
+    padding: 0 8.4375%;
+}
+.explore-gap{
+    row-gap: 30px;
+}
+
+@media (max-width: 1440px){
+    .home-padding{
+        padding: 5.5556%;
+    }
+    .explore-gap{
+        row-gap: 20px;
+    }
+}
+@media (max-width: 390px){
+    .home-padding{
+        padding: 4.1026%;
+    }
+}
+
+

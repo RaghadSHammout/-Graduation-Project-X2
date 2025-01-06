@@ -1,0 +1,61 @@
+.explore-card {
+    background-color: var(--DarkGrayOne);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid var(--DarkGrayOne);
+}
+.explore-card-padding{
+    padding: 30px;
+}
+
+.explore-card:hover {
+    transform: scale(1.02) translate(0, -10px);
+    -webkit-transform: scale(1.02) translate(0, -10px);
+    -moz-transform: scale(1.02) translate(0, -10px);
+    -ms-transform: scale(1.02) translate(0, -10px);
+    -o-transform: scale(1.02) translate(0, -10px);
+}
+
+.explore-card-image {
+    width: 237px;
+    height: 252px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.explore-card-title {
+    font-size: 18px;
+    height: 27px;
+    width: 205.4px;
+    margin: 1.5px 0;
+    color: #fff;
+}
+
+.explore-card-link {
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+}
+.arrow{
+    width: 18.75px;
+    height: 16.88px;
+}
+
+.explore-card-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1440px){
+    .explore-card-padding{
+        padding: 20px;
+    }
+}
+@media (max-width: 390px){
+
+}
+
