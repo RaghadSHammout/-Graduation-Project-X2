@@ -1,4 +1,3 @@
-import React from 'react'
 import './Hero.css'
 import'../Title/Title'
 import Title from '../Title/Title'
@@ -12,6 +11,7 @@ export default function Hero() {
         <div className='ma-box'>
             <div className='ma-contant'>
                 <Title
+                  
                     maMargin = {'ma-50'}
                     size={'ma-size'}
                     matext={'ma-text'}
