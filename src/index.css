@@ -7,7 +7,12 @@
   font-optical-sizing: auto;
  
 }
-
+body{
+  background-color: var(--DarkGrayTwo);
+}
+.Desktop-padding-left-right{
+  padding: 0 8.4357%;
+}
 
 :root {
   --DeepBlack: #0f0f0f;
@@ -33,4 +38,14 @@
   --SmokyGray: #333333;
 
   --LightGray: #e4e4e7;
+}
+@media(max-width:1440px){
+  .Desktop-padding-left-right{
+    padding: 0 5.556%;
+  }
+}
+@media(max-width:390px){
+  .Desktop-padding-left-right{
+    padding: 0 4.10%;
+  }
 }
