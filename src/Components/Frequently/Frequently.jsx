@@ -3,6 +3,7 @@ import "./Frequently.css";
 import Title from "../Title/Title";
 import FaqItem from "../FaqItem/FaqItem";
 import Button from "../Button/Button";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 const Frequently = () => {
   const [activeId, setActiveId] = useState(1);
 
@@ -69,10 +70,10 @@ const Frequently = () => {
           text={
             "Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
           }
-          size={false}
-          maMargin={false}
+          size={""}
+          maMargin={"hd-text"}
+          matext={""}
         />
-
         <Button pad={false} text={"Ask a Question"} img={false} />
       </div>
       <div className="faq2">
