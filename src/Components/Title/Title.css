@@ -1,9 +1,9 @@
 .ma-title {
     font-size: 38px;
     font-weight: 700;
-    line-height: 87px;
+    line-height: 57px;
     margin-bottom: 14px;
-    color: var(  --White);
+    color: var( --White);
 }
 .ma-text {
     font-size: 18px;
@@ -15,6 +15,7 @@
 }
 .ma-title.ma-size {
     font-size: 58px;
+    line-height: 87px;
 }
 .ma-50{
     margin-bottom: 50px;
@@ -22,43 +23,19 @@
 .ma-80{
     margin-bottom: 80px;
 }
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 87px;
-  margin-bottom: 14px;
-  color: var(--White);
-}
-.ma-text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: var(--Gray);
-  padding: 0px;
-  margin: 0px;
-}
-.ma-title.ma-size {
-  font-size: 58px;
-}
-.ma-50 {
-  margin-bottom: 50px;
-}
-.ma-80 {
-  margin-bottom: 80px;
-}
 
-.ma-80{
-    margin-bottom: 80px;
-}
  @media (max-width:1440px) {
     .ma-title.ma-size {
         font-size: 48px;
     } 
     .ma-title {
+        font-size: 28px;
+        line-height: 42px;
         margin-bottom: 10px;
     } 
     .ma-text {
-        line-height: 21px;
-        font-size: 14px;
+        line-height: 24px;
+        font-size: 16px;
     } 
     .ma-50 {
         margin-bottom: 40px;
@@ -70,13 +47,16 @@
  @media (max-width:390px) {
     .ma-title.ma-size {
         font-size: 28px;
+        line-height: 42px;
     } 
     .ma-title {
-        line-height: 42px
+        line-height: 36px;
+        font-size: 24px;
     } 
     .ma-text {
         font-size: 14px;
         line-height: 21px;
+        width: 100%;
     } 
     .ma-50 {
         margin-bottom: 30px;
