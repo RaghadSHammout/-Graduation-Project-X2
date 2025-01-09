@@ -7,7 +7,8 @@ import Button from "../Button/Button";
 import plus from "../../assets/photos/plus.png";
 import voice from "../../assets/photos/voice.png";
 import like from "../../assets/photos/like.png";
-
+import triangle from "../../assets/photos/Home page images/triangle.png";
+import SlideComponent from '../../Components/SlideComponent/SlideComponent';
 export default function Hero2() {
   return (
     <>
@@ -15,7 +16,7 @@ export default function Hero2() {
         <div className="zk-container">
           <Carousel className="zk-carousel">
             <Carousel.Item className="slide">
-              <img src={herobg} className="w-100 h-100  img-hero" />
+              <img src={herobg} className=" h-100  img-hero" />
               <Carousel.Caption className="zk-caption">
                 <Title
                   maMargin={true}
@@ -24,10 +25,13 @@ export default function Hero2() {
                   text={
                     "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.    "
                   }
+                  matext={"zk-text"}
                 />
                 <div className="zk-btns-div">
                   {" "}
-                  <Button img={true} text={" Play Now"} />
+                  <Button img={triangle} text={" Play Now"}
+                  pad={"zk-pad"} show={true}
+                  />
                   <div>
                     <img src={plus} />
                     <img src={like} />
@@ -39,7 +43,7 @@ export default function Hero2() {
 
             <Carousel.Item className="slide">
               <img src={herobg} className=" h-100  img-hero" />
-              <Carousel.Caption className="zk-cation">
+              <Carousel.Caption className="zk-caption">
                 <Title
                   maMargin={true}
                   size={true}
@@ -47,10 +51,13 @@ export default function Hero2() {
                   text={
                     "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.    "
                   }
+                  matext={"zk-text"}
                 />
                 <div className="zk-btns-div">
                   {" "}
-                  <Button img={true} text={" Play Now"} />
+                  <Button img={triangle} text={" Play Now"}
+                  pad={"zk-pad"} show={true}
+                  />
                   <div>
                     <img src={plus} />
                     <img src={like} />
@@ -61,7 +68,7 @@ export default function Hero2() {
             </Carousel.Item>
             <Carousel.Item className="slide">
               <img src={herobg} className=" h-100  img-hero" />
-              <Carousel.Caption>
+              <Carousel.Caption className="zk-caption">
                 <Title
                   maMargin={true}
                   size={true}
@@ -69,10 +76,13 @@ export default function Hero2() {
                   text={
                     "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.    "
                   }
+                  matext={"zk-text"}
                 />
                 <div className="zk-btns-div">
                   {" "}
-                  <Button img={true} text={" Play Now"} />
+                  <Button img={triangle} text={" Play Now"}
+                  pad={"zk-pad"} show={true}
+                  />
                   <div>
                     <img src={plus} />
                     <img src={like} />
@@ -83,7 +93,7 @@ export default function Hero2() {
             </Carousel.Item>
             <Carousel.Item className="slide">
               <img src={herobg} className=" h-100  img-hero" />
-              <Carousel.Caption>
+              <Carousel.Caption className="zk-caption">
                 <Title
                   maMargin={true}
                   size={true}
@@ -91,10 +101,13 @@ export default function Hero2() {
                   text={
                     "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.    "
                   }
+                  matext={"zk-text"}
                 />
                 <div className="zk-btns-div">
                   {" "}
-                  <Button img={true} text={" Play Now"} />
+                  <Button img={triangle} text={" Play Now"}
+                  pad={"zk-pad"} show={true}
+                  />
                   <div>
                     <img src={plus} />
                     <img src={like} />
@@ -103,6 +116,7 @@ export default function Hero2() {
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
+            
           </Carousel>
         </div>
       </section>

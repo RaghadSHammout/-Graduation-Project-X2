@@ -9,7 +9,7 @@ export default function MoviesAndShows() {
   return (
     <>
       {/* <Hero2 /> */}
-      <Hero2 />
+      <Hero2/>
       <CardWatchMovies
         id={"1"}
         image={img1}
