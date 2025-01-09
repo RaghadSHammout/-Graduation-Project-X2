@@ -70,11 +70,11 @@ const Frequently = () => {
           text={
             "Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
           }
-          size={""}
+          size={"ma-title"}
           maMargin={"hd-text"}
-          matext={""}
+          matext={"ma-text"}
         />
-        <Button pad={false} text={"Ask a Question"} img={false} />
+        <Button pad={""} show={false} text={"Ask a Question"} img={false} />
       </div>
       <div className="faq2">
         <div className="faq-large-screen">
@@ -107,15 +107,14 @@ const Frequently = () => {
 
         <div className="faq-small-screen">
           {faqData.slice(0, 6).map((item) => (
-            <div key={item.id}>
-              <FaqItem
-                id={item.id}
-                question={item.question}
-                answer={item.answer}
-                activeId={activeId}
-                onToggle={toggleFAQ}
-              />
-            </div>
+            <FaqItem
+              key={item.id}
+              id={item.id}
+              question={item.question}
+              answer={item.answer}
+              activeId={activeId}
+              onToggle={toggleFAQ}
+            />
           ))}
         </div>
       </div>
