@@ -66,6 +66,9 @@
     line-height: 27px;
 }
 @media(max-width:1440px){
+    .plans{
+        padding-bottom: 0px;
+    }
     .LQ-Title-Tab{
         gap: 80px;
     }
@@ -89,7 +92,7 @@
     .lq-father-card{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 90px;
+        gap: 40px;
         
     }
 }
@@ -97,11 +100,12 @@
     .LQ-Title-Tab{
         flex-wrap: wrap;
         justify-content: start;
+
     }
     .lq-father-card{
         flex-wrap: wrap;
-        justify-content: start;
-        gap: 90px;
+        justify-content:start;
+        gap: 20px;
         
     }
 }

@@ -19,9 +19,6 @@ export default function PlanCards({subTitle, description , price , duration }) {
         text={"Choose Plan"}
         show={false}
          />
-        {/* <button class="lq-btn2 L-font-style">Choose Plan</button> */}
-         
-        
       </div>
     </div>
   );
