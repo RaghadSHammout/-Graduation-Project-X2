@@ -1,59 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", serif;
   font-optical-sizing: auto;
- 
 }
-body{
+
+body {
   background-color: var(--DarkGrayTwo);
 }
-.Desktop-padding-left-right{
+
+.Desktop-padding-left-right {
   padding: 0 8.4357%;
 }
-.subscription-padding{
-  padding:150px 8.4357%;
+
+.subscription-padding {
+  padding: 150px 8.4357%;
 }
+
 :root {
   --DeepBlack: #0f0f0f;
-
   --Darkblack: #1f1f1f;
-
   --SilverGray: #bfbfbf;
-
   --White: #ffffff;
-
   --Gray: #999999;
-
   --Red: #e50000;
-
   --VeryDarkGray: #1a1a1a;
-
   --DarkGrayOne: #262626;
-
   --Semi-TransparentRed: #e5000080;
-
   --DarkGrayTwo: #141414;
-
   --SmokyGray: #333333;
-
   --LightGray: #e4e4e7;
 }
-@media(max-width:1440px){
-  .Desktop-padding-left-right{
+
+@media (max-width: 1440px) {
+  .Desktop-padding-left-right {
     padding: 0 5.556%;
   }
-  .subscription-padding{
+  .subscription-padding {
     padding: 8.33% 5.556%;
   }
 }
-@media(max-width:390px){
-  .Desktop-padding-left-right{
+
+@media (max-width: 390px) {
+  .Desktop-padding-left-right {
     padding: 0 4.10%;
   }
-  .subscription-padding{
+  .subscription-padding {
     padding: 80px 15px;
   }
 }
