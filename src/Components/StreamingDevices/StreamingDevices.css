@@ -1,0 +1,116 @@
+
+.v{
+    width: 1597px !important;
+margin: 0 auto;
+padding-bottom:80px ;
+}
+
+.MAContanair{
+    width: 1297px !important;
+    height: 125px;
+    color: var(--White);
+
+
+
+}
+.MAContanair h3{
+    width: 1297px;
+
+    height: 57px;
+font-size: 38px;
+font-family: var(--main-font);
+
+color: var(--White);
+}
+.MAContanair p{
+    width: 1297px;
+height: 54px;
+font-size: 18px;
+
+font-family: var(--main-font);
+color: var( --Gray);
+}
+
+
+@media  (max-width: 1440px) { 
+    .MAContanair h3{
+        width: 1129px;
+height: 42px;
+font-size: 28px;
+
+    }
+    .MAContanair p{
+
+    width: 1129px;
+    height: 48px;
+    font-size: 16px;
+    }
+    .MAContanair{
+        width:1129px;
+        height:100px;
+
+    }
+    .v{
+        width: 1279px !important;
+        padding-bottom:60px !important ;
+
+    }
+}
+
+       
+             @media (max-width: 576px) { 
+
+               .v{
+                width: 300px !important;
+                padding-bottom:10px !important ;
+               }
+               .MAContanair{
+                width:200px !important;  
+                height: max-content;
+
+            }
+            .MAContanair h3{
+                width: 200px !important;
+        font-size:16px;
+        height: max-content;
+
+        
+            }
+            .MAContanair p{
+        
+            width: 200px !important;
+            font-size: 12px;
+            height: max-content;
+
+            }
+
+             }
+             @media  (max-width: 390px) { 
+                .v{
+                    width: 361px !important;
+                    height: 112px;
+                    padding-bottom:10px !important ;
+                   }
+                   .MAContanair{
+                    width: 361px !important;
+                    height: 112px;
+    
+                }
+                .MAContanair h3{
+                    width: 361px !important;
+                    height: 60px;         
+                       font-size:20px;
+            height: max-content;
+    
+            
+                }
+                .MAContanair p{
+            
+                width: 361px;
+                font-size: 14px;
+                height: 42px;
+    
+                }
+                 
+                 }   
+             

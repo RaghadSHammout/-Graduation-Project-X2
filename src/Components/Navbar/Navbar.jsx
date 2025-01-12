@@ -3,33 +3,51 @@ import logo from '../../assets/photos/logo.png'
 import button from '../../assets/photos/Button.png'
 import search from'../../assets/photos/search.png'
 import vector from'../../assets/photos/vector.png'
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState , useEffect} from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
-    const [isopen , setisopen]= useState(false)
-    const listdown = () => {
-        setisopen(!isopen);
-      };
-      
+    const [maisopen , setmaisopen]= useState(false)
+    const [mascroll, masetScroll] = useState(false);
 
+    const listdown = () => {
+        setmaisopen(!maisopen);
+      };
+
+      useEffect(() => {
+        const mahandleScroll = () => {
+          if (window.scrollY > 50) {
+            masetScroll(true); 
+          } else {
+            masetScroll(false);
+          }
+        };
+    
+        window.addEventListener('scroll', mahandleScroll);
+    
+      
+        return () => {
+          window.removeEventListener('scroll', mahandleScroll);
+        };
+      }, []); 
+      
   return (
-    <nav className='ma-navbar'>
+    <nav className={`ma-navbar ${mascroll ? 'ma-nav2' : ''}`}>
         <div className='ma-logo'>
             <img src={logo} alt="" />
         </div>
-        <ul className={`ma-links ${isopen ? 'ma-link-open' : ''}`}>
-            <li  className='ma-active'>
-                <Link to={'/'}>Home</Link>
+        <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
+            <li>
+                <NavLink to={'/'} className='ma-home'>Home</NavLink>
             </li>
             <li>
-                <Link to={'/MoviesAndShows'}>Movies & Shows</Link>
+                <NavLink to={'/MoviesAndShows'}>Movies & Shows</NavLink>
             </li>
             <li>
-                <Link to={'/Support'}>Support</Link>
+                <NavLink to={'/Support'}>Support</NavLink>
             </li>
             <li>
-                <Link to={'/Subscription'}>Subscriptions</Link>
+                <NavLink to={'/Subscription'} className='ma-Subscriptions'>Subscriptions</NavLink>
             </li>
         </ul>
         <div className='ma-icon'>
@@ -42,3 +60,4 @@ export default function Navbar() {
   </nav>
   )
 }
+

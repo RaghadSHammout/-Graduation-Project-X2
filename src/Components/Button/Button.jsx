@@ -1,13 +1,11 @@
-import React from 'react'
-import './Button.css'
-import triangle from '../../assets/photos/Home page images/triangle.png'
+import "./Button.css";
+import triangle from "../../assets/photos/Home page images/triangle.png";
 
-export default function Button({pad , text , img}) {
+export default function Button({ pad, text, img, show }) {
   return (
-
-       <button className= {`ma-btn ${pad ? 'ma-pad' : ''}`}>
-            {img && <img src={triangle} alt="" />}
-            {text}
-        </button>
-  )
+    <button className={`ma-btn ${pad ? "ma-pad" : ""} ${pad}`}>
+      {show && img && <img src={img || triangle} alt="button icon" />}
+      {text}
+    </button>
+  );
 }
