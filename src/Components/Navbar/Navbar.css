@@ -62,6 +62,10 @@
   left: 40%;
   
 }
+.ma-img-search{
+  width: 25.5px;
+  height: 25.5px;
+}
 .ma-nav2 {
   background-color: var( --DeepBlack);
 }
@@ -73,6 +77,10 @@
   .ma-navbar {
     height: 98px;
     padding: 18px 5.555%;
+  }
+  .ma-img-search{
+    width: 18px;
+    height: 18px;
   }
 }
 @media (min-width: 950px) {
