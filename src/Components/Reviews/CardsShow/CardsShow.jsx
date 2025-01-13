@@ -44,7 +44,7 @@ export default function CardsShow() {
 
     ],
     customPaging: (i) => <div className="custom-dot">_</div>,
-     appendDots: (dots) => ( <div> <ul style={{ margin: "0px" }}> {dots.filter((_, idx) => idx % 2 === 0)} </ul> </div> ),
+     appendDots: (dots) => ( <div> <ul className='uuu' style={{ margin: "0px" }}> {dots.filter((_, idx) => idx % 2 === 0)} </ul> </div> ),
 
   };
 

@@ -98,17 +98,17 @@ function Footer() {
             <div className="contecticon">
               <div className="contericon-zq">
                 <a href="/" className="links">
-                  <img src={FaFacebook} alt="" />
+                  <img src={FaFacebook} alt="Icon Fecbook" />
                 </a>
               </div>
               <div className="contericon-zq">
                 <a href="/" className="links">
-                  <img src={twittericon} alt="" />
+                  <img src={twittericon} alt="Icon twitter" />
                 </a>
               </div>
               <div className="contericon-zq">
                 <a href="/" className="links">
-                  <img src={linkedinicon} alt="" />
+                  <img src={linkedinicon} alt="Icon linkedin" />
                 </a>
               </div>
             </div>
@@ -121,9 +121,9 @@ function Footer() {
           <div>
             <ul className="SitePolicies">
               <li className="SitePolicieslist">Terms of Use</li>
-              <span></span>
+              <span className="Line-zq"></span>
               <li className="SitePolicieslist">Privacy Policy</li>
-              <span></span>
+              <span className="Line-zq"></span>
               <li className="SitePolicieslist">Cookie Policy</li>
             </ul>
           </div>

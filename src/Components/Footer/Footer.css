@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--VeryDarkGray);
   padding: 150px 162px;
-  overflow: hidden;
+
 }
 .image-container {
   position: relative;
@@ -99,7 +99,7 @@
   list-style-type: none;
 }
 
-span {
+.Line-zq {
   border-right: 1px solid var(--DarkGrayOne);
 }
 @media (max-width: 1440px) {

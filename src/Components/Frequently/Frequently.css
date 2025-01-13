@@ -1,30 +1,30 @@
 .faq-container {
   padding: 0% 8.4375%;
   background-color: var(--DeepBlack);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 734px;
 }
 
 .faq1 {
   margin-bottom: 80px;
-  height: 98px;
+  height: 6.125rem;
   display: flex;
   justify-content: space-between;
   gap: 100px;
 }
-.faq1 div {
-  width: 1320px;
-  height: 100%;
+.hd-text {
+  width: 82.70676691729%;
 }
-.faq1 .ma-title {
-  line-height: 57px;
-}
+
 .faq1 Button {
+  width: 11.0275689223%;
   margin-top: 35px;
+  margin-right: 0px;
 }
 
 .faq2 {
-  height: 75.75%;
+  height: 34.75rem;
 }
 
 .faq-large-screen {
@@ -44,9 +44,20 @@
 .faq-small-screen {
   display: none;
 }
-
+.faq-small-screen .line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.faq-small-screen .no-line {
+  margin-top: 20px;
+}
 .faq-item {
   width: 100%;
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .faq1 Button {
+    font-size: 12px;
+  }
 }
 @media (max-width: 1440px) {
   .faq-container {
@@ -54,21 +65,34 @@
     height: 582px;
   }
   .faq1 {
-    height: 13.05842%;
+    height: 4.75rem;
     margin-bottom: 60px;
-    display: none;
+    gap: 80px;
+  }
+  .hd-text {
+    width: 82.8125%;
+  }
+  .faq1 Button {
+    width: 10.9375%;
+    margin-top: 27px;
+    padding: 14px 20px;
   }
   .faq2 {
-    height: 76.632302%;
+    height: 27.875rem;
   }
   .faq-large-screen {
     gap: 40px;
   }
   .faq-column {
-    width: 620px;
+    width: 47.4937343358%;
   }
 }
-@media (max-width: 990px) {
+@media (min-width: 993px) and (max-width: 1435px) {
+  .faq1 Button {
+    font-size: 10px;
+  }
+}
+@media (max-width: 992px) {
   .faq-container {
     padding: 0 1rem;
     height: 1002px;
@@ -79,17 +103,38 @@
   }
 
   .faq-small-screen {
-    gap: 20px;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
   .faq1 {
     height: 172px;
     margin-bottom: 0px;
-    gap: 20px;
-    display: none;
+    gap: 0px;
+    flex-direction: column;
+    width: 22.375rem;
+  }
+  .hd-text {
+    width: 22.375rem;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+  }
+  .faq1 .ma-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hd-text p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .faq1 Button {
+    margin-top: 20px;
+    width: 140px;
   }
   .faq2 {
-    height: 790px;
+    height: 49.375rem;
+    width: 22.375rem;
   }
 }

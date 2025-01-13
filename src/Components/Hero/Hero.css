@@ -14,20 +14,12 @@
     align-items: end;
     justify-content: center;
     width: 100%;
-    align-items: start;
-    justify-content: center;
-    width: 100%;
-    /* position: fixed;
-    top: 796px;
-    left: 21.45%; */
-
+    position: absolute;
 }
 .ma-hero .ma-contant{
     width: 57.08333%;
     text-align: center;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
     top: 796px;
 
 }

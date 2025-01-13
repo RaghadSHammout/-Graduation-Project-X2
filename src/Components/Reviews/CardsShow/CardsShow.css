@@ -1,7 +1,7 @@
 
 .custom_container {
   width: 1057px; /* العرض */
-  background-color: var(--SmokyGray);
+  background-color: var(----VeryDarkGray);
 
   height: 555px;
   padding: 50px;
@@ -15,6 +15,7 @@
 .slick-dots ul{
   padding-left: 0;
   }
+ 
  
 .custom-dots-container {
   
@@ -31,12 +32,19 @@
 
 .custom-dot {
   font-size: 30px;
-  color: #000; 
+  color: var(--SmokyGray);
   margin-top: 30px;
 }
-.slick-dots li{
+  .custom-dot {
+    padding-top: 10px;
+    border-radius: 100px;
+  }
+
+.slick-dots li button::before{
   width: 23px;
   height: 4px;
+ 
+
 }
 
 .slick-dots li.slick-active .custom-dot {

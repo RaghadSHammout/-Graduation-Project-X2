@@ -5,7 +5,7 @@ const FaqItem = ({ id, question, answer, activeId, onToggle }) => {
 
   const shouldHaveBorder = [1, 2, 3, 5, 6, 7].includes(id);
   const shouldHaveBorder2 = [1, 2, 3, 5].includes(id);
-  const isLargeScreen = window.innerWidth > 990;
+  const isLargeScreen = window.innerWidth > 992;
   return (
     <>
       {isLargeScreen ? (
@@ -36,7 +36,7 @@ const FaqItem = ({ id, question, answer, activeId, onToggle }) => {
             </div>
             {isActive && <div className="faq-answer">{answer}</div>}
           </div>
-          <div className={`${shouldHaveBorder2 ? "line" : ""}`}></div>
+          <div className={` ${shouldHaveBorder2 ? "line" : "no-line"}`}></div>
         </>
       )}
     </>

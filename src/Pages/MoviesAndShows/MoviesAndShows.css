@@ -1,0 +1,10 @@
+.Trinding-Now,.New-Releases {
+    padding-left: 160px;
+    padding-right: 162px;
+    background-color: var(--VeryDarkGray);
+}
+.Trinding-Now-cards,.New-Releases-cards{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}

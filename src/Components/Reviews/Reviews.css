@@ -24,8 +24,7 @@ line-height: 27px;
 
 display: flex;
 align-items: center;
-color: white;
-}
+color: var(--Gray);}
 .MA_titleButton  button{
     color: white;
     background-color: black;
