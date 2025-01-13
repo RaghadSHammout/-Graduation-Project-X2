@@ -6,8 +6,12 @@ import './Cards.css';
 import StreamingDevices from '../StreamingDevices';
 export default function Cards() {
   return (
+    
     <>
+
+
    <section >
+
    <div className='MA_card '>
     <StreamingDevices/>
     <div className='MA '>

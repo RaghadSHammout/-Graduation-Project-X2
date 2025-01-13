@@ -3,6 +3,7 @@ import Home from './Pages/Home/Home';
 import MoviesAndShows from './Pages/MoviesAndShows/MoviesAndShows';
 import Subscription from './Pages/Subscription/Subscription';
 import Support from './Pages/Support/Support';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from'./Components/Footer/Footer.jsx'
 import Navbar from './Components/Navbar/Navbar';
@@ -20,7 +21,9 @@ export default function App() {
         <Route path='/Subscription' element={<Subscription />} />
         <Route path='/Support' element={<Support />} />
       </Routes>
-      <Footer/>
+      
+      {/* <Footer/> */}
+
     </>
   )
 }
