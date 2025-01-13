@@ -8,14 +8,14 @@ import star4 from "../../assets/photos/Container(12).png";
 export default function MoviesAndShows() {
   return (
     <>
-      {/* <Hero2 /> */}
-      <Hero2/>
+       <Hero2 />
       <CardWatchMovies
         id={"1"}
         image={img1}
         duration={"1h 57min"}
         star={star4_5}
       />
+      
     </>
   );
 }
