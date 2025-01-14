@@ -25,8 +25,8 @@
 
 .img-hero {
     object-fit: cover;
-    margin-top: 140px; /* From zeinab-k branch */
-    border-radius: 12px; /* From zeinab-k branch */
+    margin-top: 140px; 
+    border-radius: 12px; 
     width: 100%;
 }
 
