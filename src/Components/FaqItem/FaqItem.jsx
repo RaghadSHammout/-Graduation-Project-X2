@@ -36,7 +36,7 @@ const FaqItem = ({ id, question, answer, activeId, onToggle }) => {
             </div>
             {isActive && <div className="faq-answer">{answer}</div>}
           </div>
-          <div className={`${shouldHaveBorder2 ? "line" : ""}`}></div>
+          <div className={` ${shouldHaveBorder2 ? "line" : "no-line"}`}></div>
         </>
       )}
     </>

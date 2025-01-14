@@ -38,7 +38,7 @@ export default function Navbar() {
         </div>
         <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
             <li>
-                <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/'} className='ma-home'>Home</NavLink>
             </li>
             <li>
                 <NavLink to={'/MoviesAndShows'}>Movies & Shows</NavLink>
@@ -47,12 +47,12 @@ export default function Navbar() {
                 <NavLink to={'/Support'}>Support</NavLink>
             </li>
             <li>
-                <NavLink to={'/Subscription'}>Subscriptions</NavLink>
+                <NavLink to={'/Subscription'} className='ma-Subscriptions'>Subscriptions</NavLink>
             </li>
         </ul>
         <div className='ma-icon'>
-           <img src={search} alt="" />
-           <img src={vector} alt="" />
+           <img src={search} alt=""  className='ma-img-search'/>
+           <img src={vector} alt="" className='ma-img-search' />
         </div>
         <div className='ma-button'>
             <img src={button} alt="" onClick={listdown} />

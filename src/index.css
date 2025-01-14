@@ -16,6 +16,10 @@ body {
   padding: 0 8.4357%;
 }
 
+.subscription-padding {
+  padding: 150px 8.4357%;
+}
+
 :root {
   --DeepBlack: #0f0f0f;
   --Darkblack: #1f1f1f;
@@ -35,10 +39,16 @@ body {
   .Desktop-padding-left-right {
     padding: 0 5.556%;
   }
+  .subscription-padding {
+    padding: 8.33% 5.556%;
+  }
 }
 
 @media (max-width: 390px) {
   .Desktop-padding-left-right {
     padding: 0 4.10%;
+  }
+  .subscription-padding {
+    padding: 80px 15px;
   }
 }

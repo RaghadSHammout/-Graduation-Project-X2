@@ -44,7 +44,7 @@
         margin-bottom: 60px;
     }
 }
- @media (max-width:390px) {
+ @media (min-width:390px) and (max-width:992px) {
     .ma-title.ma-size {
         font-size: 28px;
         line-height: 42px;
