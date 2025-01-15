@@ -1,0 +1,152 @@
+.LQ-plan-card{
+    padding:50px;
+    background-color: var(--VeryDarkGray);
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 12px;
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+}
+.LQ-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+}
+.lq-card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    color:var(--White);
+    
+}
+.lq-desc{
+    font-size: 1.125rem;
+    font-size: 400;
+    line-height: 27px;
+    color: var(--Gray);
+}
+.lq-price{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+}
+.pricee{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 29.2px;
+    color: var(--White);
+}
+.lq-duration{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 13.14px;
+    color: var(--Gray);
+}
+.lq-btn-container{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.L-font-style{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--White);
+}
+.lq-btn1{
+    padding: 18px 35px;
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 8px;
+    background-color: var(--DarkGrayTwo);
+}
+.lq-btn2{
+    padding: 18px 44px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Red);
+}
+@media(max-width:1440px){
+    .LQ-plan-card{
+        padding:40px;
+        gap: 30px;     
+    }
+    .LQ-title{
+        gap: 10px;
+    }
+    .lq-card-title{
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
+    .lq-desc{
+        font-size: 0.875rem;
+        line-height: 21px;
+        width: 88%;
+    }
+    .pricee{
+        font-size: 1.5rem;
+        line-height: 17.52px;
+    }
+    .lq-duration{
+        font-size: 0.875rem;
+        line-height: 10.22px;
+    }
+    .L-font-style{
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
+    .lq-btn1{
+        padding: 14px 25.5px;
+    }
+    .lq-btn2{
+        padding: 14px 32.5px;
+    }
+    
+}
+@media(max-width:1168px){
+    .LQ-plan-card{
+        padding:24px;
+        gap: 30px;
+         
+    }
+    .LQ-title{
+        gap: 12px;
+    }
+    .lq-card-title{
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
+    .lq-desc{
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
+    .pricee{
+        font-size: 1.5rem;
+        line-height: 17.52px;
+    }
+    .lq-duration{
+        font-size: 0.875rem;
+        line-height: 10.22px;
+    }
+    .lq-btn-container{
+        gap:12px;
+    }
+    .L-font-style{
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
+    .lq-btn1{
+        padding: 14px 31.33px;
+    }
+    .lq-btn2{
+        padding: 14px 38.33px;
+    }
+
+}
