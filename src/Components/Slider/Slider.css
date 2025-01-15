@@ -1,0 +1,85 @@
+.custom-arrows {
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    outline: 1px solid var(--Darkblack);
+    background-color: var(--DeepBlack);
+    width: max-content;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.slider-upper-div {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-slide {
+    width: max-content;
+    height: max-content;
+}
+
+.slick-slide div {
+    width: max-content;
+    height: max-content;
+}
+
+
+.custom-arrows button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryDarkGray);
+    padding: 14px;
+    border: 1px solid var(--Darkblack);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.slider-arrow-div {
+    width: 26px;
+    height: 26px;
+}
+
+.slider-arrow-img {
+    width: 17.5px;
+    height: 15.75px;
+}
+
+.custom-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.prev-arrow {
+    rotate: 180deg;
+}
+
+.custom-indicators button {
+    padding: 0;
+    width: 16.33px;
+    height: 4px;
+    background: var(--SmokyGray);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.to-indicator.active {
+    background-color: red;
+    /* Red color for the active indicator */
+    width: 23px;
+}
+
+@media (max-width: 1440px) {
+
+    .slick-track {
+        gap: 20px;
+    }
+}

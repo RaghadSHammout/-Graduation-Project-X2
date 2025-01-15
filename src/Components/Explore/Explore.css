@@ -1,25 +1,41 @@
 .bg-color {
     background-color: var(--DarkGrayTwo);
 }
-.home-padding{
+
+.home-padding {
     padding: 0 8.4375%;
 }
-.explore-gap{
-    row-gap: 30px;
+
+.explore-gap {
+    gap: 30px;
 }
 
-@media (max-width: 1440px){
-    .home-padding{
+.to-prev-btn {
+    rotate: 180deg;
+}
+
+.slick-slide {
+    width: max-content !important;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 22px !important;
+    justify-content: space-between !important;
+}
+
+@media (max-width: 1440px) {
+    .home-padding {
         padding: 5.5556%;
     }
-    .explore-gap{
-        row-gap: 20px;
+
+    .explore-gap {
+        gap: 20px;
     }
 }
-@media (max-width: 390px){
-    .home-padding{
+
+@media (max-width: 390px) {
+    .home-padding {
         padding: 4.1026%;
     }
 }
-
-
