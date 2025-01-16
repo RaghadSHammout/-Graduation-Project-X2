@@ -1,21 +1,27 @@
-import React, { useState } from 'react'
-import './Plans.css'
-import PlanCards from '../PlanCards/PlanCards'
-import { cardData } from '../Data/CardData'
-import Title from '../Title/Title'
+import React, { useState } from "react";
+import "./Plans.css";
+import PlanCards from "../PlanCards/PlanCards";
+import { cardData } from "../Data/CardData";
+import Title from "../Title/Title";
+
 export default function Plans() {
-    const [activeTab , setActiveTab]= useState("Monthly")
+  const [activeTab, setActiveTab] = useState("Monthly");
+
   return (
-    <section className=" plans Desktop-padding-left-right ">
-      <div className="LQ-Title-Tab">
-        <Title
-        maMargin={'ma-80'}
-        size={'ma-title'}
-        matext={'ma-text'}
-        title={"Choose the plan that's right for you"} 
-        text={"Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"}
-         />
-        <div className="lq-tabs">
+    <section className=" plans Desktop-padding-left-right w-100">
+      <div className="LQ-Title-Tab d-flex justify-content-between align-items-end ">
+        <div className="Lq-component-container">
+          <Title
+            size={"ma-title"}
+            matext={"ma-text1"}
+            title={"Choose the plan that's right for you"}
+            text={
+              "Join StreamVibe and select from our flexible subscriptions options tailored to suite your viewing preferences .Get ready for non-stop entertainment!"
+            }
+          />
+        </div>
+
+        <div className="lq-tabs d-flex justify-content-between align-items-center">
           <button
             className={activeTab === "Monthly" ? "active" : "dis-active"}
             onClick={() => setActiveTab("Monthly")}
@@ -29,8 +35,10 @@ export default function Plans() {
             Yearly
           </button>
         </div>
+
       </div>
-      <div className="lq-father-card">
+
+      <div className="lq-father-card  d-flex justify-content-center align-items-center">
         {cardData[activeTab].map((PlanCard, index) => (
           <PlanCards
             key={index}

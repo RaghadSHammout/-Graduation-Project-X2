@@ -1,10 +1,10 @@
 import React , {useState} from 'react'
 import './Form.css'
 import Title from '../Title/Title'
-import supportImg from '../../assets/photos/Support page/Welcome to our support div img.png'
-import  Button  from '../Button/Button'
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import supportImg from '../../assets/photos/Support page/Welcome to our support div img.png';
+import  Button  from '../Button/Button';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 export default function Form() {
   const [value, setValue] = useState()
   const [isClick , setisClick] = useState(false)

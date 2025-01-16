@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <Frequently />
-      <Cards />
-      <Plans />
+      {/* <Cards /> */}
+       <Plans />  
     </>
   );
 }
