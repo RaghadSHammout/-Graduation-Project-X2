@@ -3,7 +3,7 @@ import './ExploreCard.css';
 
 function ExploreCard({ image, title, link }) {
     return (
-        <div className="explore-card card-width">
+        <div className="explore-card">
             <div className='explore-card-padding w-100'>
                 <img src={image} alt={title} className="explore-card-image" />
                 <div className="explore-card-content w-100 d-flex justify-content-between align-items-center">

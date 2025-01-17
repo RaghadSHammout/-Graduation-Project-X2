@@ -30,20 +30,9 @@ const cardData = [
 function Explore() {
     return (
         <section className="bg-color home-padding">
-            <div>
-                <div className="upper-div">
-
-                    <div className="indicators">
-                        
-                    </div>
-                </div>
-
                 <div className="carousel-container">
                     <CustomSlider cardData={cardData} lgSize={5}/>
-                        
-
                 </div>
-            </div>
         </section>
     );
 }
