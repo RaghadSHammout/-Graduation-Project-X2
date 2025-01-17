@@ -7,16 +7,18 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
+ 
 }
 .LQ-pad {
   padding: 18px 44px;
 }
 .ma-btn img {
   margin-right: 4px;
+  width: 17.84px;
+ height: 19.19px;
+ border-radius: 0px;
 }
-.ma-btn {
-  margin-right: 4px;
-}
+
 @media (max-width: 1440px) {
   .ma-btn {
     padding: 14px 24px;

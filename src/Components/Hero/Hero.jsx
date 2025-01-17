@@ -41,7 +41,7 @@ export default function Hero() {
                     text = {isCropped ? SliceText.slice(0 , number) : SliceText }
                 /> 
                 <Button
-                 shwo= {true}
+                show= {true}
                 img={triangle}
                 text = {" Start Watching Now"}/>
             </div>

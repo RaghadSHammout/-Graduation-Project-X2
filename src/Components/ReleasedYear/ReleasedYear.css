@@ -1,0 +1,234 @@
+.ma-right-div{
+    width: 519px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid  var(--DarkGrayOne);
+    background-color: var(--VeryDarkGray);
+}
+.ma-margin{
+    margin-bottom: 30px;
+}
+.ma-right-div  .ma-one {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 14px;
+}
+.ma-right-div .ma-one-div  img , .ma-right-div .ma-two-div img{
+   width: 18px;
+   height: 18px;
+}
+
+.ma-right-div .ma-one p{
+    color: var(--Gray);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.ma-right-div .ma-one-div .ma-year{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--White);
+}
+.ma-right-div .ma-two-div .ma-two , 
+.ma-right-div .ma-four-div .ma-two  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ma-right-div .ma-three-div .ma-img-star{
+    width: 18.31px;
+    height: 17.47px;
+}
+.ma-right-div .ma-two-div .ma-two div ,
+.ma-right-div .ma-four-div .ma-two div  {
+    padding: 8px 14px;
+    border: 1px solid var(--DarkGrayOne);
+    background-color: var(--DarkGrayTwo);
+    border-radius: 8px;
+}
+.ma-right-div .ma-two-div .ma-two div p ,
+.ma-right-div .ma-four-div .ma-two div p 
+,.ma-right-div .ma-Director-div h5{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--White);
+    margin-bottom: 0px;
+}
+
+.ma-right-div .ma-four-div .ma-img-game{
+    width: 16.5px;
+    height: 16.5px;
+}
+.ma-right-div .ma-three-div .ma-three-one-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.ma-right-div .ma-three-div  .ma-thrree-two-div{
+    padding: 16px;
+    background-color: var(--DarkGrayTwo);
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 8px;
+}
+.ma-right-div .ma-three-div  .ma-thrree-two-div h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--White);
+    margin-bottom: 4px;
+
+}
+.ma-right-div .ma-three-div .ma-box-imgandp{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.ma-right-div .ma-three-div .ma-box-imgandp p{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+color: var(--White);
+
+}
+.ma-right-div .ma-Director-div{
+    padding: 14px;
+    border: 1px solid var(--DarkGrayOne);
+    background-color: var(--DarkGrayTwo);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ma-right-div .ma-Director-div p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--Gray);  
+}
+.ma-right-div .ma-Director-div img{
+    width: 56.56px;
+    height: 60px;
+    border-radius: 8px ;
+}
+@media (max-width:1440px) {
+    .ma-right-div{
+        width: 416px;
+        padding:40px ;
+        border-radius: 10px;
+    }
+    .ma-margin{
+        margin-bottom: 24px;
+    }
+    .ma-gap{
+        gap: 4px;
+    }
+    .ma-right-div .ma-one{
+        margin-bottom: 10px;
+        gap: 2px;
+    }
+    .ma-right-div .ma-one-div  img , .ma-right-div .ma-two-div img{
+        width: 15px;
+        height: 15px;
+     }
+     .ma-right-div .ma-three-div .ma-img-star {
+        width: 15.26px;
+        height: 14.56px;
+    }
+    .ma-right-div .ma-four-div .ma-img-game{
+        width: 13.75px;
+        height: 13.75px;
+    }
+    .ma-right-div .ma-one p ,
+    .ma-right-div .ma-one-div .ma-year
+    {
+    font-size: 16px;
+    line-height: 24px;
+    }
+    .ma-right-div .ma-two-div .ma-two div ,
+    .ma-right-div .ma-four-div .ma-two div{
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+    .ma-right-div .ma-two-div .ma-two div p ,
+    .ma-right-div .ma-four-div .ma-two div p,
+    .ma-right-div .ma-Director-div p 
+    {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .ma-right-div .ma-Director-div h5{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .ma-right-div .ma-three-div  .ma-thrree-two-div h5{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    }
+    
+    .ma-right-div .ma-three-div  .ma-thrree-two-div{
+        padding: 14px;
+    }
+    .ma-right-div .ma-three-div  .ma-thrree-two-div .ma-box-imgandp .fourstar{
+        width: 94.82px;
+        height:18px;
+    }
+    .ma-right-div .ma-Director-div{
+        padding: 12px;
+        gap: 8px;
+    }
+    .ma-right-div .ma-three-div  .ma-thrree-two-div .ma-box-imgandp .fivestar{
+        width: 94px;
+        height:18px;
+    }
+    .ma-right-div .ma-Director-div img{
+        width: 47.13px;
+        height: 50px;
+        border-radius: 6px ;
+
+    }
+    .ma-right-div .ma-three-div .ma-box-imgandp {
+        gap: 2px;
+    }
+    .ma-right-div .ma-three-div .ma-box-imgandp p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        color: var(--White);
+        
+        }
+    
+}
+@media (max-width:576px) {
+    .ma-right-div{
+        width: 358px;
+        padding:24px ;
+    }
+    .ma-margin{
+        margin-bottom: 20px;
+    }
+   
+    .ma-right-div .ma-one p 
+    {
+    font-size: 14px;
+    line-height: 21px;
+    }
+
+    .ma-right-div .ma-three-div  .ma-thrree-two-div h5{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 2px;
+    }
+    
+    .ma-right-div .ma-three-div  .ma-thrree-two-div{
+        padding: 12px;
+    }
+    
+    .ma-right-div .ma-Director-div{
+        padding: 10px;
+    }
+}
