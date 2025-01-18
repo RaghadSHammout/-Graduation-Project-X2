@@ -4,8 +4,8 @@ export default function Card({ image, views, duration , releaseDate,iconViews,ic
   return (
     <div className='card-zq'>
 
-      <div className='imgcard-zq'>
-        <img src={image} alt="Card Image" />
+      <div className='zq-imgcard'>
+        <img className='imgcard-zq' src={image} alt="Card Image" />
       </div>
 
       <div className='conterCard-zq'>
