@@ -1,4 +1,6 @@
 
+
+
 import React from 'react'
 import '../Card/Card.css'
 export default function Card( {img,title,desc}) {

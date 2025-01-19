@@ -51,8 +51,8 @@ export default function Navbar() {
             </li>
         </ul>
         <div className='ma-icon'>
-           <img src={search} alt="" />
-           <img src={vector} alt="" />
+           <img src={search} alt=""  className='ma-img-search'/>
+           <img src={vector} alt="" className='ma-img-search' />
         </div>
         <div className='ma-button'>
             <img src={button} alt="" onClick={listdown} />
