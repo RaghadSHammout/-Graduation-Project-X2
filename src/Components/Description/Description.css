@@ -1,0 +1,56 @@
+.desc {
+    background-color: var(--VeryDarkGray);
+    border: solid 1px var(--DarkGrayOne);
+    border-radius: 12px;
+    gap: 14px;
+}
+
+.desc-padding {
+    padding: 50px;
+}
+
+.to-title,
+.to-text {
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.to-title {
+    color: var(--Gray);
+}
+
+@media (max-width:1440px) {
+    .desc {
+        border-radius: 10px;
+        gap: 10px;
+    }
+
+    .desc-padding {
+        padding: 40px;
+    }
+
+    .to-title,
+    .to-text {
+        line-height: 24px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:390px) {
+    .desc {
+        gap: 8px;
+    }
+
+    .desc-padding {
+        padding: 24px;
+    }
+
+    .to-title,
+    .to-text {
+        line-height: 21px;
+        font-size: 14px;
+    }
+}

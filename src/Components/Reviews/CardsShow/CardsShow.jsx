@@ -7,6 +7,7 @@ import iconBack from "../../../assets/Icons/Vector 619.png";
 
 import iconFront from "../../../assets/Icons/Vector.png";
 import Reviews from "../Reviews";
+
 export default function CardsShow() {
   const sliderRef = useRef(null);
 
