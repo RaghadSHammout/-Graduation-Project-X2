@@ -13,20 +13,22 @@ function Footer() {
         <div className="image-container">
           <img className="ImagFooter-zq" src={FooterImg} alt="footer image" />
           <div className="overlay">
-            <div className="info-zq">
+            
               <Title
-                maMargin={true}
-                size={true}
+                maMargin="info-zq"
+                size="zq-title"
+                matext="ma-text"
                 title={"Start your free trial today!"}
                 text={
                   "This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe."
                 }
               />
-            </div>
+          
             <Button
               // img={}
               text={"Start a Free Trail"}
             />
+          
           </div>
         </div>
       </div>
