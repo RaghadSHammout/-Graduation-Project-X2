@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import { ShowCardData } from '../../Data/showCardData';

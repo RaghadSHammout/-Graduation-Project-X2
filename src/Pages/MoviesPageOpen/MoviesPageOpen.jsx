@@ -4,7 +4,6 @@ export default function MoviesPageOpen() {
   return (
     <>
       <MoviesOpenHero/>
-      
     </>
-  )
+  );
 }
