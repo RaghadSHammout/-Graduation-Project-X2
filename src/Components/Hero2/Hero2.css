@@ -21,13 +21,35 @@
 .slide {
     height: 100vh;
     width: 100%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.Slide2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-hero {
     object-fit: cover;
-    margin-top: 140px; 
-    border-radius: 12px; 
+    margin-top: 150px;
+    border-radius: 12px;
     width: 100%;
+    height: 80%;
+}
+
+.img-hero2 {
+    object-fit: cover;
+    margin-top: 140px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 .zk-container {
@@ -49,18 +71,16 @@
 }
 
 .zk-btns-div {
-    gap: 20px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    /*margin-bottom: 10px;*/
+   
 }
 
 .zk-btns-div-img {
-    padding: 5px;
-    width: 56px;
-    height: 56px;
+    padding: 0px 5px;
 }
 
 .zk-play-btn {
@@ -86,13 +106,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 10000;
+    z-index: 100000;
     margin-bottom: 50px;
 }
 
 .carousel-caption {
-    left: 40px;
-    right: 0%;
+    /*left: 40px;
+    right: 0%;*/
 }
 
 .carousel-control-prev-icon {
@@ -127,20 +147,23 @@
 }
 
 .zk-text {
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    width: 80%;
+
+    width: 1194px;
     height: 54px;
     gap: 0px;
     opacity: 0px;
     color: var(--Gray);
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .active {
@@ -152,62 +175,135 @@
         padding-left: 80px;
         padding-right: 80px;
     }
+
+    .zk-text {
+        width: 960px;
+        height: 48px;
+        gap: 0px;
+        opacity: 0px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+    }
+    .carousel-control-next-icon {
+
+        width: 48px;
+        height: 48px;
+    }
+
+ .carousel-control-prev-icon {
+
+        width: 48px;
+        height: 48px;
+    }}
+
+@media (max-width: 1220px) {
+    .zk-text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 1000px) {
     .zk-btns-div {
-        flex-direction: column;
+       flex-direction: column;
+
     }
+
     .zk-hero {
         height: 100vh;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+
     }
+
     .zk-container {
         height: 100vh;
     }
+
     .carousel-control-prev-icon {
         display: none;
     }
+
     .carousel-control-next-icon {
         display: none;
     }
+
     .img-hero {
         height: 100vh;
         padding-left: 0px;
         padding-right: 0px;
-        margin-top: 90px !important;
+        margin-top: 100px !important;
     }
+
+    .img-hero2 {
+        height: 100vh;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 90px !important;
+
+    }
+
     .carousel-indicators [data-bs-target] {
         display: none;
     }
+
     .zk-display-none {
         display: none;
     }
+
     .zk-caption {
         margin-top: 100px;
-    }
-    .zk-text {
-        display: none;
-    }
-    .zk-pad {
-        padding: 14px 130px 14px 130px;
-        gap: 4px;
-    }
-    .zk-caption {
+        bottom: 0px;
         margin-bottom: 0px !important;
         margin-top: 0px !important;
     }
+
+    .zk-text {
+        display: none;
+    }
+
+    .zk-btns-div-img {
+
+        width: Hug (48px)px;
+        height: Hug (48px)px;
+        padding: 12px 0px 0px 0px;
+        gap: 10px;
+        border-radius: 8px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+    .zk-pad{
+        margin-bottom: 10px;
+    }
+
 }
 
-@media (max-width: 467px) {
+@media (max-width: 544px) {
+
     .zk-pad {
-        padding: 14px 70px 14px 70px;
+        width: Fill (310px)px;
+        height: Hug (52px)px;
+        padding: 14px 20px 14px 20px;
+        gap: 4px;
+        border-radius: 8px;
+        opacity: 0px;
+
     }
+
 }
 
-@media (max-width: 390px) {
+@media (max-width: 379px) {
+
     .zk-pad {
-        padding: 14px 50px 14px 50px;
+      
+       width: 100% 
+       !important;
+
     }
+
 }

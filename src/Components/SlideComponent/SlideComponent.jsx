@@ -9,11 +9,11 @@ import voice from '../../assets/photos/voice.png';
 import like from '../../assets/photos/like.png';
 import "../../Components/Hero2/Hero2.css";
 export default function SlideComponent(
-    { imgHero,title,textTitle,size,maMargin,matext, pad,text,img,show }) {
+    { imgHero,imgHeight,title,textTitle,size,maMargin,matext, pad,text,img,show,caption, }) {
     return (
         <>   <div className='zk-layer'></div>
-            <img src={imgHero} className=' h-100  img-hero' />
-            <Carousel.Caption className='zk-caption '>
+            <img src={imgHero} className={`${imgHeight}`}/>
+            <Carousel.Caption className={`${caption}`}>
                 <Title
                     title={title}
                     text={textTitle}
@@ -29,9 +29,9 @@ export default function SlideComponent(
                         show={show}
                     />
                     <div>
-                        <img src={plus} />
-                        <img src={like} />
-                        <img src={voice} />
+                        <img src={plus} className='zk-btns-div-img' />
+                        <img src={like} className='zk-btns-div-img' />
+                        <img src={voice}  className='zk-btns-div-img'/>
                     </div>
                 </div>
             </Carousel.Caption>

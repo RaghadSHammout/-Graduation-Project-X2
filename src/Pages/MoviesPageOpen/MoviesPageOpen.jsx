@@ -1,9 +1,9 @@
-import Description from "../../Components/Description/Description";
+import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 
 export default function MoviesPageOpen() {
   return (
-    <div>
-      <Description/>
-    </div>
-  )
+    <>
+      <MoviesOpenHero/>
+    </>
+  );
 }

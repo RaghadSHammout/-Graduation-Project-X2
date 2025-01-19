@@ -8,6 +8,7 @@ import Plans from "../../Components/Plans/Plans";
 export default function Home() {
   return (
     <>
+   
       <Hero />
 
       <Explore/>
