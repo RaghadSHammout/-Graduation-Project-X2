@@ -14,8 +14,14 @@
 .ma-btn img {
   margin-right: 4px;
 }
-.ma-btn {
+.ma-btn1 {
   margin-right: 4px;
+}
+@media(max-width:1754px){
+  .LQ-pad{
+    padding: 14px 38.4px;
+    font-size: 15px;
+  }
 }
 @media (max-width: 1440px) {
   .ma-btn {
@@ -26,5 +32,25 @@
   .ma-btn img {
     width: 15.29px;
     height: 16.45px;
+  }
+  .LQ-pad{
+    padding: 14px 38.33px;
+  }
+}
+@media(max-width:1320px){
+  .LQ-pad{
+    padding: 14px 33px;
+  }
+}
+@media (min-width:390px) and (max-width:992px) {
+  .LQ-pad{
+    padding: 14px 32.5px;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .ma-btn {
+      width:auto !important;
   }
 }

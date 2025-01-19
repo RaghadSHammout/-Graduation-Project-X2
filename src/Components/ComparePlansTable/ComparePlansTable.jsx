@@ -6,7 +6,7 @@ import { TableDataOnMobile } from '../Data/TableDataOnMobile'
 export default function ComparePlansTable() {
   const [ActiveTab , setActiveTab]= useState("Standard")
   return (
-    <section className="subscription-padding">
+    <section className="subscription-padding w-100">
       <div className="Lq-title-container">
         <Title
           maMargin={"ma-80"}
