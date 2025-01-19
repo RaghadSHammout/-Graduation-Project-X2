@@ -23,7 +23,7 @@
     padding: 30px;
     font-weight: 600;
     border-width: 1px;
-
+    width: 20%;
 }
 
 .lq-data {
@@ -31,7 +31,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    width: 20%;
 }
 
 .lq-headd {
@@ -39,6 +38,7 @@
     justify-content: start;
     align-items: center;
     gap: 8px;
+    border: none;
 }
 
 .lq-small-red-container span {
@@ -174,9 +174,9 @@ p {
 
 }
 
-@media(min-width:390px) and (max-width:992px) {
+@media (max-width:992px) {
     .Lq-title-container {
-        width: 95%;
+        width: 99.45%;
     }
 
     .Table {

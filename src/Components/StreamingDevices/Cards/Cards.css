@@ -1,89 +1,27 @@
-/*section{
-width: 1920px !important;
-margin: auto;
-background-color: var(--DarkGray);
-}
-/* .MA_card{
-width:1597px !important;
-height:801px !important;
-margin: 0 auto;
 
-} */
-/*
-.MA{
-width: 1597px !important;  
-height: 596px ;
-
- display: flex;
-justify-content: space-between;
-
-gap: 20px;
-flex-wrap: wrap;
-}
-@media  (max-width: 1700px) { 
- section{
-width: 1440px !important;
- }
-    .MA{
-
-        width: 1279px !important;
-        height: 480px ;
-        gap: 1px;
-        flex-wrap: wrap;
-        
-        
-    }
-    .MA_card{
-        width: 1279px !important;
-        height: fit-content !important;
-        margin: 0 auto;
-        /* padding: 80.5px; */
-
-/* } */
-/* } */
-/*
-@media  (max-width: 390px) { 
- section{
-    width: 390px !important;
-
-    margin: 0 auto;
- }
-    .MA{
-
-        width: 361px !important;
-        height: 1150px;
-        /* padding: 14.5px; */
-
-/*
-    }
-    .MA_card{
-        width: 361px !important;
-        height: fit-content !important;
-}
-}
-*/
-.MA{
+.MAA{
     /* width: 1597px; */
+    
 display: flex;
 justify-content: center;
 gap: 30px;
 flex-wrap: wrap;
 }
- section{
+ .Ma{
     width: 1920px;
     /* margin: 0 auto; */
 
-    background-color: var(--Darkblack); 
+    background-color: var(--DarkGrayTwo); 
 } 
 
 
-@media  (max-width: 1440px) { 
-   section{
-    width: 1440px !important;
+@media  (max-width: 1700px) { 
+   .Ma{
+    width: 100% !important;
     margin: 0 auto;
 
    }
-       .MA{
+       .MAA{
    
            /* width: 1279px !important; */
            gap:20px;
@@ -93,7 +31,7 @@ flex-wrap: wrap;
        }}
        @media  (max-width: 992px) { 
      
-            .MA{
+            .MAA{
         
                 /* width: 1279px !important; */
                 gap:101px;
@@ -102,12 +40,12 @@ flex-wrap: wrap;
                 
             }}
             @media (max-width: 576px) { 
-                section{
+                .Ma{
                     max-width: 576px;
                     min-width: 390px;
                     width: 100%;
                 }
-                .MA {
+                .MAA {
                     display: flex;
                     justify-content: center;
                     flex-direction: column; 
@@ -115,7 +53,7 @@ flex-wrap: wrap;
                 }
             }
             @media  (max-width: 576px) {
-                .MA{
+                .MAA{
                     gap: 10px;
                     flex-wrap: wrap;
                 } 
@@ -123,11 +61,11 @@ flex-wrap: wrap;
             }
             @media  (max-width: 390px) { 
      
-                    section{
+                    .Ma{
                         width: 390px !important;
                 
                     }
-                    .MA{
+                    .MAA{
 
                         width: 361px;
                         display: flex;
@@ -137,7 +75,7 @@ flex-wrap: wrap;
                         gap: 20px;
                     flex-wrap: wrap;
                     }
-                    .MA_card{
+                    .MAA_card{
                         width: 390px !important;
 padding: 0 14.5px;
                     }

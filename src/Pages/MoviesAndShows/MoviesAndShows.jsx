@@ -20,6 +20,8 @@ import img1 from "../../assets/photos/Movies & shows page images/Must watches mo
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
 import star4_5 from "../../assets/photos/Container(10).png";
+import CardsShow from "../../Components/Reviews/CardsShow/CardsShow";
+import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 
 export default function MoviesAndShows() {
   const cardsDataTrending = [
@@ -85,8 +87,9 @@ export default function MoviesAndShows() {
 
   return (
     <>
-      <Hero2 />
-
+     <Hero2/>
+    
+      <CardsShow />
       <CardWatchMovies
         id={"1"}
         image={img1}
@@ -112,7 +115,11 @@ export default function MoviesAndShows() {
       <div className="New-Releases">
         <div className="New-Releases-cards">
           {cardsDataNewReleases.map((card, index) => (
-            <Card key={index} image={card.image} releaseDate={card.releaseDate} />
+            <Card
+              key={index}
+              image={card.image}
+              releaseDate={card.releaseDate}
+            />
           ))}
         </div>
       </div>

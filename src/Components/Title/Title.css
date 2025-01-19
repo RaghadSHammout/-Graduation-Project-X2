@@ -3,66 +3,126 @@
     font-weight: 700;
     line-height: 57px;
     margin-bottom: 14px;
-    color: var( --White);
+    color: var(--White);
 }
+
 .ma-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    color: var( --Gray);
+    color: var(--Gray);
     padding: 0px;
     margin: 0px;
 }
+
+.ma-text1 {
+    width: 90.5%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Gray); 
+}
+
 .ma-title.ma-size {
     font-size: 58px;
     line-height: 87px;
 }
-.ma-50{
+
+.to-title {
+    line-height: 57px;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--White);
+    margin-bottom: 14px;
+}
+
+.to-text {
+    color: var(--Gray);
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ma-50 {
     margin-bottom: 50px;
 }
-.ma-80{
+
+.ma-80 {
     margin-bottom: 80px;
 }
 
- @media (max-width:1440px) {
+@media (max-width:1440px) {
     .ma-title.ma-size {
         font-size: 48px;
-    } 
+    }
+
+    .to-title {
+        line-height: 42px;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .to-text {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
     .ma-title {
         font-size: 28px;
         line-height: 42px;
         margin-bottom: 10px;
-    } 
-    .ma-text {
+    }
+
+    .ma-text,
+    .ma-text1 {
         line-height: 24px;
         font-size: 16px;
-    } 
+        width: 100%;
+    }
+
     .ma-50 {
         margin-bottom: 40px;
     }
+
     .ma-80 {
         margin-bottom: 60px;
     }
 }
- @media (min-width:390px) and (max-width:992px) {
+
+@media (min-width:390px) and (max-width:992px) {
     .ma-title.ma-size {
         font-size: 28px;
         line-height: 42px;
-    } 
+    }
+
+    .to-title {
+        line-height: 36px;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .to-text {
+        line-height: 21px;
+        font-size: 14px;
+    }
+
     .ma-title {
         line-height: 36px;
         font-size: 24px;
-    } 
-    .ma-text {
+    }
+
+    .ma-text,
+    .ma-text1 {
         font-size: 14px;
         line-height: 21px;
         width: 100%;
-    } 
+    }
+
     .ma-50 {
         margin-bottom: 30px;
     }
+
     .ma-80 {
         margin-bottom: 40px;
     }
 }
-

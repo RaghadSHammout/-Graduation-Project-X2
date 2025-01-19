@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
   margin: 0;
@@ -13,11 +13,11 @@ body {
 }
 
 .Desktop-padding-left-right {
-  padding: 0 8.4357%;
+  padding: 0  8.4357%;
 }
 
 .subscription-padding {
-  padding: 150px 8.4357%;
+  padding: 0px 8.4357%;
 }
 
 :root {
@@ -37,18 +37,19 @@ body {
 
 @media (max-width: 1440px) {
   .Desktop-padding-left-right {
-    padding: 0 5.556%;
+    padding: 0 5.555% ;
   }
   .subscription-padding {
-    padding: 8.33% 5.556%;
+    padding: 0px 5.556% 8.333% 5.556% ;
   }
 }
+
 
 @media (max-width: 390px) {
   .Desktop-padding-left-right {
     padding: 0 4.10%;
   }
   .subscription-padding {
-    padding: 80px 15px;
+    padding: 0px  3.8461% 20.5128% 3.8461%;
   }
 }
