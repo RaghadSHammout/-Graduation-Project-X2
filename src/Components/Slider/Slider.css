@@ -9,23 +9,24 @@
     width: max-content;
     border-radius: 12px;
     padding: 16px;
+    margin-top: 10px;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    transition: 1000ms;
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
 }
 
 .slider-upper-div {
-    margin-top: 10px;
     margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
-}
-
-/* .slick-slide {
-    width: max-content;
-    height: max-content;
-} */
-
-.slick-slide div {
-    width: max-content;
-    height: max-content;
 }
 
 
@@ -41,8 +42,11 @@
 }
 
 .slider-arrow-div {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider-arrow-img {
@@ -61,30 +65,16 @@
     rotate: 180deg;
 }
 
-
-
-.slick-track{
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.slick-list{
-    width: 100% !important;
+.swiper-slide,
+.swiper {
+    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 
-
-/* .slick-slide{
-    width: 100% !important;
-    display: flex !important;
-    gap: 29px !important;
-    justify-content: center !important;
-    align-items: center;
-} */
-.slide{
-    width: 100% !important;
-    display: flex !important;
-    gap: 24px !important;
-    justify-content: center !important;
-    align-items: center;
+.card-group {
+    display: flex;
+    justify-content: space-between;
 }
 
 .custom-indicators button {
@@ -103,9 +93,104 @@
     width: 23px;
 }
 
+
+.custom-indicators-sml {
+    display: none;
+    height: 5px;
+    width: 22.1%;
+    background: var(--SmokyGray);
+    border-radius: 100px;
+    margin-top: 24px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3.7974%;
+}
+
+.custom-indicators-sml button {
+    height: 5px;
+    width: 22.067%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.prev-arrow .slider-arrow-img {
+    width: 17.5px;
+    height: 15.75px;
+}
+
+.next-arrow .slider-arrow-img {
+    width: 21px;
+    height: 17.5px;
+}
+
 @media (max-width: 1440px) {
 
-    .slick-track {
-        gap: 20px;
+    .custom-arrows {
+        padding: 12px;
+        gap: 12px;
+        margin-top: 8px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .slider-arrow-div {
+        width: 24px;
+        height: 24px;
+    }
+
+    .prev-arrow .slider-arrow-img {
+        width: 15px;
+        height: 13.5px;
+    }
+
+    .next-arrow .slider-arrow-img {
+        width: 18px;
+        height: 15px;
+    }
+
+    .custom-arrows button {
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .custom-indicators button {
+        padding: 0;
+        width: 14px;
+        height: 4px;
+        background: var(--SmokyGray);
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    .to-indicator.active {
+        background-color: var(--Red);
+        /* Red color for the active indicator */
+        width: 18px;
+    }
+
+    .slider-upper-div {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .custom-arrows {
+        display: none;
+    }
+
+    .custom-indicators-sml {
+        display: flex;
+    }
+
+    .to-indicator.active {
+        width: 25.3164%;
     }
 }

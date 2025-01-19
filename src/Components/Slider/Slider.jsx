@@ -1,16 +1,17 @@
-import React, { useRef, useState, useEffect, useMemo } from 'react';
-import Slider from 'react-slick';
-import ExploreCard from '../ExploreCard/ExploreCard';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React, { useState, useEffect, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import PropTypes from 'prop-types';
+import ExploreCard from '../ExploreCard/ExploreCard';
+import Title from '../Title/Title';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import './Slider.css';
-import Title from "../Title/Title";
 
-const CustomSlider = (props) => {
-    const sliderRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(0);
+const CustomSlider = ({ cardData, lgSize, title, text }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const swiperRef = useRef(null);
 
     useEffect(() => {
         const handleResize = () => setIsSmallScreen(window.innerWidth <= 991);
@@ -18,90 +19,84 @@ const CustomSlider = (props) => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const cardDataSubset = useMemo(() => {
-        return isSmallScreen ? props.cardData.slice(0, 4) : props.cardData;
-    }, [isSmallScreen, props.cardData]);
-
-    const totalIndicators = Math.ceil(cardDataSubset.length / (isSmallScreen ? 1 : props.lgSize));
-
-    const sliderSettings = {
-        arrows: false,
-        dots: false,
-        infinite: true,
-        speed: 700,
-        slidesToShow: props.lgSize,
-        slidesToScroll: props.lgSize,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-        beforeChange: (current, next) => {
-            const newIndex = next % totalIndicators;
-            setActiveIndex(newIndex);
-        },
+    const groupCards = (cards, itemsPerGroup) => {
+        return cards.reduce((groups, card, index) => {
+            const groupIndex = Math.floor(index / itemsPerGroup);
+            if (!groups[groupIndex]) groups[groupIndex] = [];
+            groups[groupIndex].push(card);
+            return groups;
+        }, []);
     };
 
-    const renderCard = (card, index) => {
-        if (props.cardType === 'movie') {
-            return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
-        }
-        else if (props.cardType === 'explore') {
-            return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
-        }
-    };
-
-    const handleNext = () => sliderRef.current.slickNext();
-    const handlePrev = () => sliderRef.current.slickPrev();
+    const itemsPerGroup = isSmallScreen ? 2 : lgSize;
+    const slicedCards = isSmallScreen ? cardData.slice(0, 8) : cardData;
+    const groupedCards = groupCards(slicedCards, itemsPerGroup).slice(0, 4);
 
     const handleDotClick = (index) => {
-        const cardsPerIndicator = isSmallScreen ? 1 : props.lgSize;
-        sliderRef.current.slickGoTo(index * cardsPerIndicator);
+        swiperRef.current?.slideTo(index);
     };
 
     return (
         <div>
-
-            <div className='slider-upper-div'>
-                <Title
-                    title="Explore our wide variety of categories"
-                    text="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
-                    size={true}
-                    maMargin={true}
-                />
-
+            <div className="slider-upper-div">
+                <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
-                    <button className="prev-arrow" onClick={handlePrev}>
+                    <button className="prev-arrow">
                         <div className="slider-arrow-div">
                             <img className="slider-arrow-img" src="src/assets/photos/Vector 619.png" alt="Previous" />
                         </div>
                     </button>
-
                     <div className="custom-indicators">
-                        {Array.from({ length: totalIndicators }).map((_, index) => (
+                        {groupedCards.map((_, index) => (
                             <button
-                                className={`to-indicator ${activeIndex === index ? 'active' : ''}`}
                                 key={index}
+                                className={`to-indicator ${activeIndex === index ? 'active' : ''}`}
                                 onClick={() => handleDotClick(index)}
-                            ></button>
+                            />
                         ))}
                     </div>
-
-                    <button className="next-arrow" onClick={handleNext}>
+                    <button className="next-arrow">
                         <div className="slider-arrow-div">
                             <img className="slider-arrow-img" src="src/assets/photos/Vector 619.png" alt="Next" />
                         </div>
                     </button>
                 </div>
             </div>
-
-            <Slider key={isSmallScreen ? 'small-screen' : 'large-screen'} ref={sliderRef} {...sliderSettings}>
-                {cardDataSubset.map((card, index) => renderCard(card, index))}
-            </Slider>
+            <Swiper
+                modules={[Navigation]}
+                navigation={{
+                    prevEl: '.prev-arrow',
+                    nextEl: '.next-arrow',
+                }}
+                onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                slidesPerView={1}
+                loop
+            >
+                {groupedCards.map((group, groupIndex) => (
+                    <SwiperSlide key={groupIndex}>
+                        <div className="card-group">
+                            {group.map((card, cardIndex) => (
+                                <ExploreCard
+                                    key={cardIndex}
+                                    title={card.title}
+                                    image={card.image}
+                                    link={card.link}
+                                />
+                            ))}
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            <div className="custom-indicators-sml">
+                {groupedCards.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`to-indicator ${activeIndex === index ? 'active' : ''}`}
+                        onClick={() => handleDotClick(index)}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
@@ -109,13 +104,13 @@ const CustomSlider = (props) => {
 CustomSlider.defaultProps = {
     cardData: [],
     lgSize: 5,
-    cardType: 'explore',
 };
 
 CustomSlider.propTypes = {
     cardData: PropTypes.array.isRequired,
     lgSize: PropTypes.number,
-    cardType: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 };
 
 export default CustomSlider;

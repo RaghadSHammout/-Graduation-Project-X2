@@ -30,9 +30,14 @@ const cardData = [
 function Explore() {
     return (
         <section className="bg-color home-padding">
-                <div className="carousel-container">
-                    <CustomSlider cardData={cardData} lgSize={5}/>
-                </div>
+            <div className="carousel-container">
+                <CustomSlider
+                    cardData={cardData}
+                    lgSize={5}
+                    title="Explore our wide variety of categories"
+                    text={"Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"}
+                />
+            </div>
         </section>
     );
 }
