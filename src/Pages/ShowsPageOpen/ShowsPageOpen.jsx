@@ -1,8 +1,3 @@
-
 export default function ShowsPageOpen() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div></div>;
 }

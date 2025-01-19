@@ -115,7 +115,11 @@ export default function MoviesAndShows() {
       <div className="New-Releases">
         <div className="New-Releases-cards">
           {cardsDataNewReleases.map((card, index) => (
-            <Card key={index} image={card.image} releaseDate={card.releaseDate} />
+            <Card
+              key={index}
+              image={card.image}
+              releaseDate={card.releaseDate}
+            />
           ))}
         </div>
       </div>

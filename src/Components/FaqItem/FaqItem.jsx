@@ -5,7 +5,7 @@ const FaqItem = ({ id, question, answer, activeId, onToggle }) => {
 
   const shouldHaveBorder = [1, 2, 3, 5, 6, 7].includes(id);
   const shouldHaveBorder2 = [1, 2, 3, 5].includes(id);
-  const isLargeScreen = window.innerWidth > 992;
+  const isLargeScreen = window.innerWidth > 576;
   return (
     <>
       {isLargeScreen ? (
