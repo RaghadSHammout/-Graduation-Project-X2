@@ -168,7 +168,7 @@
     color: var(--White);
   }
 }
-@media (max-width: 992xp) {
+@media (max-width: 576xp) {
   .faq-number {
     border-radius: 6px;
     padding: 12px;

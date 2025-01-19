@@ -1,5 +1,7 @@
 
 .v{
+    padding-top:162px;
+
     width: 1597px !important;
 margin: 0 auto;
 padding-bottom:80px ;
@@ -32,7 +34,7 @@ color: var( --Gray);
 }
 
 
-@media  (max-width: 1440px) { 
+@media  (max-width: 1700px) { 
     .MAContanair h3{
         width: 1129px;
 height: 42px;
@@ -57,8 +59,9 @@ font-size: 28px;
     }
 }
 
+
        
-             @media (max-width: 576px) { 
+             @media (max-width: 700px) { 
 
                .v{
                 width: 300px !important;
@@ -113,4 +116,4 @@ font-size: 28px;
                 }
                  
                  }   
-             
+       

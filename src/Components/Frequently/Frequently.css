@@ -87,12 +87,12 @@
     width: 47.4937343358%;
   }
 }
-@media (min-width: 993px) and (max-width: 1435px) {
+@media (min-width: 577px) and (max-width: 1435px) {
   .faq1 Button {
     font-size: 10px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .faq-container {
     padding: 0 1rem;
     height: 1002px;
