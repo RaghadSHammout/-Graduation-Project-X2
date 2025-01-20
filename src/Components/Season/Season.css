@@ -1,0 +1,357 @@
+.season {
+  background-color: var(--DeepBlack);
+  border-radius: 12px;
+}
+.season.hd-active {
+  padding: 50px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.season.hd-active .season-header {
+  width: 882px;
+  border: none;
+  border-bottom: 1px;
+  border-radius: 0px;
+  padding: 0px;
+}
+.season-header {
+  border-radius: 12px;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--DeepBlack);
+}
+.hd-title.w-218 {
+  width: 218px;
+}
+.hd-title.w-222 {
+  width: 222px;
+}
+.hd-title {
+  display: flex;
+  width: 220px;
+  gap: 10px;
+}
+
+.hd-h4 {
+  width: 120px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--White);
+}
+.hd-h4.w-116 {
+  width: 116px;
+}
+
+.s-text {
+  margin: 4.5px 0px;
+  width: 92px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--Gray);
+}
+.s-text.w-90 {
+  width: 90px;
+}
+.hd-btn {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--DarkGrayOne);
+  background-color: var(--DarkGrayTwo);
+}
+
+.season-episodes {
+  width: 882px;
+}
+.episode {
+  padding: 40px 0px;
+  gap: 20px;
+  border-bottom: 1px solid var(--DarkGrayOne);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.first-episode {
+  border: 1px solid var(--DarkGrayOne);
+  border-right: none;
+  border-left: none;
+}
+.last-episode {
+  padding-bottom: 0px;
+  border-bottom: 1px;
+}
+.episode-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.e-number {
+  width: 60px;
+  height: 45px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--Gray);
+}
+.e-img {
+  height: 118px;
+  width: 172px;
+  border-radius: 12px;
+  padding: 34px 72px;
+  border: 1px solid var(--DarkGrayOne);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chapter {
+  width: 610px;
+}
+.chap1 {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+.hd-h5 {
+  width: 512px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--White);
+  margin-bottom: 0px;
+}
+.chap-clock {
+  height: 100%;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  gap: 4px;
+  border: 1px solid var(--DarkGrayOne);
+  background-color: var(--DarkGrayTwo);
+}
+.min {
+  width: 50px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--Gray);
+}
+.description {
+  color: var(--Gray);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media (max-width: 1440px) {
+  .season {
+    border-radius: 10px;
+  }
+  .season-header {
+    border-radius: 10px;
+    padding: 20px 40px;
+  }
+  .season.hd-active {
+    padding: 40px;
+    gap: 24px;
+  }
+  .season.hd-active .season-header {
+    width: 710px;
+  }
+  .hd-title {
+    width: 188px;
+    gap: 8px;
+  }
+  .hd-title.w-218 {
+    width: 187px;
+  }
+  .hd-title.w-222 {
+    width: 189px;
+  }
+  .hd-h4 {
+    width: 100px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hd-h4.w-116 {
+    width: 97px;
+  }
+  .s-text {
+    margin: 3px 0px;
+    width: 82px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .s-text.w-90 {
+    width: 80px;
+  }
+  .s-text.w-81 {
+    width: 81px;
+  }
+  .hd-btn {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+  }
+  .vector {
+    width: 20px;
+    height: 20px;
+  }
+  .season-episodes {
+    width: 710px;
+  }
+  .episode {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    gap: 18px;
+  }
+  .episode.last-episode {
+    padding-bottom: 0px;
+    border-bottom: 1px;
+  }
+  .episode-inner {
+    gap: 18px;
+  }
+  .e-number {
+    width: 30px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .chapter {
+    width: 472px;
+  }
+  .chap1 {
+    margin-bottom: 10px;
+  }
+  .hd-h5 {
+    width: 392px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .chap-clock {
+    border-radius: 6px;
+    padding: 5.2px;
+  }
+  .chap-clock img {
+    height: 20px;
+  }
+  .min {
+    width: 44px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .season-header {
+    padding: 16px 20px;
+  }
+  .season.hd-active {
+    width: 310px;
+    padding: 16px 20px;
+    gap: 20px;
+  }
+  .season.hd-active .season-header {
+    width: 270px;
+  }
+  .hd-title {
+    width: 156px;
+    gap: 6px;
+  }
+  .hd-title.w-218 {
+    width: 156px;
+  }
+  .hd-title.w-222 {
+    width: 157px;
+  }
+  .hd-h4 {
+    width: 80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hd-h4.w-116 {
+    width: 78px;
+  }
+  .s-text {
+    margin: 1.5px 0px;
+    width: 72px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .s-text.w-90 {
+    width: 70px;
+  }
+  .s-text.w-81 {
+    width: 71px;
+  }
+  .season-episodes {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .episode {
+    padding: 20px;
+    background-color: var(--DarkGrayTwo);
+    border-top: 1px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .episode.last-episode {
+    padding-bottom: 20px;
+  }
+  .episode-inner {
+    flex-direction: row-reverse;
+  }
+  .e-img {
+    width: 182px;
+  }
+  .chapter {
+    width: 230px;
+  }
+  .chap1 {
+    width: 230px;
+    flex-direction: column-reverse;
+    align-items: normal;
+    gap: 10px;
+    margin-bottom: 0px;
+  }
+  .hd-h5 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .chap-clock {
+    width: 74px;
+    height: 32px;
+  }
+  .chap-clock img {
+    width: 20px;
+    height: 20px;
+  }
+  .min {
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .description {
+    display: none;
+  }
+}

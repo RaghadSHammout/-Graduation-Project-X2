@@ -52,7 +52,7 @@ function CardWatchMovies({
   sub2_width,
 }) {
   return (
-    <Link to={`/MoviesAndShows/movies/${id}`} className="card">
+    <Link to={`/MoviesPageOpen/movie/${id}`} className="card">
       <img className="cardImage" src={image} alt="Card Image" />
 
       <div className="ha-container">

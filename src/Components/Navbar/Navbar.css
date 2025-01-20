@@ -46,6 +46,9 @@
 .ma-navbar .ma-icon {
   color: var(--White) !important;
   display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 199px;
   gap: 30px;
   font-size: 25.5px;
 }
@@ -70,6 +73,21 @@
   background-color: var( --DeepBlack);
 }
 @media (max-width: 1440px) {
+  .ma-navbar .ma-links{
+    padding: 20px 30px;
+    gap: 16px;
+  }
+  .ma-navbar .ma-links li .ma-home.active {
+    margin-left: -22px;
+   }
+   .ma-navbar .ma-links li .ma-Subscriptions.active {
+    margin-right: -22px;
+   }
+  .ma-navbar .ma-links li a{
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .ma-navbar .ma-logo img {
     width: 165.83px;
     height: 50px;
@@ -81,6 +99,10 @@
   .ma-img-search{
     width: 18px;
     height: 18px;
+  }
+  .ma-navbar .ma-icon{
+    gap: 14px;
+    width: 165.83px;
   }
 }
 @media (min-width: 950px) {
