@@ -1,6 +1,5 @@
 import React from 'react';
 import './ExploreCard.css';
-import Button from '../Button/Button';
 
 function ExploreCard({ image, title, link }) {
     return (
@@ -10,10 +9,7 @@ function ExploreCard({ image, title, link }) {
                 <div className="explore-card-content d-flex justify-content-between align-items-center">
 
                     <div className='d-flex flex-column btn-h-gap '>
-                        {/* Gonna be replaced by a compmonent */}
-                        {/* <div className='top10in-div'>
-                            <span className='top10in'>Top 10 In</span>
-                        </div> */}
+                       
                         <h3 className="explore-card-title d-inline-block">{title}</h3>
                     </div>
 
