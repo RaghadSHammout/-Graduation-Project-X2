@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
 
-const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType }) => {
+const CustomSlider = ({ cardData, lgSize, title, text }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
@@ -28,18 +28,6 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
         }, []);
     };
 
-    // Add the name of your card with the component with its props in a new Case in this switch statement
-    const renderCard = (card, index) => {
-        switch (cardType) {
-            case 'movie':
-                return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
-            case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
-            default:
-                return null;
-        }
-    };
-
     const itemsPerGroup = isSmallScreen ? 2 : lgSize;
     const slicedCards = isSmallScreen ? cardData.slice(0, 8) : cardData;
     const groupedCards = groupCards(slicedCards, itemsPerGroup).slice(0, 4);
@@ -50,7 +38,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
 
     return (
         <div>
-            <div className={`slider-upper-div ${upperMb}`}>
+            <div className="slider-upper-div">
                 <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
                     <button className="prev-arrow">
@@ -87,9 +75,14 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <div className={`${cardGroup}`}>
+                        <div className="card-group">
                             {group.map((card, cardIndex) => (
-                                renderCard(card, cardIndex)
+                                <ExploreCard
+                                    key={cardIndex}
+                                    title={card.title}
+                                    image={card.image}
+                                    link={card.link}
+                                />
                             ))}
                         </div>
                     </SwiperSlide>
@@ -111,7 +104,6 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
 CustomSlider.defaultProps = {
     cardData: [],
     lgSize: 5,
-    cardType: 'explore',
 };
 
 CustomSlider.propTypes = {
@@ -119,7 +111,6 @@ CustomSlider.propTypes = {
     lgSize: PropTypes.number,
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    cardType: PropTypes.string,
 };
 
 export default CustomSlider;

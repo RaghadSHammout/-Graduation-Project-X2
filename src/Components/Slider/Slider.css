@@ -24,13 +24,11 @@
 }
 
 .slider-upper-div {
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.to-slider-upper-mb {
-    margin-bottom: 70px;
-}
 
 .custom-arrows button {
     display: flex;
@@ -67,11 +65,16 @@
     rotate: 180deg;
 }
 
+.swiper-slide,
+.swiper {
+    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
 .card-group {
     display: flex;
     justify-content: space-between;
-    height: 352px !important;
-    align-items: end;
 }
 
 .custom-indicators button {
@@ -171,13 +174,10 @@
         width: 18px;
     }
 
-    .to-slider-upper-mb {
-        margin-bottom: 50px;
+    .slider-upper-div {
+        margin-bottom: 60px;
     }
 
-    .card-group {
-        height: 286px !important;
-    }
 }
 
 @media (max-width: 991px) {
@@ -192,13 +192,5 @@
 
     .to-indicator.active {
         width: 25.3164%;
-    }
-
-    .to-slider-upper-mb {
-        margin-bottom: 30px;
-    }
-
-    .card-group {
-        height: 100% !important;
     }
 }
