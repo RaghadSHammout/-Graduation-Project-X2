@@ -1,4 +1,3 @@
-import React from "react";
 import "./MoviesAndShows.css";
 import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
@@ -20,7 +19,6 @@ import img1 from "../../assets/photos/Movies & shows page images/Must watches mo
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
 import star4_5 from "../../assets/photos/Container(10).png";
-import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 
 export default function MoviesAndShows() {
   const cardsDataTrending = [
