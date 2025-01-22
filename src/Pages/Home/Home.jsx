@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Explore />
-      <Cards />
-      <Frequently />
+       <Explore /> 
+      {/* <Cards /> */}
+      {/* <Frequently /> */}
       <Plans />
     </>
   );
