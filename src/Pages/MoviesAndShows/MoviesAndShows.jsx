@@ -88,7 +88,6 @@ export default function MoviesAndShows() {
   return (
     <>
      <Hero2/>
-    
       <CardsShow />
       <CardWatchMovies
         id={"1"}

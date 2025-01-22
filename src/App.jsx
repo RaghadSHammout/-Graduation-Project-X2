@@ -6,6 +6,7 @@ import Support from "./Pages/Support/Support";
 
 import Footer from "./Components/Footer/Footer.jsx";
 import Navbar from "./Components/Navbar/Navbar";
+import MoviesPageOpen from "./Components/CardWatchMovies/CardWatchMovies.jsx"
 import Title from "./Components/Title/Title";
 
 export default function App() {
@@ -14,7 +15,9 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/MoviesAndShows" element={<MoviesAndShows />} />
+        <Route path="/MoviesAndShows" element={<MoviesAndShows />}>
+          <Route path="MoviesPageOpen/movie/${id}" element={<MoviesPageOpen/>} />
+        </Route>
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/Support" element={<Support />} />
       </Routes>
