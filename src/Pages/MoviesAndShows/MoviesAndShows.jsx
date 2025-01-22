@@ -20,7 +20,6 @@ import img1 from "../../assets/photos/Movies & shows page images/Must watches mo
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
 import star4_5 from "../../assets/photos/Container(10).png";
-import CardsShow from "../../Components/Reviews/CardsShow/CardsShow";
 import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 
 export default function MoviesAndShows() {
@@ -89,7 +88,6 @@ export default function MoviesAndShows() {
     <>
      <Hero2/>
     
-      <CardsShow />
       <CardWatchMovies
         id={"1"}
         image={img1}
