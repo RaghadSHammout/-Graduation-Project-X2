@@ -74,7 +74,9 @@ export const CardWatchMoviesData = [
       star: star4,
       Date: "20K",
     },
+
   ];
+  
   export const CardWatchMoviesData2 = [
     {
       id: 5,

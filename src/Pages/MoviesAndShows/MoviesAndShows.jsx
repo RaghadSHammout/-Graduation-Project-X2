@@ -1,4 +1,3 @@
-import React from "react";
 import "./MoviesAndShows.css";
 // import Card from "../../Components/CardTrinding/Card";
 // import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
@@ -9,10 +8,8 @@ import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 export default function MoviesAndShows() {
   return (
     <>
-      <Hero2 />
-      {/* <CardsShow /> */}
+     <Hero2/>
       <CardsMoviesshows/>
-    
     </>
   );
 }

@@ -3,12 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import PropTypes from 'prop-types';
 import ExploreCard from '../ExploreCard/ExploreCard';
+import Card from "../../Components/CardTrinding/Card";
+import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import Title from '../Title/Title';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
 
-const CustomSlider = ({ cardData, lgSize, title, text }) => {
+const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
@@ -28,6 +30,53 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
         }, []);
     };
 
+    // Add the name of your card with the component with its props in a new Case in this switch statement
+    const renderCard = (card, index) => {
+        switch (cardType) {
+            case 'CardWatchMoviesData':
+                return  <CardWatchMovies
+                key={card.id}
+                 id={card.id}
+              image={card.image}
+           duration={card.duration}
+               star={card.star}
+               Date={card.Date}
+             />;
+            case 'cardsDataNewReleases':
+                return <Card key={index} image={card.image} releaseDate={card.releaseDate} />;
+            case 'cardsDataTrending':
+                return <Card
+                            key={index}
+                            image={card.image}
+                            views={card.views}
+                            duration={card.duration}
+                            iconViews={card.iconViews}
+                            iconDuration={card.iconDuration}
+                          />;
+            case 'CardWatchMoviesData2':
+                return <CardWatchMovies
+                key={card.id}
+                id={card.id}
+                image={card.image}
+                duration={card.duration}
+                star={card.star}
+                Date={card.Date}
+              />;
+            case 'CardShwos':
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} 
+                viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
+                iconViews={card.iconViews} views={card.views}/>;
+            case 'ReleasedShwos':
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}  viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
+            case 'movie':
+                return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
+            case 'explore':
+                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
+            default:
+                return null;
+        }
+    };
+
     const itemsPerGroup = isSmallScreen ? 2 : lgSize;
     const slicedCards = isSmallScreen ? cardData.slice(0, 8) : cardData;
     const groupedCards = groupCards(slicedCards, itemsPerGroup).slice(0, 4);
@@ -38,7 +87,7 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
 
     return (
         <div>
-            <div className="slider-upper-div">
+            <div className={`slider-upper-div ${upperMb}`}>
                 <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
                     <button className="prev-arrow">
@@ -75,14 +124,9 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <div className="card-group">
+                        <div className={`${cardGroup}`}>
                             {group.map((card, cardIndex) => (
-                                <ExploreCard
-                                    key={cardIndex}
-                                    title={card.title}
-                                    image={card.image}
-                                    link={card.link}
-                                />
+                                renderCard(card, cardIndex)
                             ))}
                         </div>
                     </SwiperSlide>
@@ -104,6 +148,7 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
 CustomSlider.defaultProps = {
     cardData: [],
     lgSize: 5,
+    cardType: 'explore',
 };
 
 CustomSlider.propTypes = {
@@ -111,6 +156,7 @@ CustomSlider.propTypes = {
     lgSize: PropTypes.number,
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    cardType: PropTypes.string,
 };
 
 export default CustomSlider;
