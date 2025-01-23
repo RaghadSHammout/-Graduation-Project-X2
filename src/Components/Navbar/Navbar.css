@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 23px 8.4357%;
-  z-index: 100000000000;
+  z-index: 1000;
   position: fixed;
 }
 .ma-navbar .ma-links {

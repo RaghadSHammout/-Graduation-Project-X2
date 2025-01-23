@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 80px;
     padding: 235px 8.4357% 150px 8.4357%;
-    background-color: var(--VeryDarkGray);
+    /* background-color: var(--VeryDarkGray); */
     
 }
 .ma-allbox .ma-left-dev{

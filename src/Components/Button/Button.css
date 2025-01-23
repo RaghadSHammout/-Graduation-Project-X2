@@ -10,7 +10,8 @@
 }
 
 .LQ-pad {
-  padding: 18px 44px;
+  padding: 18px 0px;
+  width:47.5728%;
 }
 
 .ma-btn img {
@@ -24,16 +25,9 @@
   margin-right: 4px;
 }
 
-@media (max-width:1754px) {
-  .LQ-pad {
-    padding: 14px 38.4px;
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 1440px) {
   .ma-btn {
-    padding: 14px 24px;
+    padding: 14px 0px;
     font-size: 14px;
     line-height: 21px;
   }
@@ -44,24 +38,22 @@
   }
 
   .LQ-pad {
-    padding: 14px 38.33px;
+    padding: 14px 0px;
   }
 }
 
-@media (max-width:1320px) {
+@media (max-width:992px) {
   .LQ-pad {
-    padding: 14px 33px;
+    padding: 14px 0px;
+    width: 48.2014%;
   }
 }
 
-@media (min-width:390px) and (max-width:992px) {
+@media (min-width:390px){
   .LQ-pad {
-    padding: 14px 32.5px;
+    padding: 14px 5px;
+    width: 48.3%;
   }
 }
 
-@media (max-width: 800px) {
-  .ma-btn {
-    width: auto !important;
-  }
-}
+

@@ -34,7 +34,6 @@ export default function CardsShow() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          // initialSlide:1,
         },
       },
     ],

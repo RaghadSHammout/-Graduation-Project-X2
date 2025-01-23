@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import MoviesPageOpen from "./Components/CardWatchMovies/CardWatchMovies.jsx"
 import Title from "./Components/Title/Title";
 
+
 export default function App() {
   return (
     <>

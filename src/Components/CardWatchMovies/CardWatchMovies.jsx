@@ -5,6 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 
 
 
+
 function CardWatchMovies({
   id,
   image,
