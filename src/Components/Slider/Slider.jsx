@@ -11,6 +11,7 @@ import './Slider.css';
 const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [ActiveTabs, setActiveTabs] = useState("Movies");
     const swiperRef = useRef(null);
 
     useEffect(() => {

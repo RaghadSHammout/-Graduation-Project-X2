@@ -38,7 +38,7 @@ export default function Plans() {
 
       </div>
 
-      <div className="lq-father-card  d-flex justify-content-center align-items-center">
+      <div className="lq-father-card  d-flex justify-content-between align-items-strech">
         {cardData[activeTab].map((PlanCard, index) => (
           <PlanCards
             key={index}
