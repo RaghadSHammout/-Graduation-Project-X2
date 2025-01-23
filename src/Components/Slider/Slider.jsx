@@ -6,6 +6,7 @@ import ExploreCard from '../ExploreCard/ExploreCard';
 import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import Title from '../Title/Title';
+import arrow from '../../assets/photos/Vector 619.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
@@ -93,7 +94,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 <div className="custom-arrows">
                     <button className="prev-arrow">
                         <div className="slider-arrow-div">
-                            <img className="slider-arrow-img" src="src/assets/photos/Vector 619.png" alt="Previous" />
+                            <img className="slider-arrow-img" src={arrow} alt="Previous" />
                         </div>
                     </button>
                     <div className="custom-indicators">
@@ -107,7 +108,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     </div>
                     <button className="next-arrow">
                         <div className="slider-arrow-div">
-                            <img className="slider-arrow-img" src="src/assets/photos/Vector 619.png" alt="Next" />
+                            <img className="slider-arrow-img" src={arrow} alt="Next" />
                         </div>
                     </button>
                 </div>
