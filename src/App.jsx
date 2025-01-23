@@ -6,7 +6,6 @@ import Support from "./Pages/Support/Support";
 
 import Footer from "./Components/Footer/Footer.jsx";
 import Navbar from "./Components/Navbar/Navbar";
-import Title from "./Components/Title/Title";
 
 export default function App() {
   return (
