@@ -10,20 +10,29 @@
     border: 1px solid var(  --DarkGrayOne);
     background-color: var( --VeryDarkGray);
 }
+.cardShow-zq{
+    width: 359.25px;
+height: 444px;
+/* padding: 20px ;
+gap: 20px;
+border-radius: 12px ; */
+/* border: 1px 0px 0px 0px;
+opacity: 0px; */
 
+}
   .imgcard-zq
     {
         border-radius: 12px;
     }
     .conterCard-zq{
-        width:243.6px;
-        height: 36px;
+        /* width:243.6px;
+        height: 36px; */
         display: flex;
         justify-content: space-between;
     }
    
 .durationcard-zq{
-    width: 107px;
+    /* width: 107px; */
     height: 36px;
     gap: 2px;
 }
@@ -48,9 +57,17 @@ align-items: center;
 gap:10px;
 color: var(--SilverGray);
 }
-p{
+.pa-zq{
     margin: 0;
     color:var(--Gray);
 
 }
+.viewcardShow_zq{
+    width:113px;
+height: 36px;
+
+}
+/* .durationcard_zq{
+    width:118px;
+} */
 

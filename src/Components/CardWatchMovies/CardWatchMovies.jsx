@@ -50,6 +50,7 @@ function CardWatchMovies({
   star,
   sub1_width,
   sub2_width,
+ Date
 }) {
   return (
     <Link to={`/MoviesPageOpen/movie/${id}`} className="card">
@@ -64,9 +65,9 @@ function CardWatchMovies({
         </div>
         <div className={`sub-container2 ${sub2_width ? "sub2-width" : ""}`}>
           <i className="icon-star">
-            <img src={star} alt="Card Image" />
+            <img className="icon-star-zq" src={star} alt="Card Image" />
           </i>
-          <p className="text2">20K</p>
+          <p className="text2">{Date}</p>
         </div>
       </div>
     </Link>
