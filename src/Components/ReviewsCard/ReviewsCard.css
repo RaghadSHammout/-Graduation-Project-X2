@@ -1,0 +1,142 @@
+.reviews-card {
+    width: 48.955%;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--DarkGrayOne);
+    margin: 0;
+    background-color: var(--DeepBlack);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.reviews-card:hover {
+    box-shadow: 0px 3px 5px var(--DarkGrayOne);
+}
+
+.reviews-card-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    color: var(--White);
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.country {
+    color: var(--Gray);
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.stars {
+    width: 98px;
+}
+
+.num {
+    color: var(--Gray);
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.stars-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 10px;
+    background-color: var(--DarkGrayTwo);
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 51px;
+}
+
+.paragraph {
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Gray);
+}
+
+
+@media (max-width: 1440px) {
+    .reviews-card {
+        width: 48.961%;
+        padding: 30px;
+        gap: 16px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    .name {
+        line-height: 27px;
+        font-size: 18px;
+    }
+
+    .country {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .stars {
+        width: 74px;
+    }
+
+    .num {
+        line-height: 21px;
+        font-size: 14px;
+    }
+
+    .stars-div {
+        gap: 2px;
+        padding: 4px 8px;
+    }
+
+    .paragraph {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .reviews-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .reviews-card {
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    .name {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .country {
+        line-height: 21px;
+        font-size: 14px;
+    }
+
+    .paragraph {
+        line-height: 21px;
+        font-size: 14px;
+    }
+}

@@ -14,13 +14,13 @@
 
 .prev-arrow:hover,
 .next-arrow:hover {
-    transition: 1000ms;
+    transition: 600ms;
     filter: brightness(1.5);
     -webkit-filter: brightness(1.5);
-    -webkit-transition: 1000ms;
-    -moz-transition: 1000ms;
-    -ms-transition: 1000ms;
-    -o-transition: 1000ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
 }
 
 .slider-upper-div {

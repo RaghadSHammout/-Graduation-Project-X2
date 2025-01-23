@@ -3,7 +3,6 @@ import Explore from "../../Components/Explore/Explore";
 import Frequently from "../../Components/Frequently/Frequently";
 import Cards from "../../Components/StreamingDevices/Cards/Cards";
 import Plans from "../../Components/Plans/Plans";
-
 export default function Home() {
   return (
     <>

@@ -1,11 +1,12 @@
 import CastCarousel from "../../Components/CastCarousel/CastCarousel";
 import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
+import Reviews from "../../Components/Reviews/Reviews";
 
 export default function MoviesPageOpen() {
   return (
     <>
-      <MoviesOpenHero/>
-       <CastCarousel CastImages={CastImages} lunaPad={true} /> 
+      <MoviesOpenHero />
+      <Reviews cardGroup={"reviews-card-group"} />
     </>
   );
 }

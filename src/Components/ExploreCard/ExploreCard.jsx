@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExploreCard.css';
 
-function ExploreCard({ image, title, link }) {
+function ExploreCard({ image, title, link, isTop10}) {
     return (
         <div className="explore-card d-flex flex-column">
             <div className='explore-card-padding w-100'>
@@ -10,6 +10,11 @@ function ExploreCard({ image, title, link }) {
 
                     <div className='d-flex flex-column btn-h-gap '>
                        
+                        {isTop10 && (
+                            <div className="visible-div">
+                                <span>Top 10 In</span>
+                            </div>
+                        )}
                         <h3 className="explore-card-title d-inline-block">{title}</h3>
                     </div>
 
