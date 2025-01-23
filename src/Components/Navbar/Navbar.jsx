@@ -13,6 +13,7 @@ export default function Navbar() {
     const listdown = () => {
         setmaisopen(!maisopen);
       };
+   
 
       useEffect(() => {
         const mahandleScroll = () => {
@@ -38,16 +39,16 @@ export default function Navbar() {
         </div>
         <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
             <li>
-                <NavLink to={'/'} className='ma-home'>Home</NavLink>
+                <NavLink to={'/'} className='ma-home' onClick={listdown}>Home</NavLink>
             </li>
             <li>
-                <NavLink to={'/MoviesAndShows'}>Movies & Shows</NavLink>
+                <NavLink to={'/MoviesAndShows'} onClick={listdown}>Movies & Shows</NavLink>
             </li>
             <li>
-                <NavLink to={'/Support'}>Support</NavLink>
+                <NavLink to={'/Support'} onClick={listdown}>Support </NavLink>
             </li>
             <li>
-                <NavLink to={'/Subscription'} className='ma-Subscriptions'>Subscriptions</NavLink>
+                <NavLink to={'/Subscription'} className='ma-Subscriptions' onClick={listdown}>Subscriptions</NavLink>
             </li>
         </ul>
         <div className='ma-icon'>
