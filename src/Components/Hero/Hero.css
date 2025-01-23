@@ -6,6 +6,8 @@
     background-size: contain;
     background-position: top;
     display: flex;
+    margin-bottom: 200px;
+
 }
 .ma-hero .ma-box {
 
@@ -23,6 +25,9 @@
 
 }
 @media (max-width:1440px) {
+    .ma-hero{
+        margin-bottom: 0px;
+    }
     .ma-hero .ma-contant{
         width: 79.1666%;
     } 
@@ -39,6 +44,6 @@
         width:100%;
     } 
     .ma-hero .ma-contant{
-        top: 400px;
+        top: 625px;
        }
 }

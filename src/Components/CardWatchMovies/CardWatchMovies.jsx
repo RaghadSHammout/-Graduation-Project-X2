@@ -1,7 +1,10 @@
 import React from "react";
 import "./CardWatchMovies.css";
 import clock from "../../assets/photos/Movies & shows page images/clock.png";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+
+
+
 
 function CardWatchMovies({
   id,
@@ -12,9 +15,10 @@ function CardWatchMovies({
   sub2_width,
 }) {
   return (
-    <Link to={`/MoviesPageOpen/movie/${id}`} className="card">
+  
+   <div>
+      <Link to={`/MoviesAndShows/MoviesPageOpen/movie/${id}`} className="card">
       <img className="cardImage" src={image} alt="Card Image" />
-
       <div className="ha-container">
         <div className={`sub-container1 ${sub1_width}`}>
           <i className="icon-clock">
@@ -30,7 +34,10 @@ function CardWatchMovies({
         </div>
       </div>
     </Link>
+   </div>
+   
   );
 }
-
+<Outlet/>
 export default CardWatchMovies;
+
