@@ -66,6 +66,11 @@
   .ma-navbar .ma-links{
     padding: 20px 30px;
     gap: 16px;
+    border-radius: 10px;
+    border: 3px solid var(--Darkblack);
+  }
+  .ma-navbar .ma-links li a.active{
+    padding: 12px 20px ;
   }
   .ma-navbar .ma-links li .ma-home.active {
     margin-left: -22px;
