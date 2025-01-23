@@ -120,7 +120,7 @@ export const CardWatchMoviesData = [
     {
       image: imagcard1,
       iconDuration: iconduration,
-      duration: "2h 15min",
+      duration: "1h 30min",
       iconViews: iconviews,
       views: "2K",
     },
