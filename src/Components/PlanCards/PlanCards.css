@@ -1,10 +1,16 @@
 .LQ-plan-card{
-    max-height: 425px;
+    width:32.0802%;
+    min-height: 425px;
     padding:50px;
     background-color: var(--VeryDarkGray);
     outline: 1px solid var(--DarkGrayOne);
     border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
     gap: 50px;
+}
+.LQ-plan-card:hover{
+    box-shadow: 0 0 5px red, 0 0 70px red;  
 }
 .lq-card-title{
     margin-bottom: 16px;
@@ -18,6 +24,7 @@
     font-weight: 400;
     line-height: 27px;
     color: var(--Gray);
+   
 }
 .lq-price{
     gap: 4px;
@@ -37,48 +44,27 @@
 
  .lq-btn-container{
     max-height: 63px;
-     width: max-content; 
-    gap: 20px;
+     width: 100%;  
 }
  .lq-btn1{
+    width:47.5728%;
     font-size: 18px;
     font-weight: 600; 
     line-height: 27px;
     color: var(--White);
-    padding: 18px 35px;
-    border: 1px solid var(--DarkGrayOne);
+    padding: 18px 0px;
+    border: none;
+    outline: 1px solid var(--DarkGrayOne);
     border-radius: 8px;
     background-color: var(--DarkGrayTwo);
 }
-@media(max-width:1896px){
-    .LQ-plan-card{
-        width: 33%;
-    }
-    .lq-desc{
-        width: 90%;
-    }
- }
-     @media(max-width:1754px){
-        .LQ-plan-card{
-            padding:40px;
-        }
-        .lq-btn-container{
-            gap:10px;
-        }
-         .lq-desc{
-            width: 100%;
-            font-size: 17.4px;
-        } 
-        .lq-btn1{
-            padding:14px 33px;
-            font-size: 15px;
-        }
-    }  
+ 
   @media(max-width:1440px){ 
     .LQ-plan-card{
-        width: 32.266%;
-        padding:40px;
-        gap: 40px;    
+        width: 32.2914%;
+        min-height: 345px;
+        padding:40px;  
+        gap: 40px; 
     }
     .lq-card-title{
        margin-bottom: 12px;
@@ -88,6 +74,7 @@
     .lq-desc{
         font-size:16px;
         line-height: 24px;
+        
     }
     .lq-price{
         gap:2px
@@ -100,40 +87,18 @@
         font-size: 16px;
         line-height: 11.68px;
     }
-    .lq-btn-container{
-        gap:12px;
-    }
     .lq-btn1{
-        padding:14px 31.33px;
+        width: 48.6%;
+        padding:14px 0px;
         font-size:14px;
         line-height:21px;
     } 
 }  
-@media(max-width:1320px){
-    .LQ-plan-card{
-        width: 40%;
-        padding: 27px 20px;
-        gap: 30px;
-    }
-    .lq-desc{
-         font-size: 14.7px; 
-         width: 90%;
-    }
-    .pricee{
-        font-size:24px ;
-        line-height: 21.9px;
-    }
-    .lq-duration{
-        font-size: 14px;
-        line-height: 11.68px;
-    }
-    .lq-btn1{
-        padding: 14px 21px !important;
-    }
-}
 @media (max-width:992px){
     .LQ-plan-card{
         padding:24px;
+        gap: 30px;
+        min-height: 275px;
         width: 100%;
     }
     .lq-card-title{
@@ -151,9 +116,12 @@
         line-height: 10.22px;
     }
     .lq-btn-container{
-        gap:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     .lq-btn1{
-        padding: 14px 25.5px;
+        padding: 14px 22px ;
+        width: 48.3%;
     }
 }

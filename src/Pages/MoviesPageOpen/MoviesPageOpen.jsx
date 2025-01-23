@@ -1,3 +1,4 @@
+import CastCarousel from "../../Components/CastCarousel/CastCarousel";
 import MoviesOpenHero from "../../Components/MoviesOpenHero/MoviesOpenHero";
 import Reviews from "../../Components/Reviews/Reviews";
 

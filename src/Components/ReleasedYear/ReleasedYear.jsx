@@ -6,7 +6,6 @@ import star from '../../assets/photos/Movies & shows page images/Star 5.png'
 import game from '../../assets/photos/Movies & shows page images/game.png'
 import fourStar from '../../assets/photos/Movies open page images/four star.png'
 import fiveStar from '../../assets/photos/Movies open page images/five star.png'
-// import DirectorImg from '../../assets/photos/Movies open page images/Director img.png'
 
 
 

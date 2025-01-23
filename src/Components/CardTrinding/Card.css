@@ -1,56 +1,75 @@
-
-.card-zq{
+.card-zq {
     width: 283.6px;
     height: 377px;
-    padding: 20px ;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 12px ;
-    border: 1px solid var(  --DarkGrayOne);
-    background-color: var( --VeryDarkGray);
+    border-radius: 12px;
+    border: 1px solid var(--DarkGrayOne);
+    background-color: var(--VeryDarkGray);
 }
 
-  .imgcard-zq
-    {
-        border-radius: 12px;
-    }
-    .conterCard-zq{
-        width:243.6px;
-        height: 36px;
-        display: flex;
-        justify-content: space-between;
-    }
-   
-.durationcard-zq{
-    width: 107px;
+.cardShow-zq {
+    width: 359.25px;
+    height: 444px;
+}
+
+.imgcard-zq {
+    border-radius: 12px;
+}
+
+.conterCard-zq {
+    /* width:243.6px;
+        height: 36px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.durationcard-zq {
+    /* width: 107px; */
     height: 36px;
     gap: 2px;
 }
-.viewcard-zq{
-    width:  74px;
-    height:  36px;
+
+.viewcard-zq {
+    width: 74px;
+    height: 36px;
     gap: 4px;
 }
-.durationcard-zq,.viewcard-zq,.releaseDatecard-zq{
-    background-color: var(  --DarkGrayTwo);
+
+.durationcard-zq,
+.viewcard-zq,
+.releaseDatecard-zq {
+    background-color: var(--DarkGrayTwo);
     color: var(--Gray);
-    display: flex ;
+    display: flex;
     justify-content: center;
     padding: 6px 10px 6px 6px;
-    border: 1px solid var(--DarkGrayOne) ;
-    border-radius: 51px ;
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 51px;
 }
-.releaseDatecard-zq{
+
+.releaseDatecard-zq {
     width: 100%;
-display: flex;
-align-items: center;
-gap:10px;
-color: var(--SilverGray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--SilverGray);
 }
-p{
+
+.pa-zq {
     margin: 0;
-    color:var(--Gray);
+    color: var(--Gray);
 
 }
 
+.viewcardShow_zq {
+    width: 113px;
+    height: 36px;
+
+}
+
+/* .durationcard_zq{
+    width:118px;
+} */

@@ -1,3 +1,6 @@
+import icon from '../../assets/Icons/Shape.png';
+import icon1 from '../../assets/Icons/Shape (2).png';
+import icon2 from '../../assets/Icons/Shape (3).png';
 import stars5 from "../../assets/photos/Container(11).png"
 import stars4 from "../../assets/photos/Container(10).png"
 

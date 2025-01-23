@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Explore />
       <Cards />
-      <Frequently />
+      <Frequently /> 
       <Plans />
     </>
   );

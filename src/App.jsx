@@ -6,15 +6,18 @@ import Support from "./Pages/Support/Support";
 
 import Footer from "./Components/Footer/Footer.jsx";
 import Navbar from "./Components/Navbar/Navbar";
-import Title from "./Components/Title/Title";
+import MoviesPageOpen from "./Components/CardWatchMovies/CardWatchMovies.jsx"
+
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/MoviesAndShows" element={<MoviesAndShows />} />
+        <Route path="/-Graduation-Project-X2/" element={<Home />} />
+        <Route path="/MoviesAndShows" element={<MoviesAndShows />}>
+          <Route path="MoviesPageOpen/movie/${id}" element={<MoviesPageOpen/>} />
+        </Route>
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/Support" element={<Support />} />
       </Routes>

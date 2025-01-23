@@ -9,6 +9,7 @@ function ExploreCard({ image, title, link, isTop10}) {
                 <div className="explore-card-content d-flex justify-content-between align-items-center">
 
                     <div className='d-flex flex-column btn-h-gap '>
+                       
                         {isTop10 && (
                             <div className="visible-div">
                                 <span>Top 10 In</span>

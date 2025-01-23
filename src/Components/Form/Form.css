@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 80px;
     padding: 235px 8.4357% 150px 8.4357%;
-    background-color: var(--VeryDarkGray);
+    /* background-color: var(--VeryDarkGray); */
     
 }
 .ma-allbox .ma-left-dev{
@@ -134,6 +134,7 @@
    cursor: pointer;
    position: relative;
    text-align: center;
+   color: var(--White);
 }
 
 .ma-flags {
@@ -260,6 +261,7 @@
 .ma-allbox .ma-right-dev .ma-four .ma-span {
     width: 24px;
     height: 24px; 
+   
 }
 .ma-allbox .ma-four label {
     font-size: 16px;
