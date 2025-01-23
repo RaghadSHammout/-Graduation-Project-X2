@@ -1,7 +1,6 @@
 
 import React from 'react'
 import '../Card/CardShow.css'
-// import icon from '../../assets/Icons/Shape (2).png';
 export default function CardShow({ title, des, h, icon, extraImages, num }) {
   return (
 

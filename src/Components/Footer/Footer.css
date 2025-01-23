@@ -1,12 +1,10 @@
 .conter-zq {
   position: relative;
-  background-color: var(--VeryDarkGray);
   padding: 150px 162px;
 }
 .image-container {
   position: relative;
   width: 100%;
-  height: 395px;
   border: 1px solid var(--DarkGrayOne);
   border-radius: 12px;
 }
@@ -41,7 +39,7 @@
 }
 .conterfooter-zq {
   background-color: var(--DeepBlack);
-  padding: 100px 162px 50px 162px;
+  padding: 150px 162px 50px 162px;
 }
 
 .footerlink {

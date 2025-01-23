@@ -3,7 +3,6 @@ import "./Frequently.css";
 import Title from "../Title/Title";
 import FaqItem from "../FaqItem/FaqItem";
 import Button from "../Button/Button";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 const Frequently = () => {
   const [activeId, setActiveId] = useState(1);
 
