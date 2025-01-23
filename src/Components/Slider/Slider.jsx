@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import PropTypes from 'prop-types';
 import ExploreCard from '../ExploreCard/ExploreCard';
+import Card from "../../Components/CardTrinding/Card";
+import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import Title from '../Title/Title';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -32,6 +34,41 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     // Add the name of your card with the component with its props in a new Case in this switch statement
     const renderCard = (card, index) => {
         switch (cardType) {
+            case 'CardWatchMoviesData':
+                return  <CardWatchMovies
+                key={card.id}
+                 id={card.id}
+              image={card.image}
+           duration={card.duration}
+               star={card.star}
+               Date={card.Date}
+             />;
+            case 'cardsDataNewReleases':
+                return <Card key={index} image={card.image} releaseDate={card.releaseDate} />;
+            case 'cardsDataTrending':
+                return <Card
+                            key={index}
+                            image={card.image}
+                            views={card.views}
+                            duration={card.duration}
+                            iconViews={card.iconViews}
+                            iconDuration={card.iconDuration}
+                          />;
+            case 'CardWatchMoviesData2':
+                return <CardWatchMovies
+                key={card.id}
+                id={card.id}
+                image={card.image}
+                duration={card.duration}
+                star={card.star}
+                Date={card.Date}
+              />;
+            case 'CardShwos':
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} 
+                viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
+                iconViews={card.iconViews} views={card.views}/>;
+            case 'ReleasedShwos':
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}  viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
