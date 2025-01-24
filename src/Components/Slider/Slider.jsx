@@ -7,6 +7,10 @@ import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import Title from '../Title/Title';
 import arrow from '../../assets/photos/Vector 619.png';
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
@@ -93,7 +97,12 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
 
     return (
         <div>
-            <div className={`slider-upper-div ${upperMb}`}>
+            <motion.div 
+              variants={fadeIn("right" , 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{once:false , amount:0.7}}
+            className={`slider-upper-div ${upperMb}`}>
                 <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
                     <button className="prev-arrow">
@@ -116,7 +125,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                         </div>
                     </button>
                 </div>
-            </div>
+            </motion.div>
             <Swiper
                 modules={[Navigation]}
                 navigation={{
@@ -130,11 +139,16 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <div className={`${cardGroup}`}>
+                        <motion.div
+                          variants={fadeIn("left" , 0.2)}
+                          initial="hidden"
+                          whileInView={"show"}
+                          viewport={{once:false , amount:0.7}}
+                         className={`${cardGroup}`}>
                             {group.map((card, cardIndex) => (
                                 renderCard(card, cardIndex)
                             ))}
-                        </div>
+                        </motion.div>
                     </SwiperSlide>
                 ))}
             </Swiper>
