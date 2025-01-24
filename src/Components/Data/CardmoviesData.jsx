@@ -1,4 +1,3 @@
-import React from 'react'
 import imagcard1 from "../../assets/photos/Movies & shows page images/Trending section card(1).jpg";
 import imagcard2 from "../../assets/photos/Movies & shows page images/Trending section card(2).jpg";
 import imagcard3 from "../../assets/photos/Movies & shows page images/Trending section card(3).jpg";
@@ -223,7 +222,6 @@ export const CardWatchMoviesData = [
       duration: "12h 23min",
       iconViews: iconunio,
       views: "5 Season",
-      // durationcardStyle: { width: "117px" },
     },
     {
       cardShow_zq: "cardShow-zq",
@@ -233,7 +231,6 @@ export const CardWatchMoviesData = [
       duration: "7h 40min",
       iconViews: iconunio,
       views: "2 Season",
-      // durationcard_zq:"durationcard_zq"
     },
     {
       cardShow_zq: "cardShow-zq",
@@ -243,7 +240,6 @@ export const CardWatchMoviesData = [
       duration: "8h 20min",
       iconViews: iconunio,
       views: "4 Season",
-      //  durationcard_zq:"durationcard_zq"
     },
     {
       cardShow_zq: "cardShow-zq",
@@ -253,7 +249,6 @@ export const CardWatchMoviesData = [
       duration: "10h 30min",
       iconViews: iconunio,
       views: "3 Season",
-      // durationcard_zq:"durationcard_zq"
     },
   ];
   export default {CardWatchMoviesData ,CardWatchMoviesData2,cardsDataTrending , cardsDataNewReleases ,CardShwos, CardReleasedShwos}
