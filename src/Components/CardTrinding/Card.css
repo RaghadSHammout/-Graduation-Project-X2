@@ -114,6 +114,16 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
+  .releaseDatecard-zq span{
+    font-family: Manrope;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
   .viewcardShow_zq img {
     width: 20px;
     height: 20px;
