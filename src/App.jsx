@@ -7,6 +7,7 @@ import Support from "./Pages/Support/Support";
 import Footer from "./Components/Footer/Footer.jsx";
 import Navbar from "./Components/Navbar/Navbar";
 import MoviesPageOpenR from "./Pages/MoviesPageOpenR/MoviesPageOpenR.jsx";
+import ShowsPageOpenR from "./Pages/ShowsPageOpenR/ShowsPageOpenR.jsx";
 
 
 export default function App() {
@@ -17,9 +18,9 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/MoviesAndShows" element={<MoviesAndShows />}/>
         <Route path="/MoviesPageOpenR/movie/:id" element={<MoviesPageOpenR/>} />
+        <Route path="/ShowsPageOpenR/movie/:id" element={<ShowsPageOpenR/>} />        
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/Support" element={<Support />} />
-
       </Routes>
       <Footer />
     </>

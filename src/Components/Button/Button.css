@@ -8,7 +8,10 @@
   font-weight: 600;
   line-height: 27px;
 }
-
+.ma-btn:hover {
+  transform: translate(0 ,-5px);
+  border: 1px solid var(--White);
+}
 .LQ-pad {
   padding: 18px 0px;
   width:47.5728%;

@@ -1,4 +1,3 @@
-import React from 'react'
 import imagcard1 from "../../assets/photos/Movies & shows page images/Trending section card(1).jpg";
 import imagcard2 from "../../assets/photos/Movies & shows page images/Trending section card(2).jpg";
 import imagcard3 from "../../assets/photos/Movies & shows page images/Trending section card(3).jpg";
@@ -20,6 +19,7 @@ import star4 from "../../assets/photos/Container(12).png";
 import star5 from "../../assets/photos/Container(11).png";
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
+
 
 import img1_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(1).png";
 import img2_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(2).png";
@@ -256,6 +256,7 @@ export const CardWatchMoviesData = [
       iconViews: iconunio,
       views: "5 Season",
       routePath:"/ShowsPageOpenR/movie/"
+
     },
     {  id:24,
       cardShow_zq: "cardShow-zq",
@@ -266,6 +267,7 @@ export const CardWatchMoviesData = [
       iconViews: iconunio,
       views: "2 Season",
       routePath:"/ShowsPageOpenR/movie/"
+
     },
     {  id:25,
       cardShow_zq: "cardShow-zq",
@@ -277,6 +279,7 @@ export const CardWatchMoviesData = [
       views: "4 Season",
       routePath:"/ShowsPageOpenR/movie/"
         
+
     },
     {  id:26,
       cardShow_zq: "cardShow-zq",
@@ -288,6 +291,7 @@ export const CardWatchMoviesData = [
       views: "3 Season",
       routePath:"/ShowsPageOpenR/movie/"
       
+
     },
   ];
   export default {CardWatchMoviesData ,CardWatchMoviesData2,cardsDataTrending , cardsDataNewReleases ,CardShwos, CardReleasedShwos}
