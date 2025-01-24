@@ -7,6 +7,10 @@ import Title from '../Title/Title';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 
 const CustomSlider = ({ cardData, lgSize, title, text }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
@@ -39,7 +43,12 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
 
     return (
         <div>
-            <div className="slider-upper-div">
+            <motion.div 
+              variants={fadeIn("right" , 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{once:false , amount:0.7}}
+            className="slider-upper-div">
                 <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
                     <button className="prev-arrow">
@@ -62,7 +71,7 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
                         </div>
                     </button>
                 </div>
-            </div>
+            </motion.div>
             <Swiper
                 modules={[Navigation]}
                 navigation={{
@@ -76,7 +85,12 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <div className="card-group">
+                        <motion.div 
+                         variants={fadeIn("left" , 0.2)}
+                         initial="hidden"
+                         whileInView={"show"}
+                         viewport={{once:false , amount:0.62}}
+                        className="card-group">
                             {group.map((card, cardIndex) => (
                                 <ExploreCard
                                     key={cardIndex}
@@ -85,7 +99,7 @@ const CustomSlider = ({ cardData, lgSize, title, text }) => {
                                     link={card.link}
                                 />
                             ))}
-                        </div>
+                        </motion.div>
                     </SwiperSlide>
                 ))}
             </Swiper>

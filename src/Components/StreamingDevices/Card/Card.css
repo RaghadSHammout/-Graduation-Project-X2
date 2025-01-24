@@ -6,7 +6,11 @@
  padding: 50px;
  border: 1px solid ;
  border-radius: 12px;
- background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.336) 0%, rgba(15, 15, 15, 1) 20%);}
+ background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.336) 0%, rgba(15, 15, 15, 1) 20%);
+}
+.MA_Card:hover{
+    box-shadow: 0 0 10px white , 0 0 20px red;
+}
  .MA_WtitleImg{
      width: 412.33px;
      height: 72px;

@@ -1,9 +1,7 @@
 import React from "react";
-
 import ExploreCard from "../ExploreCard/ExploreCard";
 import "./Explore.css";
 import CustomSlider from "../Slider/Slider";
-
 const cardData = [
     { title: "Action", image: "src/assets/photos/Home page images/Exploreb section card(1).png", link: "/action" },
     { title: "Adventure", image: "src/assets/photos/Home page images/Explore section card(2).png", link: "/adventure" },

@@ -11,7 +11,10 @@
     padding: 16px;
     margin-top: 10px;
 }
-
+.home-padding {
+    padding: 0 8.4375%;
+    margin-top: 350px;
+}
 .prev-arrow:hover,
 .next-arrow:hover {
     transition: 1000ms;

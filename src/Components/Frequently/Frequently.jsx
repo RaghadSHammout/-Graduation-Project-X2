@@ -4,6 +4,10 @@ import Title from "../Title/Title";
 import FaqItem from "../FaqItem/FaqItem";
 import Button from "../Button/Button";
 import { faL } from "@fortawesome/free-solid-svg-icons";
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 const Frequently = () => {
   const [activeId, setActiveId] = useState(1);
 
@@ -64,7 +68,12 @@ const Frequently = () => {
 
   return (
     <div className=" faq-container">
-      <div className="faq1">
+      <motion.div
+          variants={fadeIn("up" , 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false , amount:0.7}}
+       className="faq1">
         <Title
           title={"Frequently Asked Questions"}
           text={
@@ -75,8 +84,13 @@ const Frequently = () => {
           matext={"ma-text"}
         />
         <Button pad={""} show={false} text={"Ask a Question"} img={false} />
-      </div>
-      <div className="faq2">
+      </motion.div>
+      <motion.div
+         variants={fadeIn("up" , 0.2)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{once:false , amount:0.7}}
+       className="faq2">
         <div className="faq-large-screen">
           <div className="faq-column">
             {faqData.slice(0, Math.ceil(faqData.length / 2)).map((item) => (
@@ -117,7 +131,7 @@ const Frequently = () => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -10,7 +10,7 @@
     gap: 50px;
 }
 .LQ-plan-card:hover{
-    box-shadow: 0 0 5px red, 0 0 70px red;  
+    box-shadow: 0 0 5px red, 0 0 40px red;  
 }
 .lq-card-title{
     margin-bottom: 16px;

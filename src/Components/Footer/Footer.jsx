@@ -6,13 +6,27 @@ import "./Footer.css";
 import FaFacebook from "../../assets/photos/facebookicon.png";
 import twittericon from "../../assets/photos/twittericon.png";
 import linkedinicon from "../../assets/photos/linkedinicon.png";
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 function Footer() {
   return (
     <>
       <div className="conter-zq">
-        <div className="image-container">
+        <motion.div
+          variants={fadeIn("up" , 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false , amount:0.7}}
+         className="image-container">
           <img className="ImagFooter-zq" src={FooterImg} alt="footer image" />
-          <div className="overlay">
+          <motion.div 
+           variants={fadeIn("left" , 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{once:false , amount:0.62}}
+          className="overlay">
             
               <Title
                 maMargin="info-zq"
@@ -29,13 +43,18 @@ function Footer() {
               text={"Start a Free Trail"}
             />
           
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       <div className="conterfooter-zq">
         <div className="footerlink">
-          <div className="Home">
+          <motion.div
+             variants={fadeIn("up" , 0.2)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{once:false , amount:0.7}}
+           className="Home">
             <h5 className="heading-zq">Home</h5>
             <a href="/" className="links">
               Categories
@@ -49,8 +68,13 @@ function Footer() {
             <a href="/" className="links">
               FAQ
             </a>
-          </div>
-          <div className="Movies">
+          </motion.div>
+          <motion.div
+             variants={fadeIn("up" , 0.2)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{once:false , amount:0.8}}
+           className="Movies">
             <h5 className="heading-zq">Movies</h5>
             <a href="/" className="links">
               Gernes
@@ -64,8 +88,13 @@ function Footer() {
             <a href="/" className="links">
               Popular
             </a>
-          </div>
-          <div className="Shows">
+          </motion.div>
+          <motion.div 
+           variants={fadeIn("up" , 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{once:false , amount:0.65}}
+          className="Shows">
             <h5 className="heading-zq">Shows</h5>
             <a href="/" className="links">
               Gernes
@@ -79,14 +108,24 @@ function Footer() {
             <a href="/" className="links">
               Popular
             </a>
-          </div>
-          <div className="Support">
+          </motion.div>
+          <motion.div 
+           variants={fadeIn("up" , 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{once:false , amount:0.7}}
+          className="Support">
             <h5 className="heading-zq">Support</h5>
             <a href="/" className="links">
               Contact Us
             </a>
-          </div>
-          <div className="Subscription">
+          </motion.div>
+          <motion.div 
+           variants={fadeIn("up" , 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{once:false , amount:0.68}}
+          className="Subscription">
             <h5 className="heading-zq"> Subscription</h5>
             <a href="/" className="links">
               Plans
@@ -94,8 +133,13 @@ function Footer() {
             <a href="/" className="links">
               Features
             </a>
-          </div>
-          <div className="contecticonfooter">
+          </motion.div>
+          <motion.div 
+           variants={fadeIn("up" , 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{once:false , amount:0.7}}
+          className="contecticonfooter">
             <h5 className="heading-zq">Connect With Us</h5>
             <div className="contecticon">
               <div className="contericon-zq">
@@ -114,7 +158,7 @@ function Footer() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="footerBar">
           <div className="SitePolicies-zq">
