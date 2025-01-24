@@ -28,8 +28,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 107px; */
-  /* height: 36px; */
   padding: 6px 10px 6px 6px;
   gap: 2px;
   border-radius: 51px;
@@ -109,10 +107,7 @@ color: var(--Gray);
     width: 15.8125rem;
     height: 2rem;
   }
-  /* .sub-container1 {
-    width: 88px;
-    height: 32px;
-  } */
+
   .icon-clock {
     width: 1.25rem;
     height: 1.25rem;
@@ -120,11 +115,10 @@ color: var(--Gray);
   .clock {
     width: 16.5px;
     height: 16.5px;
-    /* margin-bottom: 12px; */
+    
   }
   .text {
-    /* width: 3.0625rem;
-    height: 9px; */
+ 
     font-size: 12px;
     line-height: 18px;
   }
