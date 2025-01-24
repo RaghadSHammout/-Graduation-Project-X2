@@ -47,17 +47,20 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
            duration={card.duration}
                star={card.star}
                Date={card.Date}
+               routePath={card.routePath}
              />;
             case 'cardsDataNewReleases':
-                return <Card key={index} image={card.image} releaseDate={card.releaseDate} />;
+                return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
             case 'cardsDataTrending':
                 return <Card
-                            key={index}
+                key={card.id}
+                id={card.id}
                             image={card.image}
                             views={card.views}
                             duration={card.duration}
                             iconViews={card.iconViews}
                             iconDuration={card.iconDuration}
+                            routePath={card.routePath}
                           />;
             case 'CardWatchMoviesData2':
                 return <CardWatchMovies
@@ -67,13 +70,14 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 duration={card.duration}
                 star={card.star}
                 Date={card.Date}
+                routePath={card.routePath} 
               />;
             case 'CardShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} 
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} 
                 viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
-                iconViews={card.iconViews} views={card.views}/>;
+                iconViews={card.iconViews} views={card.views}  routePath={card.routePath} />;
             case 'ReleasedShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}  viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}  viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views}  routePath={card.routePath}  />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
