@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import "./CardsShow.css";
 import Slider from "react-slick";
 import { ShowCardData } from "../../Data/showCardData";
-import CardShow from "../Card/CardShow";
-import "./CardsShow.css";
+import CardShow from "../Card/CardShow.jsx";
 import iconBack from "../../../assets/Icons/Vector 619.png";
 
 import iconFront from "../../../assets/Icons/Vector.png";

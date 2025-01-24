@@ -18,7 +18,7 @@ function CardWatchMovies({
   return (
   
    <div>
-      <Link to={`/MoviesAndShows/MoviesPageOpen/movie/${id}`} className="card">
+      <Link to={`/MoviesPageOpenR/movie/${id}`} className="card">
       <img className="cardImage" src={image} alt="Card Image" />
       <div className="ha-container">
         <div className={`sub-container1 ${sub1_width}`}>
