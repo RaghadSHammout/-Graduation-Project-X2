@@ -39,7 +39,7 @@ export default function Navbar() {
         </div>
         <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
             <li>
-                <NavLink to={'/-Graduation-Project-X2'} className='ma-home' onClick={listdown}>Home</NavLink>
+                <NavLink to={'/'} className='ma-home' onClick={listdown}>Home</NavLink>
             </li>
             <li>
                 <NavLink to={'/MoviesAndShows'} onClick={listdown}>Movies & Shows</NavLink>
