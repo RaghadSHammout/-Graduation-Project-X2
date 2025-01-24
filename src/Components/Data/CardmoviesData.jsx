@@ -20,7 +20,7 @@ import star4 from "../../assets/photos/Container(12).png";
 import star5 from "../../assets/photos/Container(11).png";
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
-import CardsShow from "../../Components/Reviews/CardsShow/CardsShow";
+// import CardsShow from "../../Components/Reviews/CardsShow/CardsShow";
 
 import img1_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(1).png";
 import img2_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(2).png";
