@@ -1,6 +1,6 @@
 
 import React from 'react'
-import '../Card/CardShow.css'
+//import '../Card/CardShow.css'
 export default function CardShow({ title, des, h, icon, extraImages, num }) {
   return (
 

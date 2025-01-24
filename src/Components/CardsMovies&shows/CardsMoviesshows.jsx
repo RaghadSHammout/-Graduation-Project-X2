@@ -4,9 +4,9 @@ import CustomSlider from "../Slider/Slider";
 import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import { CardReleasedShwos, cardsDataNewReleases, cardsDataTrending, CardShwos, CardWatchMoviesData, CardWatchMoviesData2 } from '../Data/CardmoviesData';
-
+import { useParams } from "react-router-dom";
 function CardsMoviesshows() {
-
+  const { id } = useParams();
   return (
     <div className='cards-container-zq' >
     
