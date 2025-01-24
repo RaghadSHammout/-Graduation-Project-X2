@@ -8,6 +8,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
+
 const Frequently = () => {
   const [activeId, setActiveId] = useState(1);
 

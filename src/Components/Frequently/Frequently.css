@@ -1,9 +1,8 @@
 .faq-container {
   padding: 0% 8.4375%;
-  background-color: var(--DeepBlack);
   display: flex;
   flex-direction: column;
-  height: 734px;
+  margin-top: 150px;
 }
 
 .faq1 {

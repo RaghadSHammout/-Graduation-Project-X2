@@ -27,14 +27,16 @@ a {
 .sub-container1 {
   display: flex;
   justify-content: center;
-  width: 107px;
-  height: 36px;
-  padding-top: 6px;
+  align-items: center;
+  /* width: 107px; */
+  /* height: 36px; */
+  padding: 6px 10px 6px 6px;
   gap: 2px;
   border-radius: 51px;
   border: 1px solid var(--DarkGrayOne);
   background-color: var(--DarkGrayTwo);
 }
+
 .sub-w-100 {
   width: 100px;
 }
@@ -47,22 +49,20 @@ a {
 .icon-clock {
   width: 1.5rem;
   height: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .clock {
   width: 19.5px;
   height: 19.5px;
 }
 .text {
-  width: 4.0625rem;
-  height: 12px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin-bottom: 0px;
-  color: var(--Gray);
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: var(--Gray);
+
 }
 .sub-container2 {
   display: flex;
@@ -78,10 +78,10 @@ a {
 .sub2-width {
   width: 148px;
 }
-.icon-star {
+.icon-star img {
   width: 97.12px;
   height: 18px;
-  margin-bottom: 7.5px;
+  margin-bottom: 2px;
 }
 .text2 {
   width: 26px;
@@ -109,10 +109,10 @@ a {
     width: 15.8125rem;
     height: 2rem;
   }
-  .sub-container1 {
+  /* .sub-container1 {
     width: 88px;
     height: 32px;
-  }
+  } */
   .icon-clock {
     width: 1.25rem;
     height: 1.25rem;
@@ -120,11 +120,11 @@ a {
   .clock {
     width: 16.5px;
     height: 16.5px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
   }
   .text {
-    width: 3.0625rem;
-    height: 9px;
+    /* width: 3.0625rem;
+    height: 9px; */
     font-size: 12px;
     line-height: 18px;
   }

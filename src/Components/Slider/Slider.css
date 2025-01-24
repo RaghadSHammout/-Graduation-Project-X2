@@ -17,21 +17,23 @@
 }
 .prev-arrow:hover,
 .next-arrow:hover {
-    transition: 1000ms;
+    transition: 600ms;
     filter: brightness(1.5);
     -webkit-filter: brightness(1.5);
-    -webkit-transition: 1000ms;
-    -moz-transition: 1000ms;
-    -ms-transition: 1000ms;
-    -o-transition: 1000ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
 }
 
 .slider-upper-div {
-    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
 }
 
+.to-slider-upper-mb {
+    margin-bottom: 70px;
+}
 
 .custom-arrows button {
     display: flex;
@@ -68,16 +70,11 @@
     rotate: 180deg;
 }
 
-.swiper-slide,
-.swiper {
-    overflow: visible;
-    overflow-y: visible;
-    overflow-x: hidden;
-}
-
 .card-group {
     display: flex;
     justify-content: space-between;
+    height: 352px !important;
+    align-items: end;
 }
 
 .custom-indicators button {
@@ -135,10 +132,6 @@
         gap: 12px;
         margin-top: 8px;
         border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
     }
 
     .slider-arrow-div {
@@ -177,10 +170,13 @@
         width: 18px;
     }
 
-    .slider-upper-div {
-        margin-bottom: 60px;
+    .to-slider-upper-mb {
+        margin-bottom: 50px;
     }
 
+    .card-group {
+        height: 286px !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -194,5 +190,13 @@
 
     .to-indicator.active {
         width: 25.3164%;
+    }
+
+    .to-slider-upper-mb {
+        margin-bottom: 30px;
+    }
+
+    .card-group {
+        height: 100% !important;
     }
 }

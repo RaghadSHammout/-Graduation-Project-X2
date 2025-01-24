@@ -5,12 +5,11 @@
     justify-content: center;
     gap: 80px;
     padding: 235px 8.4357% 150px 8.4357%;
-    background-color: var(--VeryDarkGray);
-    
+       
 }
 .ma-allbox .ma-left-dev{
-    width: 533px;
-    
+    width: 33.5431088%;
+  
 }
 .ma-allbox .ma-title2 {
     font-size: 48px;
@@ -24,16 +23,23 @@
     line-height: 27px;
     color: var(--Gray);
 }
-.ma-allbox .ma-left-dev .ma-supportImg {
+
+.ma-allbox .ma-left-dev .ma-supportImg img {
     margin-top: 50px;
+    width: 100%;
 }
 .ma-allbox .ma-right-dev {
-    width: 976px;
+    width: 61.422278%;
     padding: 50px;
     border:1px solid var(--DarkGrayOne);
     background-color: var(--DeepBlack);
     border-radius: 12px;
 }
+.ma-allbox .ma-right-dev input:hover , .PhoneInputCountry:hover{
+    transform: translate(0 ,-5px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
 .ma-allbox .ma-right-dev .ma-one 
 , .ma-allbox .ma-right-dev .ma-two{
     display: flex;
@@ -50,9 +56,13 @@
     gap: 16px;
 }
 .ma-allbox .ma-right-dev .ma-bordar-input {
+    outline: none;
     border-radius: 8px;
     border: 1px solid var( --DarkGrayOne);
     background-color: var(--DarkGrayTwo);
+    color: var(--White);
+    font-size: 25px;
+    padding: 10px;
 }
 .ma-allbox .ma-right-dev .ma-input-width {
     width: 413px;
@@ -134,6 +144,7 @@
    cursor: pointer;
    position: relative;
    text-align: center;
+   color: var(--White);
 }
 
 .ma-flags {
@@ -147,6 +158,10 @@
     border-radius: 8px;
     border: 1px solid var( --DarkGrayOne);
     background-color: var(--DarkGrayTwo);
+    color: var(--White);
+    font-size: 25px;
+    padding: 10px;
+    outline: none;
 }
 
 .PhoneInputCountry {
@@ -181,6 +196,7 @@
     border-right-width: 2px !important ;
     border-bottom-width: 2px !important ;
 }
+
  @media (max-width:1900px){
 .ma-allbox {
     gap: 50px;
@@ -260,6 +276,7 @@
 .ma-allbox .ma-right-dev .ma-four .ma-span {
     width: 24px;
     height: 24px; 
+   
 }
 .ma-allbox .ma-four label {
     font-size: 16px;

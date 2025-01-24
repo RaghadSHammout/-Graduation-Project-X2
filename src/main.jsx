@@ -13,7 +13,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/-Graduation-Project-X2/'>
       <App />
     </BrowserRouter>
   </StrictMode>

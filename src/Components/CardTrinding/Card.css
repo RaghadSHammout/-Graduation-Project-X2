@@ -1,56 +1,180 @@
-
-.card-zq{
-    width: 283.6px;
-    height: 377px;
-    padding: 20px ;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 12px ;
-    border: 1px solid var(  --DarkGrayOne);
-    background-color: var( --VeryDarkGray);
+.card-zq {
+  width: 283.6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--DarkGrayOne);
+  background-color: var(--VeryDarkGray);
 }
 
-  .imgcard-zq
-    {
-        border-radius: 12px;
-    }
-    .conterCard-zq{
-        width:243.6px;
-        height: 36px;
-        display: flex;
-        justify-content: space-between;
-    }
-   
-.durationcard-zq{
-    width: 107px;
-    height: 36px;
+.cardShow-zq {
+  width: 359.25px;
+}
+
+.imgcard-zq {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.conterCard-zq {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.durationcard-zq {
+  /* width: 107px;
+    height: 36px; */
+  gap: 2px;
+}
+
+.viewcard-zq {
+  /* width: 74px;
+    height: 36px; */
+  gap: 4px;
+}
+
+.durationcard-zq,
+.viewcard-zq,
+.releaseDatecard-zq {
+  background-color: var(--DarkGrayTwo);
+  color: var(--Gray);
+  display: flex;
+  justify-content: center;
+  padding: 6px 10px 6px 6px;
+  border: 1px solid var(--DarkGrayOne);
+  border-radius: 51px;
+}
+
+.releaseDatecard-zq {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--SilverGray);
+}
+
+.pa-zq {
+  margin: 0;
+  color: var(--Gray);
+}
+
+.viewcardShow_zq {
+  width: 113px;
+  height: 36px;
+}
+
+@media (max-width: 1440px) {
+  .cardShow-zq {
+    width: 284px !important;
+    padding: 16px;
+    gap: 16px;
+  }
+  .card-zq {
+    width: 224px;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .durationcard-zq {
+    /* width: 92px;
+        height: 28px; */
+    padding: 4px 8px 4px 4px;
     gap: 2px;
-}
-.viewcard-zq{
-    width:  74px;
-    height:  36px;
+    display: flex;
+    align-items: center;
+  }
+  .durationcard-zq img {
+    width: 20px;
+    height: 20px;
+  }
+  .pa-zq {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .viewcard-zq {
+    /* width: 54px;
+        height: 28px; */
+    padding: 4px 8px 4px 4px;
     gap: 4px;
+    display: flex;
+    align-items: center;
+  }
+  .releaseDatecard-zq {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .viewcardShow_zq img {
+    width: 20px;
+    height: 20px;
+  }
+  /* .viewcardShow_zq img{
+        width: 20px;
+        height: 20px;
+    }
+    .viewcardShow_zq p{
+        font-family: Manrope;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+      
+    } */
+  .viewcardShow_zq {
+    /* width: 88px;
+        height: 28px; */
+    padding: 4px 8px 4px 4px;
+    gap: 4px;
+  }
 }
-.durationcard-zq,.viewcard-zq,.releaseDatecard-zq{
-    background-color: var(  --DarkGrayTwo);
-    color: var(--Gray);
-    display: flex ;
-    justify-content: center;
-    padding: 6px 10px 6px 6px;
-    border: 1px solid var(--DarkGrayOne) ;
-    border-radius: 51px ;
-}
-.releaseDatecard-zq{
-    width: 100%;
-display: flex;
-align-items: center;
-gap:10px;
-color: var(--SilverGray);
-}
-p{
-    margin: 0;
-    color:var(--Gray);
+@media (max-width: 992px) {
+  .cardShow-zq {
+    width: 284px !important;
+    padding: 16px;
+    gap: 16px;
+  }
+  .card-zq {
+    width: 181.6px;
+    padding: 12px;
+    gap: 12px;
+  }
+  .durationcard-zq {
+    padding: 4px 8px 4px 4px;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .durationcard-zq img {
+    width: 16.25px;
+    height: 16.25px;
+    top: 1.88px;
+    left: 1.88px;
+  }
+  .pa-zq {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
 
-}
+  .viewcard-zq {
+    padding: 4px 8px 4px 4px;
+    gap: 4px;
 
+    display: flex;
+    align-items: center;
+  }
+  .releaseDatecard-zq {
+    padding: 6px 14px 6px 14px;
+    gap: 10px;
+  
+  }
+}

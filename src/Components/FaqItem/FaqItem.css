@@ -5,15 +5,12 @@
   padding: 30px 34px;
   border-bottom: 1px;
   border-top: 1px;
-  height: 127px;
   transition: all 0.3s ease;
 }
 .faq-toggle.active {
-  background-color: var(--DeepBlack);
   padding: 0px;
 }
 .faq-item.active {
-  background-color: var(--DeepBlack);
   align-items: normal;
   gap: 20px;
   padding: 34px;
@@ -32,7 +29,6 @@
 .faq-number {
   border-radius: 10px;
   border: 1px solid var(--DarkGray);
-  background-color: var(--Darkblack);
   padding: 20px;
   height: 67px;
   width: 62px;
@@ -89,7 +85,6 @@
   color: white;
 }
 .faq-item-small.active {
-  background-color: var(--DeepBlack);
   align-items: normal;
   height: 140px;
   gap: 12px;
@@ -102,9 +97,7 @@
   display: block;
 }
 
-/* .items .line {
-  margin-top: 20px;
-} */
+
 .line {
   border: 1px solid transparent;
   border-image-source: linear-gradient(

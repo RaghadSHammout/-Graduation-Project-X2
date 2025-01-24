@@ -39,7 +39,6 @@ function Footer() {
               />
           
             <Button
-              // img={}
               text={"Start a Free Trail"}
             />
           
