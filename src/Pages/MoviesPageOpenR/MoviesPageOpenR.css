@@ -1,0 +1,64 @@
+.ma-sec-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+
+}
+.ma-sec-all .ma-sec-left{
+    width: 66.2280701%;
+}
+.ma-sec-all .ma-sec-left .ma-div-Seasons {
+    width: 100%;
+}
+.ma-sec-all .ma-sec-right{
+    width: 32.51879699%;
+}
+.ma-sec-left .ma-Description , .ma-CastCarousel {
+    width: 100%;
+    margin-bottom: 30px
+}
+.ma-Reviews{
+    width: 100%;
+}
+.ma-addition{
+    display: none;
+}
+@media (max-width:1440px) {
+    .ma-sec-all{
+        padding: 0px 77px;
+    }
+    .ma-sec-all .ma-sec-left{
+        width: 66.096423%;
+    }
+    .ma-sec-all .ma-sec-right{
+        width: 32.348367%;
+    }
+    .ma-sec-left .ma-Description , .ma-CastCarousel {
+        margin-bottom: 20px
+    }
+}
+@media (max-width:992px) {
+    .ma-sec-all{
+        gap: 0px;
+        padding: 0px 16px;
+    }
+    .ma-sec-all .ma-sec-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .ma-sec-all .ma-sec-left{
+        width: 100%;
+    }
+    .ma-sec-all .ma-sec-left div{
+        display: none;
+    }
+    .ma-sec-all .ma-sec-left .ma-Description{
+        display: block;
+    }
+    .ma-addition{
+        width: 100%;
+        display: block;
+    }
+}
