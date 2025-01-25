@@ -49,8 +49,8 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
             case 'cardsDataTrending':
                 return <Card
-                key={card.id}
-                id={card.id}
+                            key={card.id}
+                            id={card.id}
                             image={card.image}
                             views={card.views}
                             duration={card.duration}
