@@ -15,6 +15,7 @@ function Explore() {
                     cardGroup="card-group"
                     upperMb="to-slider-upper-mb"
                     cardType={"explore"}
+                    isThereText={true}
                 />
             </div>
         </section>

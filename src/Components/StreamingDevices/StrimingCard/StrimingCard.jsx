@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Card/Card.css'
-export default function Card({ img, title, desc }) {
+import './StrimingCard.css'
+export default function StrimingCard({ img, title, desc }) {
   return (
     <div className='MA_Card'>
       <div className='MA_WtitleImg'>

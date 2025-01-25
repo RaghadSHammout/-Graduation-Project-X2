@@ -1,17 +1,53 @@
+import React, { useState, useEffect } from 'react';
+import "./StreamingDevices.css";
+import Title from '../Title/Title';
+import { SkileData } from '../../Components/Data/SkilsData'
+import StrimingCard from "../StrimingCard/StrimingCard"
 
-import React from 'react'
-import "../StreamingDevices/StreamingDevices.css"
 export default function StreamingDevices() {
-  return (
-<div className='v'>
-<div className='MAContanair'>
-            <h3>We Provide you streaming experience across various devices.</h3>
-            <p>
-            With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.
-            </p>
-        </div>
+  const [displayText, setDisplayText] = useState("");
 
-</div>
-      
-  )
+  const fullText = "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.";
+
+  const updateDisplayText = () => {
+    if (window.innerWidth <= 1000) {
+      setDisplayText(fullText.slice(0, 82) + ".");
+    } else {
+      setDisplayText(fullText);
+    }
+  };
+
+  useEffect(() => {
+    updateDisplayText();
+    window.addEventListener('resize', updateDisplayText);
+
+    return () => {
+      window.removeEventListener('resize', updateDisplayText);
+    };
+  }, []);
+
+  return (
+    <section className={"home-padding "}>
+      <div className='MAContanair '>
+
+        <Title
+          maMargin={'maMargin'}
+          size={'mo-size'}
+          matext={'mo-text'}
+          title={"We Provide you streaming experience across various devices."}
+          text={displayText}
+        />
+      </div>
+
+      <div className='MAA_card'>
+        <div className='MAA'>
+          {SkileData.map((e, index) => {
+            return (
+              <StrimingCard key={index} title={e.title} img={e.img} desc={e.desc} />
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -1,129 +1,52 @@
-.MA_Card{
-    width: 512.33px; 
-    height: 283px ;
-    column-gap: 50px;
- padding: 50px;
- border: 1px solid ;
- border-radius: 12px;
- background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.336) 0%, rgba(15, 15, 15, 1) 20%);}
- .MA_WtitleImg{
-     width: 412.33px;
-     height: 72px;
-     margin-bottom:30px ;
- }
- .MA_WtitleImg h5{
-     width: 324.33px;
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     color:var(--White);
- 
- }
- .MA_WtitleImg img{
-     width: 40px;
-     height: 40px;
- 
- }
- .MA_CardImg{
-     width: 72px;
-     height: 72px; 
-     display: flex;
-     justify-content: center;
-     align-items: center; 
-     border: 1px solid;
-     border-radius: 12px;
-     margin-right: 16px;
-     background-color: var( --DarkGray);
- 
- }
- .MA_Card p{
-     font-family: Manrope;
- font-size: 18px;
- font-weight: 400;
- line-height: 27px;
- text-align: left;
- text-underline-position: from-font;
- text-decoration-skip-ink: none;
- 
- color:  var(--Gray);
-   
- }
- @media  (max-width: 1700px) { 
-     
-     .MA_Card {
-         width: 413px !important; 
-         height: 230px  ;
-         padding: 30px;
-      } 
-     .MA_CardImg{
-         width: 54px;
-         height: 54px; 
-         margin-right: 12px;
- 
- }
- .MA_WtitleImg img{
-     width: 30px;
-     height: 30px;
- }
- .MA_WtitleImg h5{
-     width: 267px;
- margin-bottom: 20px;
- }
-     .MA_Card p{font-size: 16px;
-         font-family: Manrope;
-         font-size: 16px;
-         font-weight: 400;
-         line-height: 24px;
-         text-align: left;
-         text-underline-position: from-font;
-         text-decoration-skip-ink: none;
-         
-     }
- }
- @media  (max-width: 576px) { 
-     .MA_Card {
-         width: 361px !important; 
-         height: 175px ;
-         padding:  24px;
-      } 
-      .MA_CardImg{
-         width: 44px;
-         height: 44px; 
-         margin-right: 10px;
- 
- }
- .MA_WtitleImg{
-     width: 313px;
-     height: 44px;
-     margin-bottom:20px ;
- }
- .MA_WtitleImg img{
-     width: 24px;
-     height: 24px;
- }
- .MA_WtitleImg h5{
-     width: 259px;
-     height:27px;
-     display: flex;
-     justify-content: start;
-     align-items: center;
-    
- }
-     .MA_Card p{
-         width: 313px;
-         height: 63px;
- 
-         font-family: Manrope;
-         font-size: 14px;
-         font-weight: 400;
-         line-height: 21px;
-         text-align: left;
-         text-underline-position: from-font;
-         text-decoration-skip-ink: none;
-         
-         
-     }
- 
-     
- }
- 
+.MA_Card {
+    width: 32.1008%;
+    background-color: var(--DeepBlack);
+    padding: 50px;
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 12px;
+    background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.336) 0%, rgba(15, 15, 15, 1) 20%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.MA_WtitleImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.MA_WtitleImg h5 {
+    color: var(--White);
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.streaming-img-div {
+    border: 1px solid var(--Darkblack);
+    border-radius: 12px;
+    background-color: var(--DarkGray);
+    padding: 16px;
+}
+
+.MA_CardImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.streaming-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Gray);
+    margin: 0;
+}
+

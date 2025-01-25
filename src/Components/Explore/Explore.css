@@ -5,7 +5,9 @@
 .to-prev-btn {
     rotate: 180deg;
 }
-
+.explore-m-bot {
+    margin-bottom: 150px;
+}
 
 @media (max-width: 1440px) {
     .home-padding {

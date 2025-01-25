@@ -1,0 +1,148 @@
+.MA_Card {
+    width: 32.1008%;
+    background-color: var(--DeepBlack);
+    padding: 50px;
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 12px;
+    background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.336) 0%, rgba(15, 15, 15, 1) 20%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.MA_WtitleImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.MA_WtitleImg h5 {
+    color: var(--White);
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.streaming-img-div {
+    border: 1px solid var(--Darkblack);
+    border-radius: 12px;
+    background-color: var(--DarkGray);
+    padding: 16px;
+}
+
+.MA_CardImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.streaming-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Gray);
+    margin: 0;
+}
+
+@media (min-width: 930px) and (max-width: 1440px) {
+    .MA_Card {
+        width: 32.290%;
+        /* width: 413px; */
+        padding: 40px;
+        gap: 24px;
+
+
+    }
+
+    .MA_WtitleImg {
+        gap: 12px;
+    }
+
+    .streaming-img-div {
+        padding: 12px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .MA_WtitleImg h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+
+    }
+
+    .streaming-paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
+    .MA_CardImg {
+        width: 30px !important;
+        height: 30px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MA_CardImg img {
+        width: 27px !important;
+    }
+
+    .streaming-img-div {
+
+        padding: 12px;
+        gap: 10px;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .MA_Card {
+        width: 99.56%;
+        padding: 40px;
+        gap: 24px;
+
+
+    }
+
+    .MA_CardImg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .MA_CardImg img {
+        width: 20px !important;
+    }
+
+    .MA_WtitleImg {
+        gap: 10px;
+    }
+
+    .streaming-img-div {
+        padding: 10px;
+        gap: 10px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .MA_WtitleImg h5 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .streaming-paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+    }
+}

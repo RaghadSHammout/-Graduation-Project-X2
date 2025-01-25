@@ -11,11 +11,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
 
-const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType }) => {
+const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
-    const [ActiveTabs, setActiveTabs] = useState("Movies");
     const swiperRef = useRef(null);
+
+    // Generate unique IDs for navigation buttons
+    const uniqueId = useRef(`slider-${Math.random().toString(36).substr(2, 9)}`);
 
     useEffect(() => {
         const handleResize = () => setIsSmallScreen(window.innerWidth <= 991);
@@ -36,63 +38,64 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     const renderCard = (card, index) => {
         switch (cardType) {
             case 'CardWatchMoviesData':
-                return  <CardWatchMovies
-                key={card.id}
-                 id={card.id}
-              image={card.image}
-           duration={card.duration}
-               star={card.star}
-               Date={card.Date}
-             />;
+                return <CardWatchMovies
+                    key={card.id}
+                    id={card.id}
+                    image={card.image}
+                    duration={card.duration}
+                    star={card.star}
+                    Date={card.Date}
+                />;
             case 'cardsDataNewReleases':
                 return <Card key={index} image={card.image} releaseDate={card.releaseDate} />;
             case 'cardsDataTrending':
                 return <Card
-                            key={index}
-                            image={card.image}
-                            views={card.views}
-                            duration={card.duration}
-                            iconViews={card.iconViews}
-                            iconDuration={card.iconDuration}
-                          />;
+                    key={index}
+                    image={card.image}
+                    views={card.views}
+                    duration={card.duration}
+                    iconViews={card.iconViews}
+                    iconDuration={card.iconDuration}
+                />;
             case 'CardWatchMoviesData2':
                 return <CardWatchMovies
-                key={card.id}
-                id={card.id}
-                image={card.image}
-                duration={card.duration}
-                star={card.star}
-                Date={card.Date}
-              />;
+                    key={card.id}
+                    id={card.id}
+                    image={card.image}
+                    duration={card.duration}
+                    star={card.star}
+                    Date={card.Date}
+                />;
             case 'CardShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} 
-                viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
-                iconViews={card.iconViews} views={card.views}/>;
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}
+                    viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
+                    iconViews={card.iconViews} views={card.views} />;
             case 'ReleasedShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}  viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
+                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
+                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link}/>;
+            case 'exploreTop10':
+                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} isTop10={true} cardWidth={cardWidth}/>;
             default:
                 return null;
         }
     };
 
     const itemsPerGroup = isSmallScreen ? 2 : lgSize;
-    const slicedCards = isSmallScreen ? cardData.slice(0, 8) : cardData;
-    const groupedCards = groupCards(slicedCards, itemsPerGroup).slice(0, 4);
+    const groupedCards = groupCards(cardData, itemsPerGroup).slice(0, 4);
 
     const handleDotClick = (index) => {
         swiperRef.current?.slideTo(index);
     };
 
     return (
-        <div>
+        <div className="w-100">
             <div className={`slider-upper-div ${upperMb}`}>
-                <Title title={title} text={text} size="to-title" matext="to-text" />
+                <Title title={title} text={text} size="to-title" matext="to-text" maMargin="to-title-div" isThereText={isThereText} />
                 <div className="custom-arrows">
-                    <button className="prev-arrow">
+                    <button className={`prev-arrow ${uniqueId.current}-prev`}>
                         <div className="slider-arrow-div">
                             <img className="slider-arrow-img" src={arrow} alt="Previous" />
                         </div>
@@ -106,7 +109,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                             />
                         ))}
                     </div>
-                    <button className="next-arrow">
+                    <button className={`next-arrow ${uniqueId.current}-next`}>
                         <div className="slider-arrow-div">
                             <img className="slider-arrow-img" src={arrow} alt="Next" />
                         </div>
@@ -116,8 +119,8 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             <Swiper
                 modules={[Navigation]}
                 navigation={{
-                    prevEl: '.prev-arrow',
-                    nextEl: '.next-arrow',
+                    prevEl: `.${uniqueId.current}-prev`,
+                    nextEl: `.${uniqueId.current}-next`,
                 }}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -127,9 +130,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
                         <div className={`${cardGroup}`}>
-                            {group.map((card, cardIndex) => (
-                                renderCard(card, cardIndex)
-                            ))}
+                            {group.map((card, cardIndex) => renderCard(card, cardIndex))}
                         </div>
                     </SwiperSlide>
                 ))}
@@ -151,6 +152,7 @@ CustomSlider.defaultProps = {
     cardData: [],
     lgSize: 5,
     cardType: 'explore',
+    isThereText: false,
 };
 
 CustomSlider.propTypes = {
