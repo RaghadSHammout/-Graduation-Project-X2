@@ -1,7 +1,9 @@
-import React from "react";
-import cardData from "../Data/toCardData";
 import "./Explore.css";
 import CustomSlider from "../Slider/Slider";
+import cardData from "../Data/toCardData";
+
+
+
 
 function Explore() {
     return (

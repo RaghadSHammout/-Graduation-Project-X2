@@ -1,4 +1,3 @@
-import React from 'react'
 import imagcard1 from "../../assets/photos/Movies & shows page images/Trending section card(1).jpg";
 import imagcard2 from "../../assets/photos/Movies & shows page images/Trending section card(2).jpg";
 import imagcard3 from "../../assets/photos/Movies & shows page images/Trending section card(3).jpg";
@@ -20,6 +19,7 @@ import star4 from "../../assets/photos/Container(12).png";
 import star5 from "../../assets/photos/Container(11).png";
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
+
 
 import img1_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(1).png";
 import img2_2 from "../../assets/photos/Movies & shows page images/Must watch shows section card(2).png";
@@ -51,9 +51,9 @@ export const CardWatchMoviesData = [
     {
       id: 2,
       image: img2,
-      sub1_width: "sub-w-100 ",
+      sub1_width: "",
       duration: "1h 30min",
-      sub2_width: "sub2-width",
+   
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -62,9 +62,9 @@ export const CardWatchMoviesData = [
     {
       id: 3,
       image: img3,
-      sub1_width: "sub-w-108 ",
+      sub1_width: "",
       duration: "1h 42min",
-      sub2_width: "",
+
       star: star4_5,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -73,9 +73,9 @@ export const CardWatchMoviesData = [
     {
       id: 4,
       image: img4,
-      sub1_width: "sub-w-109 ",
+      sub1_width: "",
       duration: "2h 10min",
-      sub2_width: "sub2-width",
+  
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -88,9 +88,8 @@ export const CardWatchMoviesData = [
     {
       id: 5,
       image: img1_2,
-      sub1_width: "",
+      sub1_width: "sub-container2-2",
       duration: "7h 40min",
-      sub2_width: "",
       star: star4_5,
       Date: "12k",
       routePath:"/ShowsPageOpenR/movie/"
@@ -98,9 +97,8 @@ export const CardWatchMoviesData = [
     {
       id: 6,
       image: img2_2,
-      sub1_width: "sub-w-100 ",
-      duration: "12h 32min",
-      sub2_width: "sub2-width",
+      sub1_width: "sub-container2-2",
+      duration: "12h 23min",
       star: star5,
       Date: "28k",
       routePath:"/ShowsPageOpenR/movie/"
@@ -108,9 +106,8 @@ export const CardWatchMoviesData = [
     {
       id: 7,
       image: img3_2,
-      sub1_width: "sub-w-108 ",
+      sub1_width: "sub-container2-2",
       duration: "10h 30min",
-      sub2_width: "",
       star: star4,
       Date: "2k",
       routePath:"/ShowsPageOpenR/movie/"
@@ -118,9 +115,8 @@ export const CardWatchMoviesData = [
     {
       id: 8,
       image: img4_2,
-      sub1_width: "sub-w-109 ",
+      sub1_width: "sub-container2-2",
       duration: "8h 20min",
-      sub2_width: "sub2-width",
       star: star4_5,
       Date: "32k",
       routePath:"/ShowsPageOpenR/movie/"
@@ -256,6 +252,7 @@ export const CardWatchMoviesData = [
       iconViews: iconunio,
       views: "5 Season",
       routePath:"/ShowsPageOpenR/movie/"
+
     },
     {  id:24,
       cardShow_zq: "cardShow-zq",
@@ -266,6 +263,7 @@ export const CardWatchMoviesData = [
       iconViews: iconunio,
       views: "2 Season",
       routePath:"/ShowsPageOpenR/movie/"
+
     },
     {  id:25,
       cardShow_zq: "cardShow-zq",
@@ -277,6 +275,7 @@ export const CardWatchMoviesData = [
       views: "4 Season",
       routePath:"/ShowsPageOpenR/movie/"
         
+
     },
     {  id:26,
       cardShow_zq: "cardShow-zq",
@@ -288,6 +287,7 @@ export const CardWatchMoviesData = [
       views: "3 Season",
       routePath:"/ShowsPageOpenR/movie/"
       
+
     },
   ];
   export default {CardWatchMoviesData ,CardWatchMoviesData2,cardsDataTrending , cardsDataNewReleases ,CardShwos, CardReleasedShwos}

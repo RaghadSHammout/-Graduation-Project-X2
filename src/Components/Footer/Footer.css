@@ -65,11 +65,11 @@
 .Subscription,
 .contecticonfooter {
   width: 241px;
+  
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-
 .links {
   text-decoration: none;
   color: var(--Gray);
@@ -92,7 +92,9 @@
   border: 1px solid var(--DarkGrayOne);
   background-color: var(--VeryDarkGray);
 }
-
+.contericon-zq:hover{
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.664) , 0 0 30px red;
+}
 .footerBar {
   display: flex;
   align-items: center;
@@ -114,7 +116,7 @@
 }
 .links:hover {
   color: var(--White);
-  text-shadow: 0 0 20px var(--White); 
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.664) , 0 0 30px red; 
 }
 @media (max-width: 1440px) {
   .conterfooter-zq {

@@ -66,6 +66,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 duration={card.duration}
                 star={card.star}
                 Date={card.Date}
+                sub1_width={card.sub1_width}
                 routePath={card.routePath} 
               />;
             case 'CardShwos':
