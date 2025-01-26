@@ -7,8 +7,8 @@
     height: max-content;
 }
 
-.explore-card-2 {
-    width: 23.69%;
+.top10in-div {
+    padding: 10px;
 }
 
 .explore-card-padding {
@@ -37,17 +37,16 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
+    width: 205.6px;
     padding: 1.5px 0 0 0;
     margin: 0;
     color: #fff;
 }
 
 .explore-card-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30px;
     width: 30px;
+    text-decoration: none;
 }
 
 .arrow {
@@ -59,18 +58,10 @@
     text-decoration: underline;
 }
 
-.btn-h-gap {
-    gap: 4px;
-}
-
 @media (max-width: 1440px) {
     .explore-card {
         border-radius: 10px;
         width: 18.75%;
-    }
-
-    .explore-card-2 {
-        width: 23.7291%;
     }
 
     .explore-card-padding {
@@ -81,6 +72,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
+        width: 167.8px;
         padding: 0;
         margin: 0;
         color: #fff;
@@ -94,10 +86,6 @@
     .arrow {
         width: 15px;
         height: 13.5px;
-    }
-
-    .btn-h-gap {
-        gap: 2px;
     }
 }
 
@@ -132,6 +120,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 21px;
+        width: 118.4px;
         color: #fff;
     }
 

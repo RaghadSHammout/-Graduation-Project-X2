@@ -1,28 +1,5 @@
-.to-not-button {
+.to-not-button{
     background-color: var(--Red);
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-}
-
-.to-not-button-text {
-    line-height: 12px;
-    font-weight: 600;
-    font-size: 16px;
     color: var(--White);
-}
-
-@media (max-width:1440px) {
-    .to-not-button {
-        padding: 8px;
-        border-radius: 4px;
-    }
-
-    .to-not-button-text {
-        line-height: 9px;
-        font-size: 12px;
-    }
+    
 }

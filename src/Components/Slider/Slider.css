@@ -29,7 +29,6 @@
 .slider-upper-div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .to-slider-upper-mb {
@@ -71,19 +70,11 @@
     rotate: 180deg;
 }
 
-.card-group,
-.to-card-group-2 {
+.card-group {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-}
-
-.card-group {
     height: 352px !important;
-}
-
-.to-card-group-2 {
-    height: 397.56px !important;
+    align-items: end;
 }
 
 .custom-indicators button {
@@ -186,10 +177,6 @@
     .card-group {
         height: 286px !important;
     }
-
-    .to-card-group-2 {
-        height: 310px !important;
-    }
 }
 
 @media (max-width: 991px) {
@@ -197,7 +184,6 @@
     .custom-arrows {
         display: none;
     }
-
     .custom-indicators-sml {
         display: flex;
     }
@@ -211,10 +197,6 @@
     }
 
     .card-group {
-        height: 100% !important;
-    }
-
-    .to-card-group-2 {
         height: 100% !important;
     }
 }
