@@ -142,16 +142,11 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <motion.div
-                            variants={fadeIn("left", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{ once: false, amount: 0.7 }}
-                            className={`${cardGroup}`}>
+                        <div className={`${cardGroup}`}>
                             {group.map((card, cardIndex) => (
                                 renderCard(card, cardIndex)
                             ))}
-                        </motion.div>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

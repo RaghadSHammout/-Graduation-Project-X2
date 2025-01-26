@@ -38,6 +38,9 @@
 .cards-container {
     width: 100%;
 }
+.cards-container > div {
+    width: 100% !important;
+}
 
 .containers-container {
     width: 100%;

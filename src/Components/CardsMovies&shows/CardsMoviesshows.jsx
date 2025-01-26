@@ -20,6 +20,7 @@ function CardsMoviesshows() {
             cardData={cardData}
             lgSize={5}
             title="Our Genres"
+            text=''
             cardGroup="card-group"
             upperMb="to-slider-upper-mb"
             cardType={"explore"}
@@ -31,6 +32,7 @@ function CardsMoviesshows() {
             cardData={cardData2}
             lgSize={4}
             title="New Released Shows"
+            text=''
             cardGroup="to-card-group-2"
             upperMb="to-slider-upper-mb"
             cardType={"exploreTop10"}
@@ -43,6 +45,7 @@ function CardsMoviesshows() {
             cardData={cardsDataTrending}
             lgSize={5}
             title="New Released Shows"
+            text=''
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb"
             cardType={"cardsDataTrending"}
@@ -54,6 +57,7 @@ function CardsMoviesshows() {
             cardData={cardsDataNewReleases}
             lgSize={5}
             title="New Released Shows"
+            text=''
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb"
             cardType={"cardsDataNewReleases"}
@@ -65,6 +69,7 @@ function CardsMoviesshows() {
             cardData={CardWatchMoviesData}
             lgSize={4}
             title="New Released Shows"
+            text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb"
             cardType={"CardWatchMoviesData"}
@@ -73,7 +78,7 @@ function CardsMoviesshows() {
       </div>
 
 
-      <div className="containers-container">
+      {/* <div className="containers-container">
         <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Shows" />
         <div className="cards-container">
           <CustomSlider
@@ -129,7 +134,7 @@ function CardsMoviesshows() {
             cardType={"CardWatchMoviesData2"}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
