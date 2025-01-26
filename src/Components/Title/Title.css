@@ -20,7 +20,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    color: var(--Gray); 
+    color: var(--Gray);
 }
 
 .ma-title.ma-size {
@@ -28,12 +28,18 @@
     line-height: 87px;
 }
 
+.to-title-div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .to-title {
     line-height: 57px;
     font-size: 38px;
     font-weight: 700;
     color: var(--White);
-    margin-bottom: 14px;
+    margin: 0;
 }
 
 .to-text {
@@ -41,6 +47,7 @@
     line-height: 27px;
     font-size: 18px;
     font-weight: 400;
+    margin: 0;
 }
 
 .ma-50 {
@@ -56,10 +63,13 @@
         font-size: 48px;
     }
 
+    .to-title-div {
+        gap: 10px;
+    }
+
     .to-title {
         line-height: 42px;
         font-size: 28px;
-        margin-bottom: 10px;
     }
 
     .to-text {
@@ -95,10 +105,13 @@
         line-height: 42px;
     }
 
+    .to-title-div {
+        gap: 8px;
+    }
+
     .to-title {
         line-height: 36px;
         font-size: 24px;
-        margin-bottom: 8px;
     }
 
     .to-text {
