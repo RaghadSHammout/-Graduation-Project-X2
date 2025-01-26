@@ -13,7 +13,8 @@ export default function Card({ img, title, desc }) {
       </div>
 
       <p className={"streaming-paragraph"}>{desc}</p>
-    </div>
-  )
-}
 
+
+    </div>
+  );
+}

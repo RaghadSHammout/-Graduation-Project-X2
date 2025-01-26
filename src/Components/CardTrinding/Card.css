@@ -1,180 +1,159 @@
-.card-zq {
-  width: 283.6px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 12px;
-  border: 1px solid var(--DarkGrayOne);
-  background-color: var(--VeryDarkGray);
-}
-
-.cardShow-zq {
-  width: 359.25px;
-}
-
-.imgcard-zq {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.conterCard-zq {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.durationcard-zq {
-  /* width: 107px;
-    height: 36px; */
-  gap: 2px;
-}
-
-.viewcard-zq {
-  /* width: 74px;
-    height: 36px; */
-  gap: 4px;
-}
-
-.durationcard-zq,
-.viewcard-zq,
-.releaseDatecard-zq {
-  background-color: var(--DarkGrayTwo);
-  color: var(--Gray);
-  display: flex;
-  justify-content: center;
-  padding: 6px 10px 6px 6px;
-  border: 1px solid var(--DarkGrayOne);
-  border-radius: 51px;
-}
-
-.releaseDatecard-zq {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--SilverGray);
-}
-
-.pa-zq {
-  margin: 0;
-  color: var(--Gray);
-}
-
-.viewcardShow_zq {
-  width: 113px;
-  height: 36px;
-}
-
-@media (max-width: 1440px) {
+  .card-zq,
   .cardShow-zq {
-    width: 284px !important;
-    padding: 16px;
-    gap: 16px;
-  }
-  .card-zq {
-    width: 224px;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .durationcard-zq {
-    /* width: 92px;
-        height: 28px; */
-    padding: 4px 8px 4px 4px;
-    gap: 2px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid var(--DarkGrayOne);
+    background-color: var(--VeryDarkGray);
   }
-  .durationcard-zq img {
-    width: 20px;
-    height: 20px;
-  }
-  .pa-zq {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-  }
-
-  .viewcard-zq {
-    /* width: 54px;
-        height: 28px; */
-    padding: 4px 8px 4px 4px;
-    gap: 4px;
-    display: flex;
-    align-items: center;
-  }
-  .releaseDatecard-zq {
-    font-family: Manrope;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .viewcardShow_zq img {
-    width: 20px;
-    height: 20px;
-  }
-  /* .viewcardShow_zq img{
-        width: 20px;
-        height: 20px;
-    }
-    .viewcardShow_zq p{
-        font-family: Manrope;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 18px;
-      
-    } */
-  .viewcardShow_zq {
-    /* width: 88px;
-        height: 28px; */
-    padding: 4px 8px 4px 4px;
-    gap: 4px;
-  }
-}
-@media (max-width: 992px) {
-  .cardShow-zq {
-    width: 284px !important;
-    padding: 16px;
-    gap: 16px;
-  }
-  .card-zq {
-    width: 181.6px;
-    padding: 12px;
-    gap: 12px;
-  }
-  .durationcard-zq {
-    padding: 4px 8px 4px 4px;
-    gap: 2px;
-    display: flex;
-    align-items: center;
-  }
-  .durationcard-zq img {
-    width: 16.25px;
-    height: 16.25px;
-    top: 1.88px;
-    left: 1.88px;
-  }
-  .pa-zq {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-  }
-
-  .viewcard-zq {
-    padding: 4px 8px 4px 4px;
-    gap: 4px;
-
-    display: flex;
-    align-items: center;
-  }
-  .releaseDatecard-zq {
-    padding: 6px 14px 6px 14px;
-    gap: 10px;
   
+  .card-zq {
+    width: 283.6px;
+    padding: 20px;
+    gap: 20px;
   }
-}
+  
+  .cardShow-zq {
+    width: 359.25px;
+  }
+  
+  .imgcard-zq {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .conterCard-zq {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .durationcard-zq,
+  .viewcard-zq,
+  .releaseDatecard-zq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: var(--DarkGrayTwo);
+    color: var(--Gray);
+    padding: 6px 10px 6px 6px;
+    border: 1px solid var(--DarkGrayOne);
+    border-radius: 51px;
+  }
+  
+  .durationcard-zq {
+    gap: 2px;
+  }
+  
+  .viewcard-zq {
+    gap: 4px;
+  }
+  
+  .releaseDatecard-zq {
+    width: 100%;
+    gap: 10px;
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+
+
+  }
+  
+  .releaseDatecard-zq span {
+    color: var(--SilverGray);
+  }
+  
+  .pa-zq {
+    margin: 0;
+    color: var(--Gray);
+  }
+
+  @media (max-width: 1440px) {
+    .cardShow-zq {
+      width: 284px !important;
+      padding: 16px;
+      gap: 16px;
+    }
+  
+    .card-zq {
+      width: 224px;
+      padding: 16px;
+      gap: 16px;
+    }
+  
+    .durationcard-zq,
+    .viewcard-zq,
+    .viewcardShow_zq {
+      height: 28px;
+      padding: 4px 8px 4px 4px;
+    }
+  
+    .durationcard-zq {
+      gap: 2px;
+   
+    }
+  
+    .durationcard-zq img,
+    .viewcard-zq img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .pa-zq {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  
+    .releaseDatecard-zq {
+      height: 30px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    .viewcardShow_zq img {
+      width: 16.25px;
+      height: 15px;
+      top: 2.5px;
+      left: 1.88px;
+      gap: 0px;
+      opacity: 0px;
+    }
+  }
+  @media (max-width: 992px) {
+    .cardShow-zq {
+      width: 284px !important;
+      padding: 16px;
+      gap: 16px;
+    }
+ 
+    .card-zq {
+      width: 181.6px;
+      padding: 12px;
+      gap: 12px;
+    }
+  
+    .durationcard-zq img,
+    .viewcard-zq img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .viewcard-zq {
+      padding: 4px 8px 4px 4px;
+      gap: 4px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .releaseDatecard-zq {
+      height: 30px;
+      padding: 6px 14px 6px 14px;
+      gap: 10px;
+    }
+
+  }
+  

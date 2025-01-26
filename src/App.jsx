@@ -6,7 +6,8 @@ import Support from "./Pages/Support/Support";
 
 import Footer from "./Components/Footer/Footer.jsx";
 import Navbar from "./Components/Navbar/Navbar";
-import MoviesPageOpen from "./Components/CardWatchMovies/CardWatchMovies.jsx"
+import MoviesPageOpenR from "./Pages/MoviesPageOpenR/MoviesPageOpenR.jsx";
+import ShowsPageOpenR from "./Pages/ShowsPageOpenR/ShowsPageOpenR.jsx";
 
 
 export default function App() {
@@ -14,10 +15,10 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/-Graduation-Project-X2/" element={<Home />} />
-        <Route path="/MoviesAndShows" element={<MoviesAndShows />}>
-          <Route path="MoviesPageOpen/movie/${id}" element={<MoviesPageOpen/>} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/MoviesAndShows" element={<MoviesAndShows />}/>
+        <Route path="/MoviesPageOpenR/movie/:id" element={<MoviesPageOpenR/>} />
+        <Route path="/ShowsPageOpenR/show/:id" element={<ShowsPageOpenR/>} />        
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/Support" element={<Support />} />
       </Routes>

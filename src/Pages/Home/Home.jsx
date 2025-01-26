@@ -9,6 +9,7 @@ export default function Home() {
       <Hero />
       <Explore />
       <StreamingDevices />
+
       <Frequently /> 
       <Plans />
     </>

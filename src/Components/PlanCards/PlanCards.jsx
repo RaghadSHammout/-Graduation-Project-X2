@@ -1,7 +1,6 @@
 import React from "react";
 import "./PlanCards.css";
 import Button from "../Button/Button";
-
 export default function PlanCards({ subTitle, description, price, duration }) {
   return (
     <div className="LQ-plan-card d-flex flex-column justify-content-between align-items-strech">
