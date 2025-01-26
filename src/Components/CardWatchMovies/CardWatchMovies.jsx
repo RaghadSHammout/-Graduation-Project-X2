@@ -3,9 +3,6 @@ import "./CardWatchMovies.css";
 import clock from "../../assets/photos/Movies & shows page images/clock.png";
 import { Link, Outlet } from "react-router-dom";
 
-
-
-
 function CardWatchMovies({
   id,
   image,
@@ -13,12 +10,13 @@ function CardWatchMovies({
   star,
   sub1_width,
   sub2_width,
- Date
+ Date,
+ routePath
 }) {
   return (
   
    <div>
-      <Link to={`/MoviesAndShows/MoviesPageOpen/movie/${id}`} className="card">
+      <Link to={`${routePath}${id}`} className="card">
       <img className="cardImage" src={image} alt="Card Image" />
       <div className="ha-container">
         <div className={`sub-container1 ${sub1_width}`}>

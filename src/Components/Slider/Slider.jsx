@@ -7,6 +7,10 @@ import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
 import Title from '../Title/Title';
 import arrow from '../../assets/photos/Vector 619.png';
+//import framer-motion library
+import { motion } from 'framer-motion'
+//import Animation.js
+import { fadeIn } from '../../Animation'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
@@ -45,17 +49,20 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     duration={card.duration}
                     star={card.star}
                     Date={card.Date}
+                    routePath={card.routePath}
                 />;
             case 'cardsDataNewReleases':
-                return <Card key={index} image={card.image} releaseDate={card.releaseDate} />;
+                return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
             case 'cardsDataTrending':
                 return <Card
-                    key={index}
+                    key={card.id}
+                    id={card.id}
                     image={card.image}
                     views={card.views}
                     duration={card.duration}
                     iconViews={card.iconViews}
                     iconDuration={card.iconDuration}
+                    routePath={card.routePath}
                 />;
             case 'CardWatchMoviesData2':
                 return <CardWatchMovies
@@ -65,19 +72,20 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     duration={card.duration}
                     star={card.star}
                     Date={card.Date}
+                    routePath={card.routePath}
                 />;
             case 'CardShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq}
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
-                    iconViews={card.iconViews} views={card.views} />;
+                    iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'ReleasedShwos':
-                return <Card key={index} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} />;
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link}/>;
+                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'exploreTop10':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} isTop10={true} cardWidth={cardWidth}/>;
+                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} isTop10={true} cardWidth={cardWidth} />;
             default:
                 return null;
         }
@@ -91,9 +99,14 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     };
 
     return (
-        <div className="w-100">
-            <div className={`slider-upper-div ${upperMb}`}>
-                <Title title={title} text={text} size="to-title" matext="to-text" maMargin="to-title-div" isThereText={isThereText} />
+        <div>
+            <motion.div
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className={`slider-upper-div ${upperMb}`}>
+                <Title title={title} text={text} size="to-title" matext="to-text" />
                 <div className="custom-arrows">
                     <button className={`prev-arrow ${uniqueId.current}-prev`}>
                         <div className="slider-arrow-div">
@@ -115,7 +128,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                         </div>
                     </button>
                 </div>
-            </div>
+            </motion.div>
             <Swiper
                 modules={[Navigation]}
                 navigation={{
@@ -129,9 +142,16 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             >
                 {groupedCards.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>
-                        <div className={`${cardGroup}`}>
-                            {group.map((card, cardIndex) => renderCard(card, cardIndex))}
-                        </div>
+                        <motion.div
+                            variants={fadeIn("left", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.7 }}
+                            className={`${cardGroup}`}>
+                            {group.map((card, cardIndex) => (
+                                renderCard(card, cardIndex)
+                            ))}
+                        </motion.div>
                     </SwiperSlide>
                 ))}
             </Swiper>

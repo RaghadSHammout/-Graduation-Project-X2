@@ -8,8 +8,9 @@ import cardData from '../Data/toCardData';
 import cardData2 from '../Data/toPopularData';
 import NotButton from '../notButton/notButton';
 
+import { useParams } from "react-router-dom";
 function CardsMoviesshows() {
-
+  const { id } = useParams();
   return (
     <section className='cards-container-zq home-padding' >
       <div className="containers-container">

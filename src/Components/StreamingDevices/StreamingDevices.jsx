@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import "./StreamingDevices.css";
+//import framer-motion library
+import { motion } from 'framer-motion'
+//import Animation.js
+import { fadeIn } from '../../Animation'
 import Title from '../Title/Title';
 import { SkileData } from '../../Components/Data/SkilsData'
 import StrimingCard from "../StrimingCard/StrimingCard"
@@ -28,26 +32,32 @@ export default function StreamingDevices() {
 
   return (
     <section className={"home-padding "}>
-      <div className='MAContanair '>
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}>
+        <div className='MAContanair '>
 
-        <Title
-          maMargin={'maMargin'}
-          size={'mo-size'}
-          matext={'mo-text'}
-          title={"We Provide you streaming experience across various devices."}
-          text={displayText}
-        />
-      </div>
-
-      <div className='MAA_card'>
-        <div className='MAA'>
-          {SkileData.map((e, index) => {
-            return (
-              <StrimingCard key={index} title={e.title} img={e.img} desc={e.desc} />
-            )
-          })}
+          <Title
+            maMargin={'maMargin'}
+            size={'mo-size'}
+            matext={'mo-text'}
+            title={"We Provide you streaming experience across various devices."}
+            text={displayText}
+          />
         </div>
-      </div>
+
+        <div className='MAA_card'>
+          <div className='MAA'>
+            {SkileData.map((e, index) => {
+              return (
+                <StrimingCard key={index} title={e.title} img={e.img} desc={e.desc} />
+              )
+            })}
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
