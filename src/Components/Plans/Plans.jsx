@@ -3,13 +3,22 @@ import "./Plans.css";
 import PlanCards from "../PlanCards/PlanCards";
 import { cardData } from "../Data/CardData";
 import Title from "../Title/Title";
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 
-export default function Plans() {
+export default function Plans({addPlans}) {
   const [activeTab, setActiveTab] = useState("Monthly");
 
   return (
-    <section className=" plans Desktop-padding-left-right w-100">
-      <div className="LQ-Title-Tab d-flex justify-content-between align-items-end ">
+    <section className={` Desktop-padding-left-right w-100 ${ addPlans? 'plans' : 'new-plans'}`}>
+      <motion.div
+         variants={fadeIn("up" , 0.2)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{once:false , amount:0.7}}
+       className="LQ-Title-Tab d-flex justify-content-between align-items-end ">
         <div className="Lq-component-container">
           <Title
             size={"ma-title"}
@@ -36,7 +45,7 @@ export default function Plans() {
           </button>
         </div>
 
-      </div>
+      </motion.div>
 
       <div className="lq-father-card  d-flex justify-content-between align-items-strech">
         {cardData[activeTab].map((PlanCard, index) => (

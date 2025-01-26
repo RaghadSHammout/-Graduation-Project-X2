@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Explore />
-      <Cards />
+       <Explore /> 
+       <Cards />
       <Frequently /> 
-      <Plans />
+      <Plans 
+      addPlans= {true}
+      />
     </>
   );
 }

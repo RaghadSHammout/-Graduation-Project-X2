@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 .season.hd-active .season-header {
-  width: 882px;
+  /* width: 882px; */
   border: none;
   border-bottom: 1px;
   border-radius: 0px;
@@ -70,9 +70,9 @@
   background-color: var(--DarkGrayTwo);
 }
 
-.season-episodes {
+/* .season-episodes {
   width: 882px;
-}
+} */
 .episode {
   padding: 40px 0px;
   gap: 20px;
@@ -165,9 +165,9 @@
     padding: 40px;
     gap: 24px;
   }
-  .season.hd-active .season-header {
+  /* .season.hd-active .season-header {
     width: 710px;
-  }
+  } */
   .hd-title {
     width: 188px;
     gap: 8px;
@@ -207,9 +207,9 @@
     width: 20px;
     height: 20px;
   }
-  .season-episodes {
+  /* .season-episodes {
     width: 710px;
-  }
+  } */
   .episode {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -262,13 +262,13 @@
     padding: 16px 20px;
   }
   .season.hd-active {
-    width: 310px;
+    width: 100%;
     padding: 16px 20px;
     gap: 20px;
   }
-  .season.hd-active .season-header {
+  /* .season.hd-active .season-header {
     width: 270px;
-  }
+  } */
   .hd-title {
     width: 156px;
     gap: 6px;
@@ -300,7 +300,7 @@
     width: 71px;
   }
   .season-episodes {
-    width: 270px;
+    /* width: 270px; */
     display: flex;
     flex-direction: column;
     gap: 20px;

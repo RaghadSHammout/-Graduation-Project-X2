@@ -31,7 +31,7 @@ const CastCarousel = (props) => {
   const groupedImages = groupImages(slicedImages, itemsPerGroup).slice(0, 4);
 
   return (
-    <div className = {props.lunaPad? 'LQ-cast': 'LQ-show'}>
+    <div className = {props.lunaPad? '': 'LQ-show'}>
       <div className="LQ-casting">
         <div className="lq-sub-title-icon">
           <span className="lq-mini-title">Cast</span>

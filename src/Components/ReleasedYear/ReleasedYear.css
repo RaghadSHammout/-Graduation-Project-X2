@@ -66,6 +66,7 @@
 .ma-right-div .ma-three-div .ma-three-one-div{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .ma-right-div .ma-three-div  .ma-thrree-two-div{
@@ -116,7 +117,7 @@ color: var(--White);
 }
 @media (max-width:1440px) {
     .ma-right-div{
-        width: 416px;
+        width: 100%;
         padding:40px ;
         border-radius: 10px;
     }
@@ -205,7 +206,6 @@ color: var(--White);
 }
 @media (max-width:576px) {
     .ma-right-div{
-        width: 358px;
         padding:24px ;
     }
     .ma-margin{
