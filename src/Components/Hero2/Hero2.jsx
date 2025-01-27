@@ -7,7 +7,7 @@ export default function Hero2() {
   return (
     <>
       <div className="zk-container zk-hero">
-        <Carousel className="zk-carousel">
+        <Carousel className="zk-carousel" >
           {Hero2SlideData.map((e,index) => {
             return (
               <Carousel.Item className="slide">
