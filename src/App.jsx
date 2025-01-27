@@ -16,7 +16,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/MoviesAndShows" element={<MoviesAndShows />}/>
+        <Route path="/MoviesAndShows" element={<MoviesAndShows/>}/>
         <Route path="/MoviesPageOpenR/movie/:id" element={<MoviesPageOpenR/>} />
         <Route path="/ShowsPageOpenR/show/:id" element={<ShowsPageOpenR/>} />        
         <Route path="/Subscription" element={<Subscription />} />
