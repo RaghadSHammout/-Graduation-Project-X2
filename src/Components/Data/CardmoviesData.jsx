@@ -207,7 +207,7 @@ export const CardWatchMoviesData = [
       duration: "8h 20min",
       iconViews: iconunio,
       views: "4 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
     },
     {  id:20,
       cardShow_zq: "cardShow-zq",
@@ -217,7 +217,7 @@ export const CardWatchMoviesData = [
       duration: "12h 32min",
       iconViews: iconunio,
       views: "5 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
     },
     {  id:21,
       cardShow_zq: "cardShow-zq",
@@ -227,7 +227,7 @@ export const CardWatchMoviesData = [
       duration: "14h 30min",
       iconViews: iconunio,
       views: "3 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
     },
     {  id:22,
       cardShow_zq: "cardShow-zq",
@@ -237,7 +237,7 @@ export const CardWatchMoviesData = [
       duration: "7h 40min",
       iconViews: iconunio,
       views: "2 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
     },
   ];
   export const CardReleasedShwos = [
@@ -250,7 +250,7 @@ export const CardWatchMoviesData = [
       duration: "12h 23min",
       iconViews: iconunio,
       views: "5 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
 
     },
     {  id:24,
@@ -261,7 +261,7 @@ export const CardWatchMoviesData = [
       duration: "7h 40min",
       iconViews: iconunio,
       views: "2 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
 
     },
     {  id:25,
@@ -272,7 +272,7 @@ export const CardWatchMoviesData = [
       duration: "8h 20min",
       iconViews: iconunio,
       views: "4 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
         
 
     },
@@ -284,7 +284,7 @@ export const CardWatchMoviesData = [
       duration: "10h 30min",
       iconViews: iconunio,
       views: "3 Season",
-      routePath:"/ShowsPageOpenR/movie/"
+      routePath:"/ShowsPageOpenR/show/"
       
 
     },

@@ -8,11 +8,11 @@ import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
 
-export default function Plans() {
+export default function Plans({addPlans}) {
   const [activeTab, setActiveTab] = useState("Monthly");
 
   return (
-    <section className=" plans Desktop-padding-left-right w-100">
+    <section className={` Desktop-padding-left-right w-100 ${ addPlans? 'plans' : 'new-plans'}`}>
       <motion.div
          variants={fadeIn("up" , 0.2)}
          initial="hidden"

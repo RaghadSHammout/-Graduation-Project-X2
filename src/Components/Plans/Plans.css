@@ -2,6 +2,10 @@
     padding-top: 150px;
     padding-bottom:123px ;
 } 
+.new-plans{
+    padding-top: 220px;
+    padding-bottom:150px ;
+}
 .Lq-component-container{
     width:78.89%;
 } 
@@ -41,6 +45,10 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .new-plans{
+        padding-top: 198px;
+        padding-bottom:120px ;
+    }
     .Lq-component-container{
         width: 76.5%;
     }
@@ -61,6 +69,10 @@
     .plans{
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .new-plans{
+        padding-top: 142px;
+        padding-bottom:80px ;
     }
     .lq-father-card{
         flex-direction: column;

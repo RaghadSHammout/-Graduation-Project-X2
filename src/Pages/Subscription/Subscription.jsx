@@ -6,7 +6,8 @@ import ComparePlansTable from '../../Components/ComparePlansTable/ComparePlansTa
 export default function Subscription() {
   return (
     <>
-      <Plans />
+      <Plans
+      addPlans= {false} />
       <ComparePlansTable />
     </>
   );
