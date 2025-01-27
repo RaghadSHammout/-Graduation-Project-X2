@@ -1,5 +1,5 @@
 .seasons {
-  width: 1062px;
+  width: 100%;
   padding: 40px;
   border-radius: 12px;
   background-color: var(--VeryDarkGray);
@@ -20,7 +20,7 @@
 
 @media (max-width: 1440px) {
   .seasons {
-    width: 850px;
+   
     padding: 30px;
   }
   .title {
@@ -35,7 +35,7 @@
 
 @media (max-width: 576px) {
   .seasons {
-    width: 358px;
+   width: 100%;
     padding: 24px;
     border-radius: 10px;
     border: 1px solid var(--DarkGrayOne);
@@ -46,7 +46,7 @@
     line-height: 27px;
     margin-bottom: 20px;
   }
-  .seasons-list {
-    width: 310px;
+  .seasons-list , .season-header {
+    width: 100%;
   }
 }

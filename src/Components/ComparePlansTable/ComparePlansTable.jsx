@@ -1,12 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Title from '../Title/Title'
 import './ComparePlansTable.css'
 import { TableData } from '../Data/TableData'
 import { TableDataOnMobile } from '../Data/TableDataOnMobile'
+import { useLocation } from 'react-router-dom';
 export default function ComparePlansTable() {
   const [ActiveTab , setActiveTab]= useState("Standard")
+  const location = useLocation(); 
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
+
+    return () => {
+      window.removeEventListener('hashchange', handleScrollToHash);
+    };
+  }, [location]);
   return (
-    <section className="subscription-padding w-100">
+    <section className="subscription-padding w-100" id='features'>
       <div className="Lq-title-container">
         <Title
           maMargin={"ma-80"}

@@ -10,6 +10,7 @@ import linkedinicon from "../../assets/photos/linkedinicon.png";
 import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -55,18 +56,18 @@ function Footer() {
              viewport={{once:false , amount:0.7}}
            className="Home">
             <h5 className="heading-zq">Home</h5>
-            <a href="/" className="links">
-              Categories
-            </a>
-            <a href="/" className="links">
-              Devices
-            </a>
-            <a href="/" className="links">
-              Pricing
-            </a>
-            <a href="/" className="links">
-              FAQ
-            </a>
+            <Link to="/#Categories" className="links">
+            Categories
+          </Link>
+          <Link to="/#Devices" className="links">
+            Devices
+          </Link>
+          <Link to="/#Pricing" className="links">
+            Pricing
+          </Link>
+          <Link to="/#FAQ" className="links">
+            FAQ
+          </Link>
           </motion.div>
           <motion.div
              variants={fadeIn("up" , 0.2)}
@@ -75,18 +76,18 @@ function Footer() {
              viewport={{once:false , amount:0.8}}
            className="Movies">
             <h5 className="heading-zq">Movies</h5>
-            <a href="/" className="links">
-              Gernes
-            </a>
-            <a href="/" className="links">
-              Trending
-            </a>
-            <a href="/" className="links">
-              New Release
-            </a>
-            <a href="/" className="links">
-              Popular
-            </a>
+            <Link to="/MoviesAndShows#genres" className="links">
+            Genres
+          </Link>
+          <Link to="/MoviesAndShows#trending" className="links">
+            Trending
+          </Link>
+          <Link to="/MoviesAndShows#new-release" className="links">
+            New Release
+          </Link>
+          <Link to="/MoviesAndShows#popular" className="links">
+            Popular
+          </Link>
           </motion.div>
           <motion.div 
            variants={fadeIn("up" , 0.2)}
@@ -95,18 +96,18 @@ function Footer() {
            viewport={{once:false , amount:0.65}}
           className="Shows">
             <h5 className="heading-zq">Shows</h5>
-            <a href="/" className="links">
-              Gernes
-            </a>
-            <a href="/" className="links">
+            <Link to="/MoviesAndShows#genres-Shows" className="links">
+              Genres
+            </Link>
+            <Link to="/MoviesAndShows#trending-Shows" className="links">
               Trending
-            </a>
-            <a href="/" className="links">
+            </Link>
+            <Link to="/MoviesAndShows#new-release-Shows" className="links">
               New Release
-            </a>
-            <a href="/" className="links">
+            </Link>
+            <Link to="/MoviesAndShows#popular-Shows" className="links">
               Popular
-            </a>
+            </Link>
           </motion.div>
           <motion.div 
            variants={fadeIn("up" , 0.2)}
@@ -115,9 +116,9 @@ function Footer() {
            viewport={{once:false , amount:0.7}}
           className="Support">
             <h5 className="heading-zq">Support</h5>
-            <a href="/" className="links">
-              Contact Us
-            </a>
+            <Link to="/Support#Contact-Us" className="links">
+            Contact Us
+            </Link>
           </motion.div>
           <motion.div 
            variants={fadeIn("up" , 0.2)}
@@ -126,12 +127,12 @@ function Footer() {
            viewport={{once:false , amount:0.68}}
           className="Subscription">
             <h5 className="heading-zq"> Subscription</h5>
-            <a href="/" className="links">
-              Plans
-            </a>
-            <a href="/" className="links">
-              Features
-            </a>
+            <Link to="/Subscription#Pricing" className="links">
+            Plans
+          </Link>
+          <Link to="/Subscription#features" className="links">
+            Features
+          </Link>
           </motion.div>
           <motion.div 
            variants={fadeIn("up" , 0.2)}
