@@ -1,14 +1,18 @@
 import React from 'react'
-import "./notButton.css"
+import "./NotButton.css"
 
-function notButton({ div, divText, text }) {
+function NotButton({ div, divText, text }) {
   return (
     <div className={`to-not-button  ${div}`}>
-      <p className={`to-not-button-text  ${divText}`}>
+      <span className={`to-not-button-text  ${divText}`}>
         {text}
-      </p>
+      </span>
     </div>
   )
 }
-
-export default notButton
+NotButton.defaultProps = {
+  div: "to-not-button",
+  divText : "to-not-button-text",
+  text: "Top 10 In"
+};
+export default NotButton

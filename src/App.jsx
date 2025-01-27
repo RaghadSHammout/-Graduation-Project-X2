@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/MoviesAndShows" element={<MoviesAndShows />}/>
         <Route path="/MoviesPageOpenR/movie/:id" element={<MoviesPageOpenR/>} />
-        <Route path="/ShowsPageOpenR/movie/:id" element={<ShowsPageOpenR/>} />        
+        <Route path="/ShowsPageOpenR/show/:id" element={<ShowsPageOpenR/>} />        
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/Support" element={<Support />} />
       </Routes>
