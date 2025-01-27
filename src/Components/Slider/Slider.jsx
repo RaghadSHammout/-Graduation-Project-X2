@@ -66,14 +66,16 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 />;
             case 'CardWatchMoviesData2':
                 return <CardWatchMovies
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    duration={card.duration}
-                    star={card.star}
-                    Date={card.Date}
-                    routePath={card.routePath}
-                />;
+                key={card.id}
+                id={card.id}
+                image={card.image}
+                duration={card.duration}
+                star={card.star}
+                Date={card.Date}
+                sub1_width={card.sub1_width}
+                routePath={card.routePath} 
+              />;
+
             case 'CardShwos':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}

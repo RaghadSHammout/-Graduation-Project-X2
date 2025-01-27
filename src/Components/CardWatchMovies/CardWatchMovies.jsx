@@ -9,34 +9,33 @@ function CardWatchMovies({
   duration,
   star,
   sub1_width,
-  sub2_width,
- Date,
- routePath
+  Date,
+  routePath
 }) {
   return (
-  
-   <div>
+
+    <div>
       <Link to={`${routePath}${id}`} className="card">
-      <img className="cardImage" src={image} alt="Card Image" />
-      <div className="ha-container">
-        <div className={`sub-container1 ${sub1_width}`}>
-          <i className="icon-clock">
-            <img className="clock" src={clock} alt="Card Image" />
-          </i>
-          <p className="text">{duration}</p>
+        <img className="cardImage" src={image} alt="Card Image" />
+        <div className="ha-container">
+          <div className={`sub-container1 ${sub1_width}`}>
+            <i className="icon-clock">
+              <img className="clock" src={clock} alt="Card Image" />
+            </i>
+            <p className="text">{duration}</p>
+          </div>
+          <div className="sub-container2">
+            <i className="icon-star">
+              <img src={star} alt="Card Image" />
+            </i>
+            <p className="text2">{Date}</p>
+          </div>
         </div>
-        <div className={`sub-container2 ${sub2_width ? "sub2-width" : ""}`}>
-          <i className="icon-star">
-            <img className="icon-star-zq" src={star} alt="Card Image" />
-          </i>
-          <p className="text2">{Date}</p>
-        </div>
-      </div>
-    </Link>
-   </div>
-   
+      </Link>
+    </div>
+
   );
 }
-<Outlet/>
+<Outlet />
 export default CardWatchMovies;
 
