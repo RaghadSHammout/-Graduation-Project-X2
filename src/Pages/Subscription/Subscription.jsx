@@ -9,7 +9,6 @@ export default function Subscription() {
       <Plans
       addPlans= {false} />
       <ComparePlansTable />
-      {/* <CastCarousel CastImages={ShowActorsImages} lunaPad={true} /> */}
     </>
   );
 }

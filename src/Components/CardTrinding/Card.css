@@ -6,28 +6,23 @@
     border: 1px solid var(--DarkGrayOne);
     background-color: var(--VeryDarkGray);
   }
-  
   .card-zq {
     width: 283.6px;
     padding: 20px;
     gap: 20px;
   }
-  
   .cardShow-zq {
     width: 359.25px;
   }
-  
   .imgcard-zq {
     width: 100%;
     border-radius: 12px;
   }
-  
   .conterCard-zq {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  
   .durationcard-zq,
   .viewcard-zq,
   .releaseDatecard-zq {
@@ -41,73 +36,62 @@
     border: 1px solid var(--DarkGrayOne);
     border-radius: 51px;
   }
-  
   .durationcard-zq {
     gap: 2px;
   }
-  
   .viewcard-zq {
     gap: 4px;
   }
-  
   .releaseDatecard-zq {
     width: 100%;
     gap: 10px;
     font-family: Manrope;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: center;
-
-
   }
-  
   .releaseDatecard-zq span {
     color: var(--SilverGray);
   }
-  
   .pa-zq {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
     margin: 0;
     color: var(--Gray);
   }
-
   @media (max-width: 1440px) {
     .cardShow-zq {
       width: 284px !important;
       padding: 16px;
       gap: 16px;
     }
-  
+    .cardShow-zq img {
+      width: 252.75px;
+      height: 328px;
+    }
     .card-zq {
       width: 224px;
       padding: 16px;
       gap: 16px;
     }
-  
     .durationcard-zq,
     .viewcard-zq,
     .viewcardShow_zq {
       height: 28px;
       padding: 4px 8px 4px 4px;
     }
-  
     .durationcard-zq {
       gap: 2px;
-   
     }
-  
     .durationcard-zq img,
     .viewcard-zq img {
       width: 20px;
       height: 20px;
     }
-  
     .pa-zq {
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
     }
-  
     .releaseDatecard-zq {
       height: 30px;
       font-size: 12px;
@@ -129,31 +113,28 @@ text-align: center;
       padding: 16px;
       gap: 16px;
     }
- 
     .card-zq {
       width: 181.6px;
       padding: 12px;
       gap: 12px;
     }
-  
     .durationcard-zq img,
     .viewcard-zq img {
       width: 20px;
       height: 20px;
     }
-  
     .viewcard-zq {
       padding: 4px 8px 4px 4px;
       gap: 4px;
       display: flex;
       align-items: center;
     }
-  
     .releaseDatecard-zq {
       height: 30px;
       padding: 6px 14px 6px 14px;
       gap: 10px;
     }
-
+    .releaseDatecard-zq p {
+      font-size: 10px;
+    }
   }
-  
