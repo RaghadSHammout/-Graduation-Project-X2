@@ -9,7 +9,7 @@ import voice from '../../assets/photos/voice.png';
 import like from '../../assets/photos/like.png';
 import "../../Components/Hero2/Hero2.css";
 export default function SlideComponent(
-    { imgHero,imgHeight,title,textTitle,size,maMargin,matext, pad,text,img,show,caption, }) {
+    { imgHero, imgHeight, title, textTitle, size, maMargin, matext, pad, text, img, show, caption,}) {
     return (
         <>   <div className='zk-layer'></div>
             <img src={imgHero} className={`${imgHeight}`}/>

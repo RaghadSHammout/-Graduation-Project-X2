@@ -373,7 +373,7 @@ export const CardWatchMoviesData2 = [
 ];
 =======
     {
-      routePath:"/MoviesPageOpenR/movie/",
+      
       id: 1,
       image: img1,
       sub1_width: "",
@@ -381,14 +381,14 @@ export const CardWatchMoviesData2 = [
       sub2_width: "",
       star: star4_5,
       Date: "20K",
-       
+      routePath:"/MoviesPageOpenR/movie/",
     },
     {
       id: 2,
       image: img2,
       sub1_width: "",
       duration: "1h 30min",
-   
+      
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -399,7 +399,7 @@ export const CardWatchMoviesData2 = [
       image: img3,
       sub1_width: "",
       duration: "1h 42min",
-
+     
       star: star4_5,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -410,53 +410,534 @@ export const CardWatchMoviesData2 = [
       image: img4,
       sub1_width: "",
       duration: "2h 10min",
-  
+      
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
 
     },
+  {
+    id: 1,
+    image: img1,
+    sub1_width: "",
+    duration: "1h 57min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 2,
+    image: img2,
+    sub1_width: "sub-w-100 ",
+    duration: "1h 30min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
 
-  ];
+  },
+  {
+    id: 3,
+    image: img3,
+    sub1_width: "sub-w-108 ",
+    duration: "1h 42min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 4,
+    image: img4,
+    sub1_width: "sub-w-109 ",
+    duration: "2h 10min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 1,
+    image: img1,
+    sub1_width: "",
+    duration: "1h 57min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 2,
+    image: img2,
+    sub1_width: "sub-w-100 ",
+    duration: "1h 30min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 3,
+    image: img3,
+    sub1_width: "sub-w-108 ",
+    duration: "1h 42min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 4,
+    image: img4,
+    sub1_width: "sub-w-109 ",
+    duration: "2h 10min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 1,
+    image: img1,
+    sub1_width: "",
+    duration: "1h 57min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 2,
+    image: img2,
+    sub1_width: "sub-w-100 ",
+    duration: "1h 30min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 3,
+    image: img3,
+    sub1_width: "sub-w-108 ",
+    duration: "1h 42min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 4,
+    image: img4,
+    sub1_width: "sub-w-109 ",
+    duration: "2h 10min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 1,
+    image: img1,
+    sub1_width: "",
+    duration: "1h 57min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 2,
+    image: img2,
+    sub1_width: "sub-w-100 ",
+    duration: "1h 30min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 3,
+    image: img3,
+    sub1_width: "sub-w-108 ",
+    duration: "1h 42min",
+    sub2_width: "",
+    star: star4_5,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 4,
+    image: img4,
+    sub1_width: "sub-w-109 ",
+    duration: "2h 10min",
+    sub2_width: "sub2-width",
+    star: star4,
+    Date: "20K",
+    routePath: "/MoviesPageOpenR/movie/"
+  }
+
+];
+
+
+export const CardWatchMoviesData2 = [
+  {
+    id: 5,
+    image: img1_2,
+    sub1_width: "sub-container2-2",
+    duration: "7h 40min",
+    star: star4_5,
+    Date: "12k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 6,
+    image: img2_2,
+    sub1_width: "sub-container2-2",
+    duration: "12h 32min",
+    
+    star: star5,
+    Date: "28k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 7,
+    image: img3_2,
+    sub1_width: "sub-container2-2",
+    duration: "10h 30min",
+   
+    star: star4,
+    Date: "2k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 8,
+    image: img4_2,
+    sub1_width: "sub-container2-2",
+    duration: "8h 20min",
+    
+    star: star4_5,
+    Date: "32k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 5,
+    image: img1_2,
+    sub1_width: "sub-container2-2",
+    duration: "7h 40min",
+    
+    star: star4_5,
+    Date: "12k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 6,
+    image: img2_2,
+    sub1_width: "sub-container2-2",
+    duration: "12h 32min",
+    
+    star: star5,
+    Date: "28k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 7,
+    image: img3_2,
+    sub1_width: "sub-container2-2",
+    duration: "10h 30min",
+    
+    star: star4,
+    Date: "2k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 8,
+    image: img4_2,
+    sub1_width: "sub-container2-2",
+    duration: "8h 20min",
+    star: star4_5,
+    Date: "32k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 5,
+    image: img1_2,
+    sub1_width: "sub-container2-2",
+    duration: "7h 40min",
+   
+    star: star4_5,
+    Date: "12k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 6,
+    image: img2_2,
+    sub1_width: "sub-container2-2",
+    duration: "12h 32min",
+   
+    star: star5,
+    Date: "28k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 7,
+    image: img3_2,
+    sub1_width: "sub-container2-2",
+    duration: "10h 30min",
+    
+    star: star4,
+    Date: "2k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 8,
+    image: img4_2,
+    sub1_width: "sub-container2-2",
+    duration: "8h 20min",
+    
+    star: star4_5,
+    Date: "32k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 5,
+    image: img1_2,
+    sub1_width: "sub-container2-2",
+    duration: "7h 40min",
+   
+    star: star4_5,
+    Date: "12k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 6,
+    image: img2_2,
+    sub1_width: "sub-container2-2",
+    duration: "12h 32min",
+    
+    star: star5,
+    Date: "28k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 7,
+    image: img3_2,
+    sub1_width: "sub-container2-2",
+    duration: "10h 30min",
+    
+    star: star4,
+    Date: "2k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 8,
+    image: img4_2,
+    sub1_width: "sub-container2-2",
+    duration: "8h 20min",
+   
+    star: star4_5,
+    Date: "32k",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+
+];
+
+export const cardsDataTrending = [
+  {
+    id: 9,
+    image: imagcard1,
+    iconDuration: iconduration,
+    duration: "1h 30min",
+    iconViews: iconviews,
+    views: "2K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 10,
+    image: imagcard2,
+    iconDuration: iconduration,
+    duration: "1h 57min",
+    iconViews: iconviews,
+    views: "1.5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 11,
+    image: imagcard3,
+    iconDuration: iconduration,
+    duration: "2h 10min",
+    iconViews: iconviews,
+    views: "1.8K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 12,
+    image: imagcard4,
+    iconDuration: iconduration,
+    duration: "2h 20min",
+    iconViews: iconviews,
+    views: "3K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 13,
+    image: imagcard5,
+    iconDuration: iconduration,
+    duration: "1h 42min",
+    iconViews: iconviews,
+    views: "5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 9,
+    image: imagcard1,
+    iconDuration: iconduration,
+    duration: "1h 30min",
+    iconViews: iconviews,
+    views: "2K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 10,
+    image: imagcard2,
+    iconDuration: iconduration,
+    duration: "1h 57min",
+    iconViews: iconviews,
+    views: "1.5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 11,
+    image: imagcard3,
+    iconDuration: iconduration,
+    duration: "2h 10min",
+    iconViews: iconviews,
+    views: "1.8K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 12,
+    image: imagcard4,
+    iconDuration: iconduration,
+    duration: "2h 20min",
+    iconViews: iconviews,
+    views: "3K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 13,
+    image: imagcard5,
+    iconDuration: iconduration,
+    duration: "1h 42min",
+    iconViews: iconviews,
+    views: "5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 9,
+    image: imagcard1,
+    iconDuration: iconduration,
+    duration: "1h 30min",
+    iconViews: iconviews,
+    views: "2K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 10,
+    image: imagcard2,
+    iconDuration: iconduration,
+    duration: "1h 57min",
+    iconViews: iconviews,
+    views: "1.5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 11,
+    image: imagcard3,
+    iconDuration: iconduration,
+    duration: "2h 10min",
+    iconViews: iconviews,
+    views: "1.8K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 12,
+    image: imagcard4,
+    iconDuration: iconduration,
+    duration: "2h 20min",
+    iconViews: iconviews,
+    views: "3K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 13,
+    image: imagcard5,
+    iconDuration: iconduration,
+    duration: "1h 42min",
+    iconViews: iconviews,
+    views: "5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 9,
+    image: imagcard1,
+    iconDuration: iconduration,
+    duration: "1h 30min",
+    iconViews: iconviews,
+    views: "2K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 10,
+    image: imagcard2,
+    iconDuration: iconduration,
+    duration: "1h 57min",
+    iconViews: iconviews,
+    views: "1.5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 11,
+    image: imagcard3,
+    iconDuration: iconduration,
+    duration: "2h 10min",
+    iconViews: iconviews,
+    views: "1.8K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 12,
+    image: imagcard4,
+    iconDuration: iconduration,
+    duration: "2h 20min",
+    iconViews: iconviews,
+    views: "3K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 13,
+    image: imagcard5,
+    iconDuration: iconduration,
+    duration: "1h 42min",
+    iconViews: iconviews,
+    views: "5K",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+];
   
-  export const CardWatchMoviesData2 = [
-    {
-      id: 5,
-      image: img1_2,
-      sub1_width: "sub-container2-2",
-      duration: "7h 40min",
-      star: star4_5,
-      Date: "12k",
-      routePath:"/ShowsPageOpenR/movie/"
-    },
-    {
-      id: 6,
-      image: img2_2,
-      sub1_width: "sub-container2-2",
-      duration: "12h 23min",
-      star: star5,
-      Date: "28k",
-      routePath:"/ShowsPageOpenR/movie/"
-    },
-    {
-      id: 7,
-      image: img3_2,
-      sub1_width: "sub-container2-2",
-      duration: "10h 30min",
-      star: star4,
-      Date: "2k",
-      routePath:"/ShowsPageOpenR/movie/"
-    },
-    {
-      id: 8,
-      image: img4_2,
-      sub1_width: "sub-container2-2",
-      duration: "8h 20min",
-      star: star4_5,
-      Date: "32k",
-      routePath:"/ShowsPageOpenR/movie/"
-    },
-  ];
+
+export const cardsDataNewReleases = [
+  {
+    id: 14,
+    image: imagNewReleasescard1,
+    releaseDate: "14 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
 
   export const cardsDataTrending = [
     {
@@ -509,87 +990,315 @@ export const CardWatchMoviesData2 = [
     },
   ];
 
-  export const  cardsDataNewReleases = [
-    {  id:14,
-      image: imagNewReleasescard1,
-      releaseDate: "14 April 2023",
-       routePath:"/MoviesPageOpenR/movie/"
-      
-    },
-    {  id:15,
-      image: imagNewReleasescard2,
-      releaseDate: "22 April 2023",
-       routePath:"/MoviesPageOpenR/movie/"
-    },
-    {  id:16,
-      image: imagNewReleasescard3,
-      releaseDate: "13 April 2023",
-       routePath:"/MoviesPageOpenR/movie/"
-    },
-    {  id:17,
-      image: imagNewReleasescard4,
-      releaseDate: "19 April 2023",
-       routePath:"/MoviesPageOpenR/movie/"
-    },
-    {  id:18,
-      image: imagNewReleasescard5,
-      releaseDate: "12 April 2023",
-       routePath:"/MoviesPageOpenR/movie/"
-    },
-  ];
-  export const CardShwos = [
-    {  id:19,
-      cardShow_zq: "cardShow-zq",
-      viewcardShow_zq: "viewcardShow_zq",
-      image: img4_2,
-      iconDuration: iconduration,
-      duration: "8h 20min",
-      iconViews: iconunio,
-      views: "4 Season",
-      routePath:"/ShowsPageOpenR/show/"
-    },
-    {  id:20,
-      cardShow_zq: "cardShow-zq",
-      viewcardShow_zq: "viewcardShow_zq",
-      image: imageshows2,
-      iconDuration: iconduration,
-      duration: "12h 32min",
-      iconViews: iconunio,
-      views: "5 Season",
-      routePath:"/ShowsPageOpenR/show/"
-    },
-    {  id:21,
-      cardShow_zq: "cardShow-zq",
-      viewcardShow_zq: "viewcardShow_zq",
-      image: imageshows,
-      iconDuration: iconduration,
-      duration: "14h 30min",
-      iconViews: iconunio,
-      views: "3 Season",
-      routePath:"/ShowsPageOpenR/show/"
-    },
-    {  id:22,
-      cardShow_zq: "cardShow-zq",
-      viewcardShow_zq: "viewcardShow_zq",
-      image: imageshows3,
-      iconDuration: iconduration,
-      duration: "7h 40min",
-      iconViews: iconunio,
-      views: "2 Season",
-      routePath:"/ShowsPageOpenR/show/"
-    },
-  ];
-  export const CardReleasedShwos = [
-    {
-      id:23,
-      cardShow_zq: "cardShow-zq",
-      viewcardShow_zq: "viewcardShow_zq",
-      image: imageReleased,
-      iconDuration: iconduration,
-      duration: "12h 23min",
-      iconViews: iconunio,
-      views: "5 Season",
-      routePath:"/ShowsPageOpenR/show/"
+  },
+  {
+    id: 15,
+    image: imagNewReleasescard2,
+    releaseDate: "22 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 16,
+    image: imagNewReleasescard3,
+    releaseDate: "13 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 17,
+    image: imagNewReleasescard4,
+    releaseDate: "19 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 18,
+    image: imagNewReleasescard5,
+    releaseDate: "12 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 14,
+    image: imagNewReleasescard1,
+    releaseDate: "14 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 15,
+    image: imagNewReleasescard2,
+    releaseDate: "22 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 16,
+    image: imagNewReleasescard3,
+    releaseDate: "13 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 17,
+    image: imagNewReleasescard4,
+    releaseDate: "19 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 18,
+    image: imagNewReleasescard5,
+    releaseDate: "12 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 14,
+    image: imagNewReleasescard1,
+    releaseDate: "14 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 15,
+    image: imagNewReleasescard2,
+    releaseDate: "22 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 16,
+    image: imagNewReleasescard3,
+    releaseDate: "13 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 17,
+    image: imagNewReleasescard4,
+    releaseDate: "19 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 18,
+    image: imagNewReleasescard5,
+    releaseDate: "12 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 14,
+    image: imagNewReleasescard1,
+    releaseDate: "14 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+
+  },
+  {
+    id: 15,
+    image: imagNewReleasescard2,
+    releaseDate: "22 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 16,
+    image: imagNewReleasescard3,
+    releaseDate: "13 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 17,
+    image: imagNewReleasescard4,
+    releaseDate: "19 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  {
+    id: 18,
+    image: imagNewReleasescard5,
+    releaseDate: "12 April 2023",
+    routePath: "/MoviesPageOpenR/movie/"
+  },
+  
+];
+export const CardShwos = [
+  {
+    id: 19,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: img4_2,
+    iconDuration: iconduration,
+    duration: "8h 20min",
+    iconViews: iconunio,
+    views: "4 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 20,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows2,
+    iconDuration: iconduration,
+    duration: "12h 32min",
+    iconViews: iconunio,
+    views: "5 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 21,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows,
+    iconDuration: iconduration,
+    duration: "14h 30min",
+    iconViews: iconunio,
+    views: "3 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 22,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows3,
+    iconDuration: iconduration,
+    duration: "7h 40min",
+    iconViews: iconunio,
+    views: "2 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 19,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: img4_2,
+    iconDuration: iconduration,
+    duration: "8h 20min",
+    iconViews: iconunio,
+    views: "4 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 20,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows2,
+    iconDuration: iconduration,
+    duration: "12h 32min",
+    iconViews: iconunio,
+    views: "5 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 21,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows,
+    iconDuration: iconduration,
+    duration: "14h 30min",
+    iconViews: iconunio,
+    views: "3 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 22,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows3,
+    iconDuration: iconduration,
+    duration: "7h 40min",
+    iconViews: iconunio,
+    views: "2 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 19,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: img4_2,
+    iconDuration: iconduration,
+    duration: "8h 20min",
+    iconViews: iconunio,
+    views: "4 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 20,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows2,
+    iconDuration: iconduration,
+    duration: "12h 32min",
+    iconViews: iconunio,
+    views: "5 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 21,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows,
+    iconDuration: iconduration,
+    duration: "14h 30min",
+    iconViews: iconunio,
+    views: "3 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 22,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows3,
+    iconDuration: iconduration,
+    duration: "7h 40min",
+    iconViews: iconunio,
+    views: "2 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 19,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: img4_2,
+    iconDuration: iconduration,
+    duration: "8h 20min",
+    iconViews: iconunio,
+    views: "4 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 20,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows2,
+    iconDuration: iconduration,
+    duration: "12h 32min",
+    iconViews: iconunio,
+    views: "5 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 21,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows,
+    iconDuration: iconduration,
+    duration: "14h 30min",
+    iconViews: iconunio,
+    views: "3 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+  {
+    id: 22,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageshows3,
+    iconDuration: iconduration,
+    duration: "7h 40min",
+    iconViews: iconunio,
+    views: "2 Season",
+    routePath: "/ShowsPageOpenR/movie/"
+  },
+];
+export const CardReleasedShwos = [
+  {
+    id: 23,
+    cardShow_zq: "cardShow-zq",
+    viewcardShow_zq: "viewcardShow_zq",
+    image: imageReleased,
+    iconDuration: iconduration,
+    duration: "12h 23min",
+    iconViews: iconunio,
+    views: "5 Season",
+    routePath: "/ShowsPageOpenR/movie/"
 
     },
     {  id:24,

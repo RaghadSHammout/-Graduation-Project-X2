@@ -10,6 +10,7 @@ export default function MoviesAndShows() {
      <Hero2/>
       <CardsMoviesshows/>
 
+
       
       <Outlet />
     </>

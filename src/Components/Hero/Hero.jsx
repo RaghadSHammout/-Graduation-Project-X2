@@ -9,12 +9,30 @@ import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
 
-
+import { useLocation } from 'react-router-dom';
 
 export default function Hero() {
+  const location = useLocation(); 
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
+
+    return () => {
+      window.removeEventListener('hashchange', handleScrollToHash);
+    };
+  }, [location]);
   
   return (
-    <div className='ma-hero'>
+    <div className='ma-hero'id='Categories'>
         <div className='ma-box'>
             <motion.div
              variants={fadeIn("up" , 0.2)}

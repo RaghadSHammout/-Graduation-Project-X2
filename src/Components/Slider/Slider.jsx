@@ -70,11 +70,12 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 id={card.id}
                 image={card.image}
                 duration={card.duration}
+                sub1_width={card.sub1_width}
                 star={card.star}
                 Date={card.Date}
-                sub1_width={card.sub1_width}
                 routePath={card.routePath} 
               />;
+
 
             case 'CardShwos':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
