@@ -101,7 +101,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     return (
         <div>
             <motion.div
-                variants={fadeIn("right", 0.2)}
+                variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}

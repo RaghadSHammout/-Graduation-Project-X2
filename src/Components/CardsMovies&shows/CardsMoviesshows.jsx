@@ -1,26 +1,52 @@
-import React from 'react'
-import './CardsMoviesshows.css'
+import "./CardsMoviesshows.css";
 import CustomSlider from "../Slider/Slider";
 import Card from "../../Components/CardTrinding/Card";
 import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
-import { CardReleasedShwos, cardsDataNewReleases, cardsDataTrending, CardShwos, CardWatchMoviesData, CardWatchMoviesData2 } from '../Data/CardmoviesData';
-import cardData from '../Data/toCardData';
-import cardData2 from '../Data/toPopularData';
-import NotButton from '../notButton/notButton';
-
+import {
+  CardReleasedShwos,
+  cardsDataNewReleases,
+  cardsDataTrending,
+  CardShwos,
+  CardWatchMoviesData,
+  CardWatchMoviesData2,
+} from "../Data/CardmoviesData";
+import cardData from "../Data/toCardData";
+import cardData2 from "../Data/toPopularData";
+import NotButton from "../notButton/notButton";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 function CardsMoviesshows() {
   const { id } = useParams();
+  const [ActiveTab , setActiveTab] = useState("Movies")
   return (
-    <section className='cards-container-zq home-padding' >
-      <div className="containers-container">
-        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Movies" />
+    <section className="cards-container-zq home-padding">
+       
+        <div className="Tabs-container">
+           <button className={`${ActiveTab === "Movies" ? "LActive" : "Dis-LActive"}`}
+           onClick={() => setActiveTab("Movies")}
+           >
+              Movies
+           </button>
+           <button className={`${ActiveTab === "Shows" ? "LActive" : "Dis-LActive"}`}
+           onClick={() => setActiveTab("Shows")}
+           >
+              Shows
+           </button>
+        </div>
+     
+      <div className={`containers-container ${ActiveTab !== "Movies" ? "displayDiv" : " "}`}>
+        <NotButton
+          div="moviesNotButton"
+          divText="moviesNotButtonText"
+          text="Movies"
+        />
         <div className="cards-container">
           <CustomSlider
             cardData={cardData}
             lgSize={5}
             title="Our Genres"
-            text=''
+            text=""
             cardGroup="card-group"
             upperMb="to-slider-upper-mb"
             cardType={"explore"}
@@ -32,7 +58,7 @@ function CardsMoviesshows() {
             cardData={cardData2}
             lgSize={4}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="to-card-group-2"
             upperMb="to-slider-upper-mb"
             cardType={"exploreTop10"}
@@ -45,7 +71,7 @@ function CardsMoviesshows() {
             cardData={cardsDataTrending}
             lgSize={5}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb"
             cardType={"cardsDataTrending"}
@@ -57,7 +83,7 @@ function CardsMoviesshows() {
             cardData={cardsDataNewReleases}
             lgSize={5}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb"
             cardType={"cardsDataNewReleases"}
@@ -69,17 +95,20 @@ function CardsMoviesshows() {
             cardData={CardWatchMoviesData}
             lgSize={4}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb"
             cardType={"CardWatchMoviesData"}
           />
         </div>
-      </div>
-
-
-      {/* <div className="containers-container">
-        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Shows" />
+    </div>
+    
+      <div className={`containers-container ${ActiveTab !== "Shows"  ? "displayDiv" : ""}` }>
+        <NotButton
+          div="moviesNotButton"
+          divText="moviesNotButtonText"
+          text="Shows"
+        />
         <div className="cards-container">
           <CustomSlider
             cardData={cardData}
@@ -102,7 +131,7 @@ function CardsMoviesshows() {
             cardWidth="explore-card-2"
           />
         </div>
-        <div className='cards-container'>
+        <div className="cards-container">
           <CustomSlider
             cardData={CardReleasedShwos}
             lgSize={4}
@@ -134,9 +163,9 @@ function CardsMoviesshows() {
             cardType={"CardWatchMoviesData2"}
           />
         </div>
-      </div> */}
+      </div>     
     </section>
-  )
+  );
 }
 
-export default CardsMoviesshows
+export default CardsMoviesshows;

@@ -32,12 +32,13 @@ export default function StreamingDevices() {
 
   return (
     <section className={"home-padding "}>
-      <motion.div
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}>
-        <div className='MAContanair '>
+      <div>
+        < motion.div
+           variants={fadeIn("up", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.7 }}
+         className='MAContanair '>
 
           <Title
             maMargin={'maMargin'}
@@ -46,7 +47,7 @@ export default function StreamingDevices() {
             title={"We Provide you streaming experience across various devices."}
             text={displayText}
           />
-        </div>
+        </motion.div>
 
         <div className='MAA_card'>
           <div className='MAA'>
@@ -57,7 +58,7 @@ export default function StreamingDevices() {
             })}
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

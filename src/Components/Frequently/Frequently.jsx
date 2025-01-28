@@ -86,12 +86,7 @@ const Frequently = () => {
         />
         <Button pad={""} show={false} text={"Ask a Question"} img={false} />
       </motion.div>
-      <motion.div
-         variants={fadeIn("up" , 0.2)}
-         initial="hidden"
-         whileInView={"show"}
-         viewport={{once:false , amount:0.7}}
-       className="faq2">
+      <div className="faq2">
         <div className="faq-large-screen">
           <div className="faq-column">
             {faqData.slice(0, Math.ceil(faqData.length / 2)).map((item) => (
@@ -132,7 +127,7 @@ const Frequently = () => {
             />
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

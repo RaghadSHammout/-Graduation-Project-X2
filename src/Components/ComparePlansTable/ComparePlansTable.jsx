@@ -3,11 +3,20 @@ import Title from '../Title/Title'
 import './ComparePlansTable.css'
 import { TableData } from '../Data/TableData'
 import { TableDataOnMobile } from '../Data/TableDataOnMobile'
+//import framer-motion library
+import {motion} from 'framer-motion'
+//import Animation.js
+import {fadeIn} from '../../Animation'
 export default function ComparePlansTable() {
   const [ActiveTab , setActiveTab]= useState("Standard")
   return (
     <section className="subscription-padding w-100">
-      <div className="Lq-title-container">
+      <motion.div 
+         variants={fadeIn("up" , 0.2)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{once:false , amount:0.7}}
+      className="Lq-title-container">
         <Title
           maMargin={"ma-80"}
           size={"ma-title"}
@@ -17,7 +26,7 @@ export default function ComparePlansTable() {
             "StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you"
           }
         />
-      </div>
+      </motion.div>
       <table className="Table">
         <thead className="Lq-row-bg">
           <tr>

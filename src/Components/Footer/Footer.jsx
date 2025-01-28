@@ -14,15 +14,11 @@ function Footer() {
   return (
     <>
       <div className="conter-zq">
-        <motion.div
-          variants={fadeIn("up" , 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{once:false , amount:0.7}}
+        <div
          className="image-container">
           <img className="ImagFooter-zq" src={FooterImg} alt="footer image" />
           <motion.div 
-           variants={fadeIn("left" , 0.2)}
+           variants={fadeIn("up" , 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{once:false , amount:0.62}}
@@ -43,16 +39,12 @@ function Footer() {
             />
           
           </motion.div>
-        </motion.div>
+        </div>
       </div>
-
+      
       <div className="conterfooter-zq">
         <div className="footerlink">
-          <motion.div
-             variants={fadeIn("up" , 0.2)}
-             initial="hidden"
-             whileInView={"show"}
-             viewport={{once:false , amount:0.7}}
+          <div
            className="Home">
             <h5 className="heading-zq">Home</h5>
             <a href="/" className="links">
@@ -67,12 +59,8 @@ function Footer() {
             <a href="/" className="links">
               FAQ
             </a>
-          </motion.div>
-          <motion.div
-             variants={fadeIn("up" , 0.2)}
-             initial="hidden"
-             whileInView={"show"}
-             viewport={{once:false , amount:0.8}}
+          </div>
+          <div
            className="Movies">
             <h5 className="heading-zq">Movies</h5>
             <a href="/" className="links">
@@ -87,13 +75,8 @@ function Footer() {
             <a href="/" className="links">
               Popular
             </a>
-          </motion.div>
-          <motion.div 
-           variants={fadeIn("up" , 0.2)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{once:false , amount:0.65}}
-          className="Shows">
+          </div>
+          <div className="Shows">
             <h5 className="heading-zq">Shows</h5>
             <a href="/" className="links">
               Gernes
@@ -107,24 +90,14 @@ function Footer() {
             <a href="/" className="links">
               Popular
             </a>
-          </motion.div>
-          <motion.div 
-           variants={fadeIn("up" , 0.2)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{once:false , amount:0.7}}
-          className="Support">
+          </div>
+          <div className="Support">
             <h5 className="heading-zq">Support</h5>
             <a href="/" className="links">
               Contact Us
             </a>
-          </motion.div>
-          <motion.div 
-           variants={fadeIn("up" , 0.2)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{once:false , amount:0.68}}
-          className="Subscription">
+          </div>
+          <div className="Subscription">
             <h5 className="heading-zq"> Subscription</h5>
             <a href="/" className="links">
               Plans
@@ -132,12 +105,9 @@ function Footer() {
             <a href="/" className="links">
               Features
             </a>
-          </motion.div>
-          <motion.div 
-           variants={fadeIn("up" , 0.2)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{once:false , amount:0.7}}
+          </div>
+          <div 
+        
           className="contecticonfooter">
             <h5 className="heading-zq">Connect With Us</h5>
             <div className="contecticon">
@@ -157,7 +127,7 @@ function Footer() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         <div className="footerBar">
           <div className="SitePolicies-zq">
