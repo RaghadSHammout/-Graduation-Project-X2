@@ -12,6 +12,7 @@ export default function Home() {
       <Frequently /> 
       <Plans 
        addPlans= {true}/>
+
     </>
   );
 }

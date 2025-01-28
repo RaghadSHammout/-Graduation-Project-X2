@@ -371,6 +371,92 @@ export const CardWatchMoviesData2 = [
   },
 
 ];
+=======
+    {
+      routePath:"/MoviesPageOpenR/movie/",
+      id: 1,
+      image: img1,
+      sub1_width: "",
+      duration: "1h 57min",
+      sub2_width: "",
+      star: star4_5,
+      Date: "20K",
+       
+    },
+    {
+      id: 2,
+      image: img2,
+      sub1_width: "",
+      duration: "1h 30min",
+   
+      star: star4,
+      Date: "20K",
+      routePath:"/MoviesPageOpenR/movie/"
+
+    },
+    {
+      id: 3,
+      image: img3,
+      sub1_width: "",
+      duration: "1h 42min",
+
+      star: star4_5,
+      Date: "20K",
+      routePath:"/MoviesPageOpenR/movie/"
+
+    },
+    {
+      id: 4,
+      image: img4,
+      sub1_width: "",
+      duration: "2h 10min",
+  
+      star: star4,
+      Date: "20K",
+      routePath:"/MoviesPageOpenR/movie/"
+
+    },
+
+  ];
+  
+  export const CardWatchMoviesData2 = [
+    {
+      id: 5,
+      image: img1_2,
+      sub1_width: "sub-container2-2",
+      duration: "7h 40min",
+      star: star4_5,
+      Date: "12k",
+      routePath:"/ShowsPageOpenR/movie/"
+    },
+    {
+      id: 6,
+      image: img2_2,
+      sub1_width: "sub-container2-2",
+      duration: "12h 23min",
+      star: star5,
+      Date: "28k",
+      routePath:"/ShowsPageOpenR/movie/"
+    },
+    {
+      id: 7,
+      image: img3_2,
+      sub1_width: "sub-container2-2",
+      duration: "10h 30min",
+      star: star4,
+      Date: "2k",
+      routePath:"/ShowsPageOpenR/movie/"
+    },
+    {
+      id: 8,
+      image: img4_2,
+      sub1_width: "sub-container2-2",
+      duration: "8h 20min",
+      star: star4_5,
+      Date: "32k",
+      routePath:"/ShowsPageOpenR/movie/"
+    },
+  ];
 
   export const cardsDataTrending = [
     {
@@ -384,6 +470,7 @@ export const CardWatchMoviesData2 = [
       
     },
   
+
     {
       id:10,
       image: imagcard2,
@@ -542,3 +629,4 @@ export const CardWatchMoviesData2 = [
     },
   ];
   export default {CardWatchMoviesData ,CardWatchMoviesData2,cardsDataTrending , cardsDataNewReleases ,CardShwos, CardReleasedShwos}
+

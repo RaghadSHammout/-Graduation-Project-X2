@@ -9,6 +9,7 @@ import img11 from "../../assets/photos/Movies open page images/Director img.png"
 import img12 from "../../assets/photos/Movies open page images/Music img.png"
 import { CastImages } from "../../Components/Data/CardImages";
 import {  Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function MoviesPageOpenR() {
   const { id } = useParams();
@@ -58,6 +59,7 @@ export default function MoviesPageOpenR() {
         </div>
       </section>
       <Outlet/>
+      
     </>
   )
 }
