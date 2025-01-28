@@ -5,7 +5,7 @@ import search from'../../assets/photos/search.png'
 import vector from'../../assets/photos/vector.png'
 import React, { useState , useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
-
+import {useLocation } from "react-router-dom";
 export default function Navbar() {
     const [maisopen , setmaisopen]= useState(false)
     const [mascroll, masetScroll] = useState(false);
@@ -30,7 +30,12 @@ export default function Navbar() {
         return () => {
           window.removeEventListener('scroll', mahandleScroll);
         };
-      }, []); 
+      }, []);
+
+      const location = useLocation();
+     useEffect(() => {
+    window.scrollTo(0, 0);
+     }, [location]);  
       
   return (
     <nav className={`ma-navbar ${mascroll ? 'ma-nav2' : ''}`}>

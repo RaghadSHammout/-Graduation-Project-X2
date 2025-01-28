@@ -258,7 +258,7 @@ export const CardWatchMoviesData2 = [
     duration: "7h 40min",
     star: star4_5,
     Date: "12k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 6,
@@ -268,7 +268,7 @@ export const CardWatchMoviesData2 = [
     
     star: star5,
     Date: "28k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 7,
@@ -278,7 +278,7 @@ export const CardWatchMoviesData2 = [
    
     star: star4,
     Date: "2k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 8,
@@ -288,7 +288,7 @@ export const CardWatchMoviesData2 = [
     
     star: star4_5,
     Date: "32k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 5,
@@ -298,7 +298,7 @@ export const CardWatchMoviesData2 = [
     
     star: star4_5,
     Date: "12k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 6,
@@ -308,7 +308,7 @@ export const CardWatchMoviesData2 = [
     
     star: star5,
     Date: "28k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 7,
@@ -318,7 +318,7 @@ export const CardWatchMoviesData2 = [
     
     star: star4,
     Date: "2k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 8,
@@ -327,7 +327,7 @@ export const CardWatchMoviesData2 = [
     duration: "8h 20min",
     star: star4_5,
     Date: "32k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 5,
@@ -337,7 +337,7 @@ export const CardWatchMoviesData2 = [
    
     star: star4_5,
     Date: "12k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 6,
@@ -347,7 +347,7 @@ export const CardWatchMoviesData2 = [
    
     star: star5,
     Date: "28k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 7,
@@ -357,7 +357,7 @@ export const CardWatchMoviesData2 = [
     
     star: star4,
     Date: "2k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 8,
@@ -367,7 +367,7 @@ export const CardWatchMoviesData2 = [
     
     star: star4_5,
     Date: "32k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 5,
@@ -377,7 +377,7 @@ export const CardWatchMoviesData2 = [
    
     star: star4_5,
     Date: "12k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 6,
@@ -387,17 +387,16 @@ export const CardWatchMoviesData2 = [
     
     star: star5,
     Date: "28k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 7,
     image: img3_2,
     sub1_width: "sub-container2-2",
     duration: "10h 30min",
-    
     star: star4,
     Date: "2k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 8,
@@ -407,7 +406,7 @@ export const CardWatchMoviesData2 = [
    
     star: star4_5,
     Date: "32k",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
 
 ];
@@ -594,8 +593,6 @@ export const cardsDataTrending = [
     routePath: "/MoviesPageOpenR/movie/"
   },
 ];
-  
-
 export const cardsDataNewReleases = [
   {
     id: 14,
@@ -733,7 +730,7 @@ export const CardShwos = [
     duration: "8h 20min",
     iconViews: iconunio,
     views: "4 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 20,
@@ -744,7 +741,7 @@ export const CardShwos = [
     duration: "12h 32min",
     iconViews: iconunio,
     views: "5 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 21,
@@ -755,7 +752,7 @@ export const CardShwos = [
     duration: "14h 30min",
     iconViews: iconunio,
     views: "3 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 22,
@@ -766,7 +763,7 @@ export const CardShwos = [
     duration: "7h 40min",
     iconViews: iconunio,
     views: "2 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 19,
@@ -777,7 +774,7 @@ export const CardShwos = [
     duration: "8h 20min",
     iconViews: iconunio,
     views: "4 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 20,
@@ -788,7 +785,7 @@ export const CardShwos = [
     duration: "12h 32min",
     iconViews: iconunio,
     views: "5 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 21,
@@ -799,7 +796,7 @@ export const CardShwos = [
     duration: "14h 30min",
     iconViews: iconunio,
     views: "3 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 22,
@@ -810,7 +807,7 @@ export const CardShwos = [
     duration: "7h 40min",
     iconViews: iconunio,
     views: "2 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 19,
@@ -821,7 +818,7 @@ export const CardShwos = [
     duration: "8h 20min",
     iconViews: iconunio,
     views: "4 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 20,
@@ -832,7 +829,7 @@ export const CardShwos = [
     duration: "12h 32min",
     iconViews: iconunio,
     views: "5 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 21,
@@ -843,7 +840,7 @@ export const CardShwos = [
     duration: "14h 30min",
     iconViews: iconunio,
     views: "3 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 22,
@@ -854,7 +851,7 @@ export const CardShwos = [
     duration: "7h 40min",
     iconViews: iconunio,
     views: "2 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 19,
@@ -865,7 +862,7 @@ export const CardShwos = [
     duration: "8h 20min",
     iconViews: iconunio,
     views: "4 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 20,
@@ -876,7 +873,7 @@ export const CardShwos = [
     duration: "12h 32min",
     iconViews: iconunio,
     views: "5 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 21,
@@ -887,7 +884,7 @@ export const CardShwos = [
     duration: "14h 30min",
     iconViews: iconunio,
     views: "3 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
   {
     id: 22,
@@ -898,7 +895,7 @@ export const CardShwos = [
     duration: "7h 40min",
     iconViews: iconunio,
     views: "2 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
   },
 ];
 export const CardReleasedShwos = [
@@ -911,7 +908,7 @@ export const CardReleasedShwos = [
     duration: "12h 23min",
     iconViews: iconunio,
     views: "5 Season",
-    routePath: "/ShowsPageOpenR/movie/"
+    routePath: "/ShowsPageOpenR/show/"
 
     },
     {  id:24,
