@@ -1,7 +1,8 @@
 import React from 'react'
 import './CardsMoviesshows.css'
 import CustomSlider from "../Slider/Slider";
-import { CardReleasedShwos, cardsDataNewReleases, cardsDataTrending, CardShwos, CardWatchMoviesData, CardWatchMoviesData2 } from '../Data/CardmoviesData';
+import { cardsDataReleasesMovies, cardsDataTrendingMovies, CardDataWatchMovies} from '../Data/CardmoviesData';
+import {CardDataMustWatchShows, CardDataReleasedShows, CardDataTrendingShows } from '../Data/CardShowData';
 import cardData from '../Data/toCardData';
 import cardData2 from '../Data/toPopularData';
 import NotButton from '../notButton/notButton';
@@ -58,37 +59,37 @@ function CardsMoviesshows() {
 
         <div className="cards-container" id='trending' >
           <CustomSlider
-            cardData={cardsDataTrending}
+            cardData={cardsDataTrendingMovies}
             lgSize={5}
             title="Trending Now"
             text=''
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb"
-            cardType={"cardsDataTrending"}
+            cardType={"cardsDataTrendingMovies"}
           />
         </div>
 
         <div className="cards-container" id='new-release'>
           <CustomSlider
-            cardData={cardsDataNewReleases}
+            cardData={cardsDataReleasesMovies}
             lgSize={5}
             title="New Releases"
             text=''
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb"
-            cardType={"cardsDataNewReleases"}
+            cardType={"cardsDataReleasesMovies"}
           />
         </div>
 
         <div className="cards-container">
           <CustomSlider
-            cardData={CardWatchMoviesData}
+            cardData={CardDataWatchMovies}
             lgSize={4}
             title="Must - Watch Movies"
             text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb"
-            cardType={"CardWatchMoviesData"}
+            cardType={"CardDataWatchMovies"}
           />
         </div>
       </div>
@@ -120,35 +121,35 @@ function CardsMoviesshows() {
         </div>
         <div className='cards-container'  id='trending-Shows'>
         <CustomSlider
-            cardData={CardShwos}
+            cardData={CardDataReleasedShows}
             lgSize={4}
             title="Trending Shows Now"
             cardGroup="card-group-zq4"
             upperMb="to-slider-upper-mb"
-            cardType={"CardShwos"}
+            cardType={"CardDataReleasedShows"}
           />
          
         </div>
 
         <div className="cards-container" id='new-release-Shows' >
         <CustomSlider
-            cardData={CardReleasedShwos}
+            cardData={CardDataTrendingShows}
             lgSize={4}
             title="New Released Shows"
             cardGroup="card-group-zq3"
             upperMb="to-slider-upper-mb"
-            cardType={"ReleasedShwos"}
+            cardType={"CardDataTrendingShows"}
           />
         </div>
 
         <div className="cards-container">
           <CustomSlider
-            cardData={CardWatchMoviesData2}
+            cardData={CardDataMustWatchShows}
             lgSize={4}
             title="Must - Watch Shows"
             cardGroup="card-group-zq5"
             upperMb="to-slider-upper-mb"
-            cardType={"CardWatchMoviesData2"}
+            cardType={"CardDataMustWatchShows"}
           />
         </div>
       </div>

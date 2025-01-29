@@ -41,7 +41,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     // Add the name of your card with the component with its props in a new Case in this switch statement
     const renderCard = (card, index) => {
         switch (cardType) {
-            case 'CardWatchMoviesData':
+            case 'CardDataWatchMovies':
                 return <CardWatchMovies
                     key={card.id}
                     id={card.id}
@@ -51,9 +51,9 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     Date={card.Date}
                     routePath={card.routePath}
                 />;
-            case 'cardsDataNewReleases':
+            case 'cardsDataReleasesMovies':
                 return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
-            case 'cardsDataTrending':
+            case 'cardsDataTrendingMovies':
                 return <Card
                     key={card.id}
                     id={card.id}
@@ -64,7 +64,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     iconDuration={card.iconDuration}
                     routePath={card.routePath}
                 />;
-            case 'CardWatchMoviesData2':
+            case 'CardDataMustWatchShows':
                 return <CardWatchMovies
                 key={card.id}
                 id={card.id}
@@ -77,11 +77,11 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
               />;
 
 
-            case 'CardShwos':
+            case 'CardDataReleasedShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
                     iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
-            case 'ReleasedShwos':
+            case 'CardDataTrendingShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
