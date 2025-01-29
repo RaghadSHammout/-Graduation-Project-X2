@@ -1,19 +1,39 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import './Form.css'
 import Title from '../Title/Title'
 import supportImg from '../../assets/photos/Support page/Welcome to our support div img.png';
 import Button from '../Button/Button';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-
+import { useLocation } from 'react-router-dom';
 export default function Form() {
   const [value, setValue] = useState()
   const [isClick, setisClick] = useState(false)
+
   const handleClick = () => {
     setisClick(!isClick)
   }
+  const location = useLocation(); 
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
+
+    return () => {
+      window.removeEventListener('hashchange', handleScrollToHash);
+    };
+  }, [location]);
+
   return (
-    <div className='ma-allbox'>
+    <div className='ma-allbox' id="Contact-Us">
       <div className='ma-left-dev'>
         <Title
           title={'Welcome to our support page!'}

@@ -7,7 +7,7 @@ import { fadeIn } from '../../Animation'
 import Title from '../Title/Title';
 import { SkileData } from '../../Components/Data/SkilsData'
 import StrimingCard from "../StrimingCard/StrimingCard"
-
+import { useLocation } from 'react-router-dom';
 export default function StreamingDevices() {
   const [displayText, setDisplayText] = useState("");
 
@@ -21,24 +21,29 @@ export default function StreamingDevices() {
     }
   };
 
+  const location = useLocation(); 
   useEffect(() => {
-    updateDisplayText();
-    window.addEventListener('resize', updateDisplayText);
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
 
     return () => {
-      window.removeEventListener('resize', updateDisplayText);
+      window.removeEventListener('hashchange', handleScrollToHash);
     };
-  }, []);
+  }, [location]);
 
   return (
-    <section className={"home-padding "}>
-      <div>
-        < motion.div
-           variants={fadeIn("up", 0.2)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{ once: false, amount: 0.7 }}
-         className='MAContanair '>
+    <section className={"home-padding "} id='Devices'>
+      
+        <div className='MAContanair '>
 
           <Title
             maMargin={'maMargin'}
@@ -47,7 +52,7 @@ export default function StreamingDevices() {
             title={"We Provide you streaming experience across various devices."}
             text={displayText}
           />
-        </motion.div>
+        </div>
 
         <div className='MAA_card'>
           <div className='MAA'>
@@ -58,7 +63,7 @@ export default function StreamingDevices() {
             })}
           </div>
         </div>
-      </div>
+      
     </section>
   );
 }

@@ -1,22 +1,42 @@
-import React, { useState } from 'react'
-import Title from '../Title/Title'
-import './ComparePlansTable.css'
-import { TableData } from '../Data/TableData'
-import { TableDataOnMobile } from '../Data/TableDataOnMobile'
+import React, { useEffect, useState } from "react";
+import Title from "../Title/Title";
+import "./ComparePlansTable.css";
+import { TableData } from "../Data/TableData";
+import { TableDataOnMobile } from "../Data/TableDataOnMobile";
 //import framer-motion library
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 //import Animation.js
-import {fadeIn} from '../../Animation'
+import { fadeIn } from "../../Animation";
+import { useLocation } from "react-router-dom";
 export default function ComparePlansTable() {
-  const [ActiveTab , setActiveTab]= useState("Standard")
+  const [ActiveTab, setActiveTab] = useState("Standard");
+  const location = useLocation();
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener("hashchange", handleScrollToHash);
+
+    return () => {
+      window.removeEventListener("hashchange", handleScrollToHash);
+    };
+  }, [location]);
   return (
-    <section className="subscription-padding w-100">
-      <motion.div 
-         variants={fadeIn("up" , 0.2)}
-         initial="hidden"
-         whileInView={"show"}
-         viewport={{once:false , amount:0.7}}
-      className="Lq-title-container">
+    <section className="subscription-padding w-100" id="features">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="Lq-title-container"
+      >
         <Title
           maMargin={"ma-80"}
           size={"ma-title"}

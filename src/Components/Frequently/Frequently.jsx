@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect,useState } from "react";
 import "./Frequently.css";
 import Title from "../Title/Title";
 import FaqItem from "../FaqItem/FaqItem";
@@ -8,7 +8,7 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
-
+import { useLocation } from 'react-router-dom';
 const Frequently = () => {
   const [activeId, setActiveId] = useState(1);
 
@@ -66,9 +66,27 @@ const Frequently = () => {
   const toggleFAQ = (id) => {
     setActiveId(activeId === id ? null : id);
   };
+  const location = useLocation(); 
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
 
+    return () => {
+      window.removeEventListener('hashchange', handleScrollToHash);
+    };
+  }, [location]);
+   
   return (
-    <div className=" faq-container">
+    <div className=" faq-container" id="FAQ">
       <motion.div
           variants={fadeIn("up" , 0.2)}
           initial="hidden"

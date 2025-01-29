@@ -7,12 +7,31 @@ import Title from "../Title/Title";
 import {motion} from 'framer-motion'
 //import Animation.js
 import {fadeIn} from '../../Animation'
-
-export default function Plans() {
+import{useEffect} from "react";
+import { useLocation } from 'react-router-dom';
+export default function Plans({addPlans}) {
   const [activeTab, setActiveTab] = useState("Monthly");
+  const location = useLocation(); 
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener('hashchange', handleScrollToHash);
 
+    return () => {
+      window.removeEventListener('hashchange', handleScrollToHash);
+    };
+  }, [location]);
+ 
   return (
-    <section className=" plans Desktop-padding-left-right w-100">
+    <section className={` Desktop-padding-left-right w-100 ${ addPlans? 'plans' : 'new-plans'}`} id="Pricing" >
       <motion.div
          variants={fadeIn("up" , 0.2)}
          initial="hidden"
@@ -32,13 +51,13 @@ export default function Plans() {
 
         <div className="lq-tabs d-flex justify-content-between align-items-center">
           <button
-            className={activeTab === "Monthly" ? "active" : "dis-active"}
+            className={activeTab === "Monthly" ? "LQactive" : "dis-LQactive"}
             onClick={() => setActiveTab("Monthly")}
           >
             Monthly
           </button>
           <button
-            className={activeTab === "Yearly" ? "active" : "dis-active"}
+            className={activeTab === "Yearly" ? "LQactive" : "dis-LQactive"}
             onClick={() => setActiveTab("Yearly")}
           >
             Yearly
