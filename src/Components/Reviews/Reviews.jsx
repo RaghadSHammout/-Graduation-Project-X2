@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import ReviewsCard from '../ReviewsCard/ReviewsCard';
 import plus from '../../assets/Icons/icon (3).png';
+import arrow from '../../assets/photos/Vector 619.png';
 import '../Reviews/Reviews.css';
 
 function Reviews({ title, text, cardGroup, upperMb }) {
@@ -88,7 +89,7 @@ function Reviews({ title, text, cardGroup, upperMb }) {
           <div className="reviews-arrows">
             <button className="prev-arrow">
               <div className="reviews-arrow-div">
-                <img className="reviews-arrow-img" src="src/assets/photos/Vector 619.png" alt="Previous" />
+                <img className="reviews-arrow-img"  src={arrow} alt="Previous" />
               </div>
             </button>
             <div className="reviews-indicators">
@@ -102,7 +103,7 @@ function Reviews({ title, text, cardGroup, upperMb }) {
             </div>
             <button className="next-arrow">
               <div className="reviews-arrow-div">
-                <img className="reviews-arrow-img" src="src/assets/photos/Vector 619.png" alt="Next" />
+                <img className="reviews-arrow-img" src={arrow} alt="Next" />
               </div>
             </button>
           </div>

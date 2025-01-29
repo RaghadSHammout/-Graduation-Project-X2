@@ -41,6 +41,7 @@ function CardsMoviesshows() {
             upperMb="to-slider-upper-mb"
             cardType={"explore"}
           />
+          
         </div>
 
         <div className="cards-container" id='popular' >
