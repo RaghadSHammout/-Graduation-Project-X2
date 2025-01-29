@@ -34,6 +34,7 @@ body {
   --DarkGrayTwo: #141414;
   --SmokyGray: #333333;
   --LightGray: #e4e4e7;
+  --dark-red:#330000;
 }
 /* scroll */
 ::-webkit-scrollbar {
