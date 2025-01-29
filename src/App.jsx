@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -10,9 +9,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import MoviesPageOpenR from "./Pages/MoviesPageOpenR/MoviesPageOpenR.jsx";
 import ShowsPageOpenR from "./Pages/ShowsPageOpenR/ShowsPageOpenR.jsx";
 
-
-export default function App() {
-  
 import HashLoader from "react-spinners/HashLoader";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage.jsx";
 

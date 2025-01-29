@@ -1,13 +1,10 @@
-import './Navbar.css'
-import logo from '../../assets/photos/logo.png'
-import button from '../../assets/photos/Button.png'
-import search from'../../assets/photos/search.png'
-import vector from'../../assets/photos/vector.png'
-import React, { useState , useEffect} from 'react'
+import './Navbar.css';
+import logo from '../../assets/photos/logo.png';
+import button from '../../assets/photos/Button.png';
+import search from '../../assets/photos/search.png';
+import vector from '../../assets/photos/vector.png';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-
-
-
 
 export default function Navbar({ routePath }) {
   const [maisopen, setmaisopen] = useState(false);
@@ -37,29 +34,6 @@ export default function Navbar({ routePath }) {
       window.removeEventListener('scroll', mahandleScroll);
     };
   }, []);
-
-      useEffect(() => {
-        const mahandleScroll = () => {
-          if (window.scrollY > 50) {
-            masetScroll(true); 
-          } else {
-            masetScroll(false);
-          }
-        };
-    
-        window.addEventListener('scroll', mahandleScroll);
-    
-      
-        return () => {
-          window.removeEventListener('scroll', mahandleScroll);
-        };
-      }, []);
-
-      const location = useLocation();
-     useEffect(() => {
-    window.scrollTo(0, 0);
-     }, [location]);  
-      
 
   return (
     <>
