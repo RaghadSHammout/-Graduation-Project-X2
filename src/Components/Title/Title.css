@@ -34,7 +34,8 @@
     gap: 14px;
 }
 
-.to-title {
+.to-title,
+.to-movies-shows-title {
     line-height: 57px;
     font-size: 38px;
     font-weight: 700;
@@ -70,6 +71,11 @@
     .to-title {
         line-height: 42px;
         font-size: 28px;
+    }
+
+    .to-movies-shows-title {
+        line-height: 45px;
+        font-size: 30px;
     }
 
     .to-text {
@@ -109,7 +115,8 @@
         gap: 8px;
     }
 
-    .to-title {
+    .to-title,
+    .to-movies-shows-title {
         line-height: 36px;
         font-size: 24px;
     }

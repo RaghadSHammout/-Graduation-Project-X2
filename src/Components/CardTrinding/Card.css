@@ -6,154 +6,253 @@
     border: 1px solid var(--DarkGrayOne);
     background-color: var(--VeryDarkGray);
   }
-  
+
+  .card-zq-width {
+    width: 18.9572%;
+  }
+
   .card-zq {
-    width: 283.6px;
-    padding: 20px;
+    width: 100%;
+    padding: 7.063%;
     gap: 20px;
+    transition: 0.5s;
   }
-  
-  .cardShow-zq {
-    width: 359.25px;
+
+  .card-zq:hover {
+    transform: translate(0, -6px) scale(1.01);
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+    -webkit-transform: translate(0, -6px) scale(1.01);
+    -moz-transform: translate(0, -6px) scale(1.01);
+    -ms-transform: translate(0, -6px) scale(1.01);
+    -o-transform: translate(0, -6px) scale(1.01);
+    box-shadow: 0px 2px 2px var(--Semi-TransparentRed);
   }
-  
+
   .imgcard-zq {
     width: 100%;
     border-radius: 12px;
   }
-  
+
   .conterCard-zq {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .durationcard-zq,
   .viewcard-zq,
   .releaseDatecard-zq {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36px;
     background-color: var(--DarkGrayTwo);
     color: var(--Gray);
     padding: 6px 10px 6px 6px;
     border: 1px solid var(--DarkGrayOne);
     border-radius: 51px;
   }
-  
+
   .durationcard-zq {
     gap: 2px;
   }
-  
+
   .viewcard-zq {
     gap: 4px;
   }
-  
+
   .releaseDatecard-zq {
     width: 100%;
-    gap: 10px;
-    font-family: Manrope;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: center;
-
-
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    padding: 6px 10px 6px 6px;
   }
-  
+
   .releaseDatecard-zq span {
     color: var(--SilverGray);
   }
-  
+
   .pa-zq {
     margin: 0;
     color: var(--Gray);
+    font-size: 16px;
+  }
+
+  @media (max-width: 1658px) {
+    .pa-zq {
+      margin: 0;
+      color: var(--Gray);
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1498px) {
+
+    .durationcard-zq,
+    .viewcard-zq,
+    .viewcardShow_zq {
+      padding: 4px 6px 4px 3px;
+    }
+
+    .pa-zq {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 18px;
+    }
   }
 
   @media (max-width: 1440px) {
     .cardShow-zq {
-      width: 284px !important;
       padding: 16px;
       gap: 16px;
     }
-  
+
+    .card-zq-width {
+      width: 18.6666%;
+    }
+
     .card-zq {
-      width: 224px;
-      padding: 16px;
+      padding: 7.1556%;
       gap: 16px;
     }
-  
-    .durationcard-zq,
-    .viewcard-zq,
-    .viewcardShow_zq {
-      height: 28px;
+
+    .durationcard-zq {
       padding: 4px 8px 4px 4px;
     }
-  
-    .durationcard-zq {
-      gap: 2px;
-   
+
+    .viewcard-zq {
+      padding: 4px 8px 4px 4px;
     }
-  
+
+    .viewcardShow_zq {
+      padding: 2px 8px 2px 4px;
+    }
+
+    .releaseDatecard-zq {
+      padding: 6px 14px;
+    }
+
     .durationcard-zq img,
     .viewcard-zq img {
       width: 20px;
       height: 20px;
     }
-  
+
     .pa-zq {
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
     }
-  
+
     .releaseDatecard-zq {
-      height: 30px;
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
     }
+
     .viewcardShow_zq img {
       width: 16.25px;
-      height: 15px;
-      top: 2.5px;
-      left: 1.88px;
       gap: 0px;
       opacity: 0px;
     }
   }
-  @media (max-width: 992px) {
+
+  @media (max-width: 1308px) {
+    .releaseDatecard-zq {
+      padding: 6px 6px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .pa-zq {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    /* .durationcard-zq,
+    .viewcard-zq,
+    .viewcardShow_zq {
+      padding: 3px 3px 3px 3px;
+    } */
+
+    .durationcard-zq img,
+    .viewcard-zq img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @media (max-width: 1139px) {
+    .pa-zq {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 13px;
+    }
+
+    .durationcard-zq,
+    .viewcard-zq,
+    .viewcardShow_zq {
+      padding: 3px 3px 3px 3px;
+    }
+
+    .durationcard-zq img,
+    .viewcard-zq img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @media (max-width: 991px) {
     .cardShow-zq {
-      width: 284px !important;
       padding: 16px;
       gap: 16px;
     }
- 
+
     .card-zq {
-      width: 181.6px;
       padding: 12px;
       gap: 12px;
     }
-  
+
+    .card-zq:hover {
+      transform: translate(0) scale(1);
+      filter: brightness(1.2);
+      -webkit-filter: brightness(1.2);
+      -webkit-transform: translate(0) scale(1);
+      -moz-transform: translate(0) scale(1);
+      -ms-transform: translate(0) scale(1);
+      -o-transform: translate(0) scale(1);
+      box-shadow: 0px 2px 2px var(--Semi-TransparentRed);
+}
+
+    .card-zq-width {
+      width: 47.8324%;
+    }
+
     .durationcard-zq img,
     .viewcard-zq img {
       width: 20px;
       height: 20px;
     }
-  
+
     .viewcard-zq {
       padding: 4px 8px 4px 4px;
       gap: 4px;
       display: flex;
       align-items: center;
     }
-  
+
     .releaseDatecard-zq {
-      height: 30px;
-      padding: 6px 14px 6px 14px;
+      padding: 6px 10px 6px 10px;
       gap: 10px;
     }
 
   }
-  
+
+  @media (max-width: 390px) {
+    .card-zq-width {
+      width: 48.8324%;
+    }
+  }

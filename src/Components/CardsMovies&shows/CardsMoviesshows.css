@@ -12,19 +12,11 @@
 
 .card-group-zq,
 .card-group-zq1,
-.card-group-zq2,
-.card-group-zq3,
-.card-group-zq4,
-.card-group-zq5 {
+.card-group-zq2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
-}
-
-.card-group-zq {
-    height: 454px !important;
-
 }
 
 .cards-container-zq {
@@ -38,7 +30,8 @@
 .cards-container {
     width: 100%;
 }
-.cards-container > div {
+
+.cards-container>div {
     width: 100% !important;
 }
 
@@ -47,7 +40,6 @@
     padding: 50px;
     border: 1px solid var(--DarkGrayOne);
     border-radius: 12px;
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -59,7 +51,7 @@
         border-radius: 6px;
         padding: 8px 20px;
         top: -18px;
-}
+    }
 
     .moviesNotButtonText {
         line-height: 24px;
@@ -69,7 +61,6 @@
     .containers-container {
         width: 100%;
         padding: 40px;
-        margin-top: 120px;
         gap: 80px;
     }
 }
@@ -82,7 +73,6 @@
     .containers-container {
         width: 100%;
         padding: 0;
-        margin-top: 120px;
         gap: 50px;
         border: none;
     }

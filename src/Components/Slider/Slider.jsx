@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
 
-const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth }) => {
+const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth, customIndicatorsSml, padding }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
@@ -30,9 +30,10 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     }, []);
 
     const groupCards = (cards, itemsPerGroup) => {
+        if (!Array.isArray(cards) || cards.length === 0) return [];
         return cards.reduce((groups, card, index) => {
             const groupIndex = Math.floor(index / itemsPerGroup);
-            if (!groups[groupIndex]) groups[groupIndex] = [];
+            groups[groupIndex] = groups[groupIndex] || [];
             groups[groupIndex].push(card);
             return groups;
         }, []);
@@ -83,9 +84,9 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
+                return <ExploreCard key={index} title={card.title} image={card.image} id={card.id} routePath={card.routePath} cardWidth={cardWidth} padding={padding} />;
             case 'exploreTop10':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} isTop10={true} cardWidth={cardWidth} />;
+                return <ExploreCard key={card.id} title={card.title} image={card.image} id={card.id} routePath={card.routePath} isTop10={true} cardWidth={cardWidth} padding={padding} />;
             default:
                 return null;
         }
@@ -106,7 +107,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
                 className={`slider-upper-div ${upperMb}`}>
-                <Title title={title} text={text} size="to-title" matext="to-text" />
+                <Title title={title} text={text} size="to-title" matext="to-text" isThereText={isThereText} />
                 <div className="custom-arrows">
                     <button className={`prev-arrow ${uniqueId.current}-prev`}>
                         <div className="slider-arrow-div">
@@ -150,7 +151,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="custom-indicators-sml">
+            <div className={`${customIndicatorsSml}`}>
                 {groupedCards.map((_, index) => (
                     <button
                         key={index}
@@ -168,6 +169,7 @@ CustomSlider.defaultProps = {
     lgSize: 5,
     cardType: 'explore',
     isThereText: false,
+    customIndicatorsSml: "custom-indicators-sml"
 };
 
 CustomSlider.propTypes = {
