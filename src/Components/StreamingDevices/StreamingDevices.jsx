@@ -42,11 +42,7 @@ export default function StreamingDevices() {
 
   return (
     <section className={"home-padding "} id='Devices'>
-      <motion.div
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}>
+      
         <div className='MAContanair '>
 
           <Title
@@ -67,7 +63,7 @@ export default function StreamingDevices() {
             })}
           </div>
         </div>
-      </motion.div>
+      
     </section>
   );
 }

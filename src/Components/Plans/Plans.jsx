@@ -51,13 +51,13 @@ export default function Plans({addPlans}) {
 
         <div className="lq-tabs d-flex justify-content-between align-items-center">
           <button
-            className={activeTab === "Monthly" ? "active" : "dis-active"}
+            className={activeTab === "Monthly" ? "LQactive" : "dis-LQactive"}
             onClick={() => setActiveTab("Monthly")}
           >
             Monthly
           </button>
           <button
-            className={activeTab === "Yearly" ? "active" : "dis-active"}
+            className={activeTab === "Yearly" ? "LQactive" : "dis-LQactive"}
             onClick={() => setActiveTab("Yearly")}
           >
             Yearly
