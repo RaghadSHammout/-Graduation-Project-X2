@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Explore />
-      <StreamingDevices />
-      <Frequently />
-      <Plans />
+       <Explore /> 
+       <StreamingDevices />
+      <Frequently /> 
+      <Plans 
+       addPlans= {true}/>
+
     </>
   );
 }

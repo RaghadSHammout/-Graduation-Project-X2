@@ -42,7 +42,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     // Add the name of your card with the component with its props in a new Case in this switch statement
     const renderCard = (card, index) => {
         switch (cardType) {
-            case 'CardWatchMoviesData':
+            case 'CardDataWatchMovies':
                 return <CardWatchMovies
                     key={card.id}
                     id={card.id}
@@ -52,9 +52,9 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     Date={card.Date}
                     routePath={card.routePath}
                 />;
-            case 'cardsDataNewReleases':
+            case 'cardsDataReleasesMovies':
                 return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
-            case 'cardsDataTrending':
+            case 'cardsDataTrendingMovies':
                 return <Card
                     key={card.id}
                     id={card.id}
@@ -65,21 +65,24 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     iconDuration={card.iconDuration}
                     routePath={card.routePath}
                 />;
-            case 'CardWatchMoviesData2':
+            case 'CardDataMustWatchShows':
                 return <CardWatchMovies
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    duration={card.duration}
-                    star={card.star}
-                    Date={card.Date}
-                    routePath={card.routePath}
-                />;
-            case 'CardShwos':
+                key={card.id}
+                id={card.id}
+                image={card.image}
+                duration={card.duration}
+                sub1_width={card.sub1_width}
+                star={card.star}
+                Date={card.Date}
+                routePath={card.routePath} 
+              />;
+
+
+            case 'CardDataReleasedShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
                     iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
-            case 'ReleasedShwos':
+            case 'CardDataTrendingShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
@@ -102,7 +105,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     return (
         <div>
             <motion.div
-                variants={fadeIn("right", 0.2)}
+                variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}

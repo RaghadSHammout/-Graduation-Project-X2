@@ -1,6 +1,6 @@
 .conter-zq {
   position: relative;
-  padding: 150px 162px;
+  padding: 0px 162px 150px  ;
 }
 .image-container {
   position: relative;
@@ -64,8 +64,7 @@
 .Support,
 .Subscription,
 .contecticonfooter {
-  width: 241px;
-  
+  width: 15.1002%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -116,9 +115,17 @@
 }
 .links:hover {
   color: var(--White);
-  text-shadow: 0 0 20px var(--White); 
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.555) , 0 0 30px red; 
 }
 @media (max-width: 1440px) {
+  .Home,
+.Movies,
+.Shows,
+.Support,
+.Subscription,
+.contecticonfooter{
+  width: 15.3648%;
+}
   .conterfooter-zq {
     padding: 80px 80px 40px 80px;
   }

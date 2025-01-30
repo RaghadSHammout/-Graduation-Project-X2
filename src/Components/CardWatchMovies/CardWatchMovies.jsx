@@ -29,6 +29,7 @@ function CardWatchMovies({ id, image, duration, star, sub1_width, Date, routePat
       </div>
     </Link>
 
+
   );
 }
 <Outlet />
