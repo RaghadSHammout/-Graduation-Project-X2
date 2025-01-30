@@ -1,6 +1,6 @@
 import "./Explore.css";
 import CustomSlider from "../Slider/Slider";
-import cardData from "../Data/toCardData";
+import { cardData, cardDataShows } from "../Data/toCardData";
 
 
 
@@ -16,7 +16,7 @@ function Explore() {
                     text="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
                     cardGroup="card-group"
                     upperMb="to-slider-upper-mb"
-                    cardType={"explore"}
+                    cardType='explore'
                     isThereText={true}
                 />
             </div>

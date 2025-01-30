@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Slider.css';
 
-const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth }) => {
+const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth, customIndicatorsSml, padding }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
@@ -30,9 +30,10 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     }, []);
 
     const groupCards = (cards, itemsPerGroup) => {
+        if (!Array.isArray(cards) || cards.length === 0) return [];
         return cards.reduce((groups, card, index) => {
             const groupIndex = Math.floor(index / itemsPerGroup);
-            if (!groups[groupIndex]) groups[groupIndex] = [];
+            groups[groupIndex] = groups[groupIndex] || [];
             groups[groupIndex].push(card);
             return groups;
         }, []);
@@ -41,7 +42,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     // Add the name of your card with the component with its props in a new Case in this switch statement
     const renderCard = (card, index) => {
         switch (cardType) {
-            case 'CardWatchMoviesData':
+            case 'CardDataWatchMovies':
                 return <CardWatchMovies
                     key={card.id}
                     id={card.id}
@@ -51,9 +52,9 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     Date={card.Date}
                     routePath={card.routePath}
                 />;
-            case 'cardsDataNewReleases':
+            case 'cardsDataReleasesMovies':
                 return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
-            case 'cardsDataTrending':
+            case 'cardsDataTrendingMovies':
                 return <Card
                     key={card.id}
                     id={card.id}
@@ -64,28 +65,31 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     iconDuration={card.iconDuration}
                     routePath={card.routePath}
                 />;
-            case 'CardWatchMoviesData2':
+            case 'CardDataMustWatchShows':
                 return <CardWatchMovies
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    duration={card.duration}
-                    star={card.star}
-                    Date={card.Date}
-                    routePath={card.routePath}
-                />;
-            case 'CardShwos':
+                key={card.id}
+                id={card.id}
+                image={card.image}
+                duration={card.duration}
+                sub1_width={card.sub1_width}
+                star={card.star}
+                Date={card.Date}
+                routePath={card.routePath} 
+              />;
+
+
+            case 'CardDataReleasedShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
                     iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
-            case 'ReleasedShwos':
+            case 'CardDataTrendingShows':
                 return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} />;
+                return <ExploreCard key={index} title={card.title} image={card.image} id={card.id} routePath={card.routePath} cardWidth={cardWidth} padding={padding} />;
             case 'exploreTop10':
-                return <ExploreCard key={index} title={card.title} image={card.image} link={card.link} isTop10={true} cardWidth={cardWidth} />;
+                return <ExploreCard key={card.id} title={card.title} image={card.image} id={card.id} routePath={card.routePath} isTop10={true} cardWidth={cardWidth} padding={padding} />;
             default:
                 return null;
         }
@@ -101,12 +105,12 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
     return (
         <div>
             <motion.div
-                variants={fadeIn("right", 0.2)}
+                variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
                 className={`slider-upper-div ${upperMb}`}>
-                <Title title={title} text={text} size="to-title" matext="to-text" />
+                <Title title={title} text={text} size="to-title" matext="to-text" isThereText={isThereText} />
                 <div className="custom-arrows">
                     <button className={`prev-arrow ${uniqueId.current}-prev`}>
                         <div className="slider-arrow-div">
@@ -150,7 +154,7 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="custom-indicators-sml">
+            <div className={`${customIndicatorsSml}`}>
                 {groupedCards.map((_, index) => (
                     <button
                         key={index}
@@ -168,6 +172,7 @@ CustomSlider.defaultProps = {
     lgSize: 5,
     cardType: 'explore',
     isThereText: false,
+    customIndicatorsSml: "custom-indicators-sml"
 };
 
 CustomSlider.propTypes = {

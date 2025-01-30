@@ -1,5 +1,4 @@
 import "./MoviesPageOpenR.css"
-import React from 'react'
 import MoviesOpenHero from '../../Components/MoviesOpenHero/MoviesOpenHero'
 import Description from "../../Components/Description/Description"
 import CastCarousel from "../../Components/CastCarousel/CastCarousel"
@@ -58,6 +57,7 @@ export default function MoviesPageOpenR() {
         </div>
       </section>
       <Outlet/>
+      
     </>
   )
 }
