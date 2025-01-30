@@ -62,11 +62,20 @@
 .ma-nav2 {
   background-color: var( --DeepBlack);
 }
-.ma-icon button{
+.ma-icon button {
   border: none;
-  padding: 16px 40px;
+  padding: 6px 19px;
   border: 4px solid var(--Darkblack);
-  background-color: var(--DeepBlack);
+  background-color: var(--Red);
+  color: var(--White);
+  border-radius: 12px;
+}
+
+.ma-navbar .ma-button button{
+  border: none;
+  padding: 6px 19px;
+  border: 4px solid var(--Darkblack);
+  background-color: var(--Red);
   color: var(--White);
   border-radius: 12px;
 }
@@ -107,6 +116,10 @@
     gap: 14px;
     width: 165.83px;
   }
+  .ma-navbar .ma-icon button
+  {  
+     padding: 3px 8px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -122,15 +135,21 @@
     position: fixed;
     top: 4%;
     left: 40%;
-    
   }
 
   .ma-navbar .ma-links,
   .ma-navbar .ma-icon {
     display: none;
   }
+  .ma-navbar .ma-icon button{
+    display: flex;
+  }
   .ma-navbar .ma-button {
     display: flex;
+    gap: 10px;
+  }
+  .ma-navbar .ma-button button{
+    padding: 5px 20px;
   }
   .ma-navbar .ma-button img {
     height: 48px;

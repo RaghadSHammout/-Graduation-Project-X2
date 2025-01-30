@@ -67,7 +67,16 @@ export default function Navbar({ routePath }) {
           </li>
         </ul>
         <div className='ma-icon'>
-          <button onClick={() => setShowSignupPopup(true)}>Sign Up</button> {/* Show popup */}
+
+<img src={search} alt=""  className='ma-img-search'/>
+          <img src={vector} alt="" className='ma-img-search' />
+          <button className='ma-btn-hover'>Log in</button>
+       
+        </div>
+        <div className='ma-button'>
+            <button className='ma-btn-hover'>Log in</button>
+            <img src={button} alt="" onClick={listdown} />
+          <button onClick={() => setShowSignupPopup(true)}>Sign Up</button> 
           <img src={search} alt="" className='ma-img-search' />
           <img src={vector} alt="" className='ma-img-search' />
         </div>
