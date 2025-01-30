@@ -13,7 +13,7 @@ import imagNewReleasescard5 from "../../assets/photos/Movies & shows page images
 import img1 from "../../assets/photos/Movies & shows page images/Must watches movies section card(1).jpg";
 import img2 from "../../assets/photos/Movies & shows page images/Must watches movies section card(2).png";
 import img3 from "../../assets/photos/Movies & shows page images/Must watches movies section card(3).png";
-import img4 from "../../assets/photos/Movies & shows page images/Must watches movies section card(4).jpg";
+import img4 from "../../assets/photos/Movies & shows page images/Must Watch (4).png";
 
 import star4_5 from "../../assets/photos/Container(10).png";
 import star4 from "../../assets/photos/Container(12).png";

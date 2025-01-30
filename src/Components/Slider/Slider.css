@@ -11,10 +11,7 @@
     padding: 16px;
     margin-top: 10px;
 }
-.home-padding {
-    padding: 0 8.4375%;
-    margin-top: 150px ;
-}
+
 .prev-arrow:hover,
 .next-arrow:hover {
     transition: 600ms;
@@ -30,10 +27,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 
 .to-slider-upper-mb {
     margin-bottom: 70px;
+}
+
+.to-slider-upper-mb2 {
+    margin-bottom: 40px;
 }
 
 .custom-arrows button {
@@ -72,6 +74,7 @@
 }
 
 .card-group,
+.card-group-2,
 .to-card-group-2 {
     display: flex;
     justify-content: space-between;
@@ -82,8 +85,21 @@
     height: 352px !important;
 }
 
+.card-group-2 {
+    height: 330.28px !important;
+}
+
+.card-group-zq,
+.card-group-zq1 {
+    height: 385.8px !important;
+}
+
+.card-group-zq2 {
+    height: 507.22px !important;
+}
+
 .to-card-group-2 {
-    height: 397.56px !important;
+    height: 390.73px !important;
 }
 
 .custom-indicators button {
@@ -103,7 +119,8 @@
 }
 
 
-.custom-indicators-sml {
+.custom-indicators-sml,
+.custom-indicators-sml2 {
     display: none;
     height: 5px;
     width: 22.1%;
@@ -116,7 +133,12 @@
     gap: 3.7974%;
 }
 
-.custom-indicators-sml button {
+.custom-indicators-sml2 {
+    margin-top: 20px;
+}
+
+.custom-indicators-sml button,
+.custom-indicators-sml2 button {
     height: 5px;
     width: 22.067%;
     padding: 0;
@@ -183,12 +205,36 @@
         margin-bottom: 50px;
     }
 
+    .to-slider-upper-mb2 {
+        margin-bottom: 30px;
+    }
+
     .card-group {
-        height: 286px !important;
+        height: 287px !important;
+    }
+
+    .card-group-2 {
+        height: 280.8px !important;
     }
 
     .to-card-group-2 {
-        height: 310px !important;
+        height: 314.91px !important;
+    }
+
+    .card-group-zq {
+        height: 306.38px !important;
+    }
+
+    .card-group-zq1 {
+        height: 314.38px !important;
+    }
+
+    .card-group-zq2 {
+        height: 407.95px !important;
+    }
+
+    .slider-upper-div {
+        gap: 80px;
     }
 }
 
@@ -198,7 +244,8 @@
         display: none;
     }
 
-    .custom-indicators-sml {
+    .custom-indicators-sml,
+    .custom-indicators-sml2 {
         display: flex;
     }
 
@@ -210,11 +257,16 @@
         margin-bottom: 30px;
     }
 
-    .card-group {
-        height: 100% !important;
+    .to-slider-upper-mb2 {
+        margin-bottom: 20px;
     }
 
-    .to-card-group-2 {
+    .card-group,
+    .card-group-2,
+    .to-card-group-2,
+    .card-group-zq,
+    .card-group-zq1,
+    .card-group-zq2 {
         height: 100% !important;
     }
 }

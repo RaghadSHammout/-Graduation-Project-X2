@@ -1,15 +1,19 @@
 .home-padding {
-    padding: 0 8.4375%;
+    padding: 0 8.4375% !important;
 }
 
 .to-prev-btn {
     rotate: 180deg;
 }
 
+.explore-m-bot {
+    margin-bottom: 150px;
+}
+
 
 @media (max-width: 1440px) {
     .home-padding {
-        padding: 5.5556%;
+        padding:0 5.5556% !important;
     }
 
     .explore-m-bot {
@@ -21,9 +25,9 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 991px) {
     .home-padding {
-        padding: 4.1026%;
+        padding:0 4.1026% !important;
     }
 
     .explore-m-bot {
