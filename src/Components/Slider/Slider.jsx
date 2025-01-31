@@ -67,23 +67,23 @@ const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardT
                 />;
             case 'CardDataMustWatchShows':
                 return <CardWatchMovies
-                key={card.id}
-                id={card.id}
-                image={card.image}
-                duration={card.duration}
-                sub1_width={card.sub1_width}
-                star={card.star}
-                Date={card.Date}
-                routePath={card.routePath} 
-              />;
+                    key={card.id}
+                    id={card.id}
+                    image={card.image}
+                    duration={card.duration}
+                    sub1_width={card.sub1_width}
+                    star={card.star}
+                    Date={card.Date}
+                    routePath={card.routePath}
+                />;
 
 
             case 'CardDataReleasedShows':
-                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} cardWidth={cardWidth}
                     viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
                     iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
             case 'CardDataTrendingShows':
-                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
+                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} cardWidth={cardWidth} />;
             case 'movie':
                 return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
             case 'explore':

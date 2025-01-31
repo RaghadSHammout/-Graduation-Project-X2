@@ -6,7 +6,7 @@ import { Hero2SlideData } from "../Data/Hero2SlideData";
 export default function Hero2() {
   return (
     <>
-      <div className="zk-container zk-hero">
+      <div className="zk-container zk-hero home-padding">
         <Carousel className="zk-carousel" >
           {Hero2SlideData.map((e,index) => {
             return (
