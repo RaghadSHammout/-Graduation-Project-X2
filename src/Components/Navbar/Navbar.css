@@ -79,6 +79,86 @@
   color: var(--White);
   border-radius: 12px;
 }
+
+.signup-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--Darkblack);
+  opacity: 0.9;
+  color: var(--White);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--VeryDarkGray);
+  z-index: 999999999999999999999999;
+  width: 450px;
+  max-width: 90%;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: var(--Red);
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content label {
+  text-align: left;
+  margin: 8px 0;
+  color: var(--SilverGray);
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--Gray);
+  background-color: var(--VeryDarkGray);
+  color: var(--White);
+  border-radius: 4px;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--Semi-TransparentRed);
+  color: var(--White);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup-content button:hover {
+  background-color: var(--Red);
+}
+
+.popup-content .toggle-popup {
+  color: var(--Red);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-content .toggle-popup:hover {
+  text-decoration: underline;
+}
+
+.signup-popup button[type="button"] {
+  background-color: var(--DarkGrayTwo);
+}
+
+.signup-popup button[type="button"]:hover {
+  background-color: var(--SmokyGray);
+}
+
+
+
 @media (max-width: 1440px) {
   .ma-navbar .ma-links{
     padding: 20px 30px;
@@ -169,59 +249,3 @@
   }
 }
 
-/* ---------------------------------------------------- */
-.login-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.popup-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  width: 300px;
-}
-
-.popup-content h2 {
-  margin-bottom: 20px;
-}
-
-.popup-content form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.popup-content form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.popup-content form button {
-  margin: 5px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.popup-content form button[type="submit"] {
-  background: #007bff;
-  color: #fff;
-}
-
-.popup-content form button[type="button"] {
-  background: #ccc;
-}

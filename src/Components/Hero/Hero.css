@@ -9,11 +9,11 @@
     height: 860px;
     object-fit: cover;
     overflow: hidden;
-    overflow-x: hidden;
+    
     
 }
 .ma-all-layers .ma-topfadeout{
-    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+    background: linear-gradient(180deg, var(--DarkGrayTwo) 0%, rgba(20, 20, 20, 0) 100%);
     width: 100%;
     height: 581px;
     position: absolute;
@@ -25,13 +25,13 @@
     pointer-events: none;
 }
 .ma-all-layers .ma-bottomfadeout{
-    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%,var(--DarkGrayTwo) 100%);
     height: 581px;
     width: 100%;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 40%;
+    bottom: 35%;
     z-index: 1;
     pointer-events: none;
 }

@@ -5,11 +5,13 @@ import { cardsDataReleasesMovies, cardsDataTrendingMovies, CardDataWatchMovies }
 import { CardDataMustWatchShows, CardDataReleasedShows, CardDataTrendingShows } from "../Data/CardShowData";
 import { cardData, cardDataShows } from "../Data/toCardData";
 import { cardData2, cardData2Shows } from "../Data/toPopularData";
+
 import NotButton from "../notButton/notButton";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+
 
 function CardsMoviesshows() {
   const location = useLocation();
@@ -35,6 +37,7 @@ function CardsMoviesshows() {
   const [ActiveTab, setActiveTab] = useState("Movies");
   return (
     <section className='cards-container-zq home-padding'>
+
       <div className="Tabs-container">
         <button
           className={`${ActiveTab === "Movies" ? "LActive" : "Dis-LActive"}`}
@@ -54,19 +57,16 @@ function CardsMoviesshows() {
         className={`containers-container ${ActiveTab !== "Movies" ? "displayDiv" : " "
           }`}
       >        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Movies" />
+
         <div className="cards-container" id="genres">
           <CustomSlider
             cardData={cardData}
             lgSize={5}
             title="Our Genres"
-            text=''
-            cardGroup="card-group-2"
-            upperMb="to-slider-upper-mb2"
+            text=""
+            cardGroup="card-group"
+            upperMb="to-slider-upper-mb"
             cardType={"explore"}
-            cardWidth="MS-explore-card"
-            isThereText={false}
-            customIndicatorsSml="custom-indicators-sml2"
-            padding="MS-explore-card-padding"
           />
         </div>
 
@@ -75,14 +75,11 @@ function CardsMoviesshows() {
             cardData={cardData2}
             lgSize={4}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="to-card-group-2"
-            upperMb="to-slider-upper-mb2"
+            upperMb="to-slider-upper-mb"
             cardType={"exploreTop10"}
             cardWidth="explore-card-2"
-            isThereText={false}
-            customIndicatorsSml="custom-indicators-sml2"
-            padding="explore-card-padding2"
           />
         </div>
 
@@ -91,26 +88,28 @@ function CardsMoviesshows() {
             cardData={cardsDataTrendingMovies}
             lgSize={5}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb2"
             cardType={"cardsDataTrendingMovies"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
+
           />
         </div>
 
-        <div className="cards-container" id="new-release" >
+        <div className="cards-container" id="new-release">
           <CustomSlider
             cardData={cardsDataReleasesMovies}
             lgSize={5}
             title="New Released Shows"
-            text=''
+            text=""
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb2"
             cardType={"cardsDataReleasesMovies"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
+
           />
         </div>
 
@@ -118,8 +117,8 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={CardDataWatchMovies}
             lgSize={4}
-            title="New Released Shows"
-            text=''
+            title="Must - Watch Movies"
+            text=""
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb2"
             cardType={"CardDataWatchMovies"}
@@ -134,39 +133,35 @@ function CardsMoviesshows() {
         className={`containers-container ${ActiveTab !== "Shows" ? "displayDiv" : ""
           }`}
       >        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Shows" />
+
         <div className="cards-container" id="genres-Shows">
           <CustomSlider
-            cardData={cardDataShows}
+            cardData={cardData}
             lgSize={5}
             title="Our Genres"
-            text=''
-            cardGroup="card-group-2"
-            upperMb="to-slider-upper-mb2"
+            cardGroup="card-group"
+            upperMb="to-slider-upper-mb"
             cardType={"explore"}
             cardWidth="MS-explore-card"
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
             padding="MS-explore-card-padding"
 
+
           />
         </div>
 
         <div className="cards-container" id="popular-Shows">
           <CustomSlider
-            cardData={cardData2Shows}
+            cardData={cardData2}
             lgSize={4}
-            title="New Released Shows"
-            text=''
+            title="Popular Top 10 In Genres"
             cardGroup="to-card-group-2"
-            upperMb="to-slider-upper-mb2"
+            upperMb="to-slider-upper-mb"
             cardType={"exploreTop10"}
             cardWidth="explore-card-2"
-            isThereText={false}
-            customIndicatorsSml="custom-indicators-sml2"
-            padding="explore-card-padding2"
           />
         </div>
-
         <div className="cards-container" id="trending-Shows">
           <CustomSlider
             cardData={CardDataTrendingShows}
@@ -179,6 +174,7 @@ function CardsMoviesshows() {
             cardWidth="to-card-zq-width2"
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
+
           />
         </div>
 
@@ -194,6 +190,7 @@ function CardsMoviesshows() {
             cardWidth="to-card-zq-width2"
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
+
           />
         </div>
 
@@ -208,12 +205,12 @@ function CardsMoviesshows() {
             cardType={"CardDataMustWatchShows"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
+
           />
         </div>
       </div>
-
     </section>
-  )
+  );
 }
 
-export default CardsMoviesshows
+export default CardsMoviesshows;
