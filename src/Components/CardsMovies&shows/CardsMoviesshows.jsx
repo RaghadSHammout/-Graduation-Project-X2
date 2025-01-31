@@ -1,38 +1,41 @@
 import "./CardsMoviesshows.css";
-import {cardsDataReleasesMovies , cardsDataTrendingMovies ,CardDataWatchMovies} from"../Data/CardmoviesData";
-import {CardDataMustWatchShows,CardDataReleasedShows,CardDataTrendingShows} from "../Data/CardShowData";
-import cardData from "../Data/toCardData";
-import cardData2 from "../Data/toPopularData";
+import React from "react";
+import CustomSlider from "../Slider/Slider";
+import { cardsDataReleasesMovies, cardsDataTrendingMovies, CardDataWatchMovies } from "../Data/CardmoviesData";
+import { CardDataMustWatchShows, CardDataReleasedShows, CardDataTrendingShows } from "../Data/CardShowData";
+import { cardData, cardDataShows } from "../Data/toCardData";
+import { cardData2, cardData2Shows } from "../Data/toPopularData";
 import NotButton from "../notButton/notButton";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
-import { useParams } from "react-router-dom";
-import React from 'react'
-import './CardsMoviesshows.css'
-import CustomSlider from "../Slider/Slider";
-import Card from "../../Components/CardTrinding/Card";
-import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
-import {
-  CardReleasedShwos,
-  cardsDataNewReleases,
-  cardsDataTrending,
-  CardShwos,
-  CardWatchMoviesData,
-  CardWatchMoviesData2
-} from '../Data/CardmoviesData';
-import { cardData, cardDataShows } from '../Data/toCardData';
-import { cardData2, cardData2Shows } from '../Data/toPopularData';
-import NotButton from '../notButton/notButton';
-
 import { useParams } from "react-router-dom";
 
 function CardsMoviesshows() {
+  const location = useLocation();
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    };
+    handleScrollToHash();
+    window.addEventListener("hashchange", handleScrollToHash);
+    return () => {
+      window.removeEventListener("hashchange", handleScrollToHash);
+    };
+  }, [location]);
+
   const { id } = useParams();
+
+  const [ActiveTab, setActiveTab] = useState("Movies");
   return (
     <section className='cards-container-zq home-padding'>
-     <div className="Tabs-container">
+      <div className="Tabs-container">
         <button
           className={`${ActiveTab === "Movies" ? "LActive" : "Dis-LActive"}`}
           onClick={() => setActiveTab("Movies")}
@@ -46,11 +49,10 @@ function CardsMoviesshows() {
           Shows
         </button>
       </div>
-      
-  <div
-        className={`containers-container ${
-          ActiveTab !== "Movies" ? "displayDiv" : " "
-        }`}
+
+      <div
+        className={`containers-container ${ActiveTab !== "Movies" ? "displayDiv" : " "
+          }`}
       >        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Movies" />
         <div className="cards-container" id="genres">
           <CustomSlider
@@ -84,15 +86,15 @@ function CardsMoviesshows() {
           />
         </div>
 
-        <div className="cards-container"  id="trending">
+        <div className="cards-container" id="trending">
           <CustomSlider
-            cardData={cardsDataTrending}
+            cardData={cardsDataTrendingMovies}
             lgSize={5}
             title="New Released Shows"
             text=''
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb2"
-            cardType={"cardsDataTrending"}
+            cardType={"cardsDataTrendingMovies"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />
@@ -100,27 +102,27 @@ function CardsMoviesshows() {
 
         <div className="cards-container" id="new-release" >
           <CustomSlider
-            cardData={cardsDataNewReleases}
+            cardData={cardsDataReleasesMovies}
             lgSize={5}
             title="New Released Shows"
             text=''
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb2"
-            cardType={"cardsDataNewReleases"}
+            cardType={"cardsDataReleasesMovies"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />
         </div>
 
-        <div className="cards-container" id="new-release">
+        <div className="cards-container" id="new-release2">
           <CustomSlider
-            cardData={CardWatchMoviesData}
+            cardData={CardDataWatchMovies}
             lgSize={4}
             title="New Released Shows"
             text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb2"
-            cardType={"CardWatchMoviesData"}
+            cardType={"CardDataWatchMovies"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />
@@ -128,10 +130,9 @@ function CardsMoviesshows() {
       </div>
 
 
- <div
-        className={`containers-container ${
-          ActiveTab !== "Shows" ? "displayDiv" : ""
-        }`}
+      <div
+        className={`containers-container ${ActiveTab !== "Shows" ? "displayDiv" : ""
+          }`}
       >        <NotButton div="moviesNotButton" divText="moviesNotButtonText" text="Shows" />
         <div className="cards-container" id="genres-Shows">
           <CustomSlider
@@ -146,7 +147,7 @@ function CardsMoviesshows() {
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
             padding="MS-explore-card-padding"
-            
+
           />
         </div>
 
@@ -168,13 +169,14 @@ function CardsMoviesshows() {
 
         <div className="cards-container" id="trending-Shows">
           <CustomSlider
-            cardData={cardsDataTrending}
-            lgSize={5}
+            cardData={CardDataTrendingShows}
+            lgSize={4}
             title="New Released Shows"
             text=''
-            cardGroup="card-group-zq"
+            cardGroup="to-card-group-zq"
             upperMb="to-slider-upper-mb2"
-            cardType={"cardsDataTrending"}
+            cardType={"CardDataTrendingShows"}
+            cardWidth="to-card-zq-width2"
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />
@@ -182,13 +184,14 @@ function CardsMoviesshows() {
 
         <div className="cards-container" id="new-release-Shows">
           <CustomSlider
-            cardData={cardsDataNewReleases}
-            lgSize={5}
+            cardData={CardDataReleasedShows}
+            lgSize={4}
             title="New Released Shows"
             text=''
-            cardGroup="card-group-zq1"
+            cardGroup="to-card-group-zq"
             upperMb="to-slider-upper-mb2"
-            cardType={"cardsDataNewReleases"}
+            cardType={"CardDataReleasedShows"}
+            cardWidth="to-card-zq-width2"
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />
@@ -196,13 +199,13 @@ function CardsMoviesshows() {
 
         <div className="cards-container">
           <CustomSlider
-            cardData={CardWatchMoviesData}
+            cardData={CardDataMustWatchShows}
             lgSize={4}
             title="New Released Shows"
             text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb2"
-            cardType={"CardWatchMoviesData"}
+            cardType={"CardDataMustWatchShows"}
             isThereText={false}
             customIndicatorsSml="custom-indicators-sml2"
           />

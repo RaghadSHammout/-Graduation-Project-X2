@@ -34,12 +34,19 @@
     gap: 14px;
 }
 
-.to-title,
 .to-movies-shows-title {
     line-height: 57px;
     font-size: 38px;
     font-weight: 700;
     color: var(--White);
+    margin: 0;
+}
+
+.to-title {
+    line-height: 57px !important;
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    color: var(--White) !important;
     margin: 0;
 }
 
@@ -69,8 +76,8 @@
     }
 
     .to-title {
-        line-height: 42px;
-        font-size: 28px;
+        line-height: 42px !important;
+        font-size: 28px !important;
     }
 
     .to-movies-shows-title {
@@ -115,10 +122,14 @@
         gap: 8px;
     }
 
-    .to-title,
     .to-movies-shows-title {
         line-height: 36px;
         font-size: 24px;
+    }
+
+    .to-title {
+        line-height: 36px !important;
+        font-size: 24px !important;
     }
 
     .to-text {
