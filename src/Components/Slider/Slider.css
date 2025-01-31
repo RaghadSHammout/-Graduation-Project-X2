@@ -73,7 +73,7 @@
 
 .card-group,
 .to-card-group-2 {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: end;
 }
@@ -189,6 +189,7 @@
 
     .to-card-group-2 {
         height: 310px !important;
+        
     }
 }
 

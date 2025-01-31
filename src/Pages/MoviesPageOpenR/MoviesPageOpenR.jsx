@@ -1,5 +1,8 @@
 import "./MoviesPageOpenR.css"
 import MoviesOpenHero from '../../Components/MoviesOpenHero/MoviesOpenHero'
+import {cardsDataReleasesMovies , cardsDataTrendingMovies ,CardDataWatchMovies} from"../../Components/Data/CardmoviesData"
+import {cardData} from "../../Components/Data/toCardData"
+import {cardData2} from "../../Components/Data/toPopularData"
 import Description from "../../Components/Description/Description"
 import CastCarousel from "../../Components/CastCarousel/CastCarousel"
 import Reviews from "../../Components/Reviews/Reviews"
@@ -11,9 +14,16 @@ import {  Outlet, useParams } from "react-router-dom";
 
 export default function MoviesPageOpenR() {
   const { id } = useParams();
+  const movie = cardsDataReleasesMovies.find((item) => item.id === parseInt(id)) ||
+                 cardsDataTrendingMovies.find((item) => item.id === parseInt(id)) ||
+                 CardDataWatchMovies.find((item) => item.id === parseInt(id)) ||
+                 cardData.find((item) => item.id === parseInt(id)) ||
+                 cardData2.find((item) => item.id === parseInt(id))
+
+   if (!movie) return <h2>Movie not found</h2> ;
   return (
     <>
-    <MoviesOpenHero/>
+    <MoviesOpenHero movie = {movie} />
     <section className="ma-sec-all Desktop-padding-left-right">
         <div className="ma-sec-left">
           <div className="ma-Description ma-hover">
@@ -27,7 +37,6 @@ export default function MoviesPageOpenR() {
               lunaPad ={true}
               CastImages={CastImages}
              />
-             npm i framer-motion
           </div>
           <div className="ma-Reviews ma-hover"> 
             <Reviews
