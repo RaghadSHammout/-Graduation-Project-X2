@@ -7,8 +7,11 @@ export default function MoviesOpenHero() {
   return (
     <>
      <div className="zk-container zk-hero  ">
+    
        <div className="zk-carousel">
         <div className="Slide2">
+      
+             
         <SlideComponent 
               imgHero={herobg2}
               imgHeight={"img-hero"}
@@ -23,8 +26,10 @@ export default function MoviesOpenHero() {
               show={true}
               caption={"zk-caption2"}
             />
+           
             </div>
            </div>
+          
       </div> 
 
     </>

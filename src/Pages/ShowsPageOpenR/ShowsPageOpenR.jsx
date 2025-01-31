@@ -1,6 +1,6 @@
 
 import './ShowsPageOpenR.css'
-import MoviesOpenHero from '../../Components/MoviesOpenHero/MoviesOpenHero'
+import ShowOpenHero from '../../Components/MoviesOpenHero/MoviesOpenHero'
 import Seasons from "../../Components/Seasons/Seasons"
 import Reviews from "../../Components/Reviews/Reviews";
 import Description from "../../Components/Description/Description";
@@ -12,7 +12,7 @@ import img12 from "../../assets/photos/Shows open page images/Music img.png"
 export default function ShowsPageOpenR() {
   return (
     <>
-    <MoviesOpenHero/>
+    <ShowOpenHero/>
       <section className="ma-section-show Desktop-padding-left-right">
         <div className="ma-sec-div-one">
           <div className="ma-div-show ma-margin-30 ma-div-Seasons ">
