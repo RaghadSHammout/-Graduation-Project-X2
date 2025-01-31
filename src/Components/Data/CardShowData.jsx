@@ -439,7 +439,7 @@ export const CardDataTrendingShows = [
       
 
     },
-  },
+  
   {
     id: 24,
     cardShow_zq: "cardShow-zq",

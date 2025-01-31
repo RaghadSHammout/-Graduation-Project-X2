@@ -74,7 +74,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={cardData2}
             lgSize={4}
-            title="New Released Shows"
+            title="Popular Top 10 In Genres"
             text=''
             cardGroup="to-card-group-2"
             upperMb="to-slider-upper-mb2"
@@ -90,7 +90,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={cardsDataTrendingMovies}
             lgSize={5}
-            title="New Released Shows"
+            title="Trending Now"
             text=''
             cardGroup="card-group-zq"
             upperMb="to-slider-upper-mb2"
@@ -104,7 +104,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={cardsDataReleasesMovies}
             lgSize={5}
-            title="New Released Shows"
+            title="New Releases"
             text=''
             cardGroup="card-group-zq1"
             upperMb="to-slider-upper-mb2"
@@ -118,7 +118,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={CardDataWatchMovies}
             lgSize={4}
-            title="New Released Shows"
+            title="Must - Watch Movies"
             text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb2"
@@ -155,7 +155,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={cardData2Shows}
             lgSize={4}
-            title="New Released Shows"
+            title="Popular Top 10 In Genres"
             text=''
             cardGroup="to-card-group-2"
             upperMb="to-slider-upper-mb2"
@@ -171,7 +171,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={CardDataTrendingShows}
             lgSize={4}
-            title="New Released Shows"
+            title="Trending Shows Now"
             text=''
             cardGroup="to-card-group-zq"
             upperMb="to-slider-upper-mb2"
@@ -201,7 +201,7 @@ function CardsMoviesshows() {
           <CustomSlider
             cardData={CardDataMustWatchShows}
             lgSize={4}
-            title="New Released Shows"
+            title="Must - Watch Shows"
             text=''
             cardGroup="card-group-zq2"
             upperMb="to-slider-upper-mb2"

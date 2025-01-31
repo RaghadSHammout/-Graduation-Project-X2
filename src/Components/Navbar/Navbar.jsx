@@ -85,7 +85,7 @@ export default function Navbar() {
             <NavLink to={'/Subscription'} className='ma-Subscriptions' onClick={listdown}>Subscriptions</NavLink>
         </li>
         <li>
-            <NavLink to={'/About uS'}  onClick={listdown}>About US</NavLink>
+            <NavLink to={'/AboutUs'}  onClick={listdown}>About US</NavLink>
         </li>
     </ul>
     <div className='ma-icon'>
