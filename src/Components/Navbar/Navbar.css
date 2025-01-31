@@ -79,6 +79,98 @@
   color: var(--White);
   border-radius: 12px;
 }
+
+.signup-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--Darkblack);
+  opacity: 0.9;
+  color: var(--White);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--VeryDarkGray);
+  z-index: 999999999999999999999999;
+  width: 450px;
+  max-width: 90%;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: var(--Red);
+  font-size: 40px;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content label {
+  text-align: left;
+  margin: 8px 0;
+  color: var(--SilverGray);
+  font-size: 25px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--Gray);
+  background-color: var(--VeryDarkGray);
+  color: var(--White);
+  font-size: 18px;
+  border-radius: 4px;
+  outline: none;
+}
+.popup-content input:hover{
+  transform: translate(0 ,-5px);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.popup-content input::placeholder {
+  font-size: 18px;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--Semi-TransparentRed);
+  color: var(--White);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.popup-content button:hover {
+  background-color: var(--Red);
+}
+
+.popup-content .toggle-popup {
+  color: var(--Red);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-content .toggle-popup:hover {
+  text-decoration: underline;
+}
+
+.signup-popup button[type="button"] {
+  background-color: var(--DarkGrayTwo);
+}
+
+.signup-popup button[type="button"]:hover {
+  background-color: var(--SmokyGray);
+}
+.ma-navbar .ma-icon span {
+  margin: 0px 10px;
+}
 @media (max-width: 1440px) {
   .ma-navbar .ma-links{
     padding: 20px 30px;
@@ -118,7 +210,9 @@
   }
   .ma-navbar .ma-icon button
   {  
-     padding: 3px 8px;
+    padding: 5px 7px;
+    border: none;
+    font-size: 24px;
   }
 }
 
@@ -150,6 +244,7 @@
   }
   .ma-navbar .ma-button button{
     padding: 5px 20px;
+    font-size: 16px;
   }
   .ma-navbar .ma-button img {
     height: 48px;

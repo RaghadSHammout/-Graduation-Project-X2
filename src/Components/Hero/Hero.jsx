@@ -19,7 +19,7 @@ export default function HeroNew() {
         rotation: 90,
         duration: 1,
         ease: 'power2.out',
-      });
+      }, 1);
     }, []);
     return (
       <img ref={imageRef} src={src} alt={alt} />
