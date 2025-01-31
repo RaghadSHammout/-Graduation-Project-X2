@@ -1,183 +1,277 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import PropTypes from 'prop-types';
-import ExploreCard from '../ExploreCard/ExploreCard';
-import Card from "../../Components/CardTrinding/Card";
-import CardWatchMovies from "../../Components/CardWatchMovies/CardWatchMovies";
-import Title from '../Title/Title';
-import arrow from '../../assets/photos/Vector 619.png';
-//import framer-motion library
-import { motion } from 'framer-motion'
-//import Animation.js
-import { fadeIn } from '../../Animation'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import './Slider.css';
+.custom-arrows {
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    outline: 1px solid var(--Darkblack);
+    background-color: var(--DeepBlack);
+    width: max-content;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 10px;
+}
 
-const CustomSlider = ({ cardData, lgSize, title, text, cardGroup, upperMb, cardType, isThereText, cardWidth, customIndicatorsSml, padding }) => {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 991);
-    const [activeIndex, setActiveIndex] = useState(0);
-    const swiperRef = useRef(null);
+.prev-arrow:hover,
+.next-arrow:hover {
+    transition: 600ms;
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+}
 
-    // Generate unique IDs for navigation buttons
-    const uniqueId = useRef(`slider-${Math.random().toString(36).substr(2, 9)}`);
+.slider-upper-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
 
-    useEffect(() => {
-        const handleResize = () => setIsSmallScreen(window.innerWidth <= 991);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+.to-slider-upper-mb {
+    margin-bottom: 70px;
+}
 
-    const groupCards = (cards, itemsPerGroup) => {
-        if (!Array.isArray(cards) || cards.length === 0) return [];
-        return cards.reduce((groups, card, index) => {
-            const groupIndex = Math.floor(index / itemsPerGroup);
-            groups[groupIndex] = groups[groupIndex] || [];
-            groups[groupIndex].push(card);
-            return groups;
-        }, []);
-    };
+.to-slider-upper-mb2 {
+    margin-bottom: 40px;
+}
 
-    // Add the name of your card with the component with its props in a new Case in this switch statement
-    const renderCard = (card, index) => {
-        switch (cardType) {
-            case 'CardWatchMoviesData':
-                return <CardWatchMovies
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    duration={card.duration}
-                    star={card.star}
-                    Date={card.Date}
-                    routePath={card.routePath}
-                />;
-            case 'cardsDataNewReleases':
-                return <Card key={card.id} id={card.id} routePath={card.routePath} image={card.image} releaseDate={card.releaseDate} />;
-            case 'cardsDataTrending':
-                return <Card
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    views={card.views}
-                    duration={card.duration}
-                    iconViews={card.iconViews}
-                    iconDuration={card.iconDuration}
-                    routePath={card.routePath}
-                />;
-            case 'CardWatchMoviesData2':
-                return <CardWatchMovies
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    duration={card.duration}
-                    star={card.star}
-                    Date={card.Date}
-                    routePath={card.routePath}
-                />;
-            case 'CardShwos':
-                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq}
-                    viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration}
-                    iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
-            case 'ReleasedShwos':
-                return <Card key={card.id} id={card.id} image={card.image} cardShow_zq={card.cardShow_zq} viewcardShow_zq={card.viewcardShow_zq} iconDuration={card.iconDuration} duration={card.duration} durationcard_zq={card.durationcard_zq} iconViews={card.iconViews} views={card.views} routePath={card.routePath} />;
-            case 'movie':
-                return <MovieCard key={index} title={card.title} image={card.image} link={card.link} />;
-            case 'explore':
-                return <ExploreCard key={index} title={card.title} image={card.image} id={card.id} routePath={card.routePath} cardWidth={cardWidth} padding={padding} />;
-            case 'exploreTop10':
-                return <ExploreCard key={card.id} title={card.title} image={card.image} id={card.id} routePath={card.routePath} isTop10={true} cardWidth={cardWidth} padding={padding} />;
-            default:
-                return null;
-        }
-    };
+.custom-arrows button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryDarkGray);
+    padding: 14px;
+    border: 1px solid var(--Darkblack);
+    cursor: pointer;
+    border-radius: 8px;
+}
 
-    const itemsPerGroup = isSmallScreen ? 2 : lgSize;
-    const groupedCards = groupCards(cardData, itemsPerGroup).slice(0, 4);
+.slider-arrow-div {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    const handleDotClick = (index) => {
-        swiperRef.current?.slideTo(index);
-    };
+.slider-arrow-img {
+    width: 17.5px;
+    height: 15.75px;
+}
 
-    return (
-        <div>
-            <motion.div
-                variants={fadeIn("right", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className={`slider-upper-div ${upperMb}`}>
-                <Title title={title} text={text} size="to-title" matext="to-text" isThereText={isThereText} />
-                <div className="custom-arrows">
-                    <button className={`prev-arrow ${uniqueId.current}-prev`}>
-                        <div className="slider-arrow-div">
-                            <img className="slider-arrow-img" src={arrow} alt="Previous" />
-                        </div>
-                    </button>
-                    <div className="custom-indicators">
-                        {groupedCards.map((_, index) => (
-                            <button
-                                key={index}
-                                className={`to-indicator ${activeIndex === index ? 'active' : ''}`}
-                                onClick={() => handleDotClick(index)}
-                            />
-                        ))}
-                    </div>
-                    <button className={`next-arrow ${uniqueId.current}-next`}>
-                        <div className="slider-arrow-div">
-                            <img className="slider-arrow-img" src={arrow} alt="Next" />
-                        </div>
-                    </button>
-                </div>
-            </motion.div>
-            <Swiper
-                modules={[Navigation]}
-                navigation={{
-                    prevEl: `.${uniqueId.current}-prev`,
-                    nextEl: `.${uniqueId.current}-next`,
-                }}
-                onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-                onSwiper={(swiper) => (swiperRef.current = swiper)}
-                slidesPerView={1}
-                loop
-            >
-                {groupedCards.map((group, groupIndex) => (
-                    <SwiperSlide key={groupIndex}>
-                        <div className={`${cardGroup}`}>
-                            {group.map((card, cardIndex) => (
-                                renderCard(card, cardIndex)
-                            ))}
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            <div className={`${customIndicatorsSml}`}>
-                {groupedCards.map((_, index) => (
-                    <button
-                        key={index}
-                        className={`to-indicator ${activeIndex === index ? 'active' : ''}`}
-                        onClick={() => handleDotClick(index)}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-};
+.custom-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
 
-CustomSlider.defaultProps = {
-    cardData: [],
-    lgSize: 5,
-    cardType: 'explore',
-    isThereText: false,
-    customIndicatorsSml: "custom-indicators-sml"
-};
+.prev-arrow {
+    rotate: 180deg;
+}
 
-CustomSlider.propTypes = {
-    cardData: PropTypes.array.isRequired,
-    lgSize: PropTypes.number,
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    cardType: PropTypes.string,
-};
+.card-group,
+.card-group-2,
+.to-card-group-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
 
-export default CustomSlider;
+.card-group {
+    height: 352px !important;
+}
+
+.card-group-2 {
+    height: 330.28px !important;
+}
+
+.card-group-zq,
+.card-group-zq1 {
+    height: 385.8px !important;
+}
+
+.card-group-zq2 {
+    height: 507.22px !important;
+}
+
+.to-card-group-2 {
+    height: 390.73px !important;
+}
+
+.custom-indicators button {
+    padding: 0;
+    width: 16.33px;
+    height: 4px;
+    background: var(--SmokyGray);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.to-indicator.active {
+    background-color: red;
+    /* Red color for the active indicator */
+    width: 23px;
+}
+
+
+.custom-indicators-sml,
+.custom-indicators-sml2 {
+    display: none;
+    height: 5px;
+    width: 22.1%;
+    background: var(--SmokyGray);
+    border-radius: 100px;
+    margin-top: 24px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3.7974%;
+}
+
+.custom-indicators-sml2 {
+    margin-top: 20px;
+}
+
+.custom-indicators-sml button,
+.custom-indicators-sml2 button {
+    height: 5px;
+    width: 22.067%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.prev-arrow .slider-arrow-img {
+    width: 17.5px;
+    height: 15.75px;
+}
+
+.next-arrow .slider-arrow-img {
+    width: 21px;
+    height: 17.5px;
+}
+
+@media (max-width: 1440px) {
+
+    .custom-arrows {
+        padding: 12px;
+        gap: 12px;
+        margin-top: 8px;
+        border-radius: 10px;
+    }
+
+    .slider-arrow-div {
+        width: 24px;
+        height: 24px;
+    }
+
+    .prev-arrow .slider-arrow-img {
+        width: 15px;
+        height: 13.5px;
+    }
+
+    .next-arrow .slider-arrow-img {
+        width: 18px;
+        height: 15px;
+    }
+
+    .custom-arrows button {
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .custom-indicators button {
+        padding: 0;
+        width: 14px;
+        height: 4px;
+        background: var(--SmokyGray);
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    .to-indicator.active {
+        background-color: var(--Red);
+        /* Red color for the active indicator */
+        width: 18px;
+    }
+
+    .to-slider-upper-mb {
+        margin-bottom: 50px;
+    }
+
+    .to-slider-upper-mb2 {
+        margin-bottom: 30px;
+    }
+
+    .card-group {
+        height: 287px !important;
+    }
+
+    .card-group-2 {
+        height: 280.8px !important;
+    }
+
+    .to-card-group-2 {
+        height: 314.91px !important;
+    }
+
+    .card-group-zq {
+        height: 306.38px !important;
+    }
+
+    .card-group-zq1 {
+        height: 314.38px !important;
+    }
+
+    .card-group-zq2 {
+        height: 407.95px !important;
+    }
+
+    .slider-upper-div {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .custom-arrows {
+        display: none;
+    }
+
+    .custom-indicators-sml,
+    .custom-indicators-sml2 {
+        display: flex;
+    }
+
+    .to-indicator.active {
+        width: 25.3164%;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+}
+
+    .to-slider-upper-mb {
+        margin-bottom: 30px;
+    }
+
+    .to-slider-upper-mb2 {
+        margin-bottom: 20px;
+    }
+
+    .card-group,
+    .card-group-2,
+    .to-card-group-2,
+    .card-group-zq,
+    .card-group-zq1,
+    .card-group-zq2 {
+        height: 100% !important;
+    }
+}

@@ -1,0 +1,62 @@
+.containerMon{
+
+    padding: 162px !important;
+    
+    } 
+    .icon-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    
+    }
+    
+    .icon {
+        font-size: 70px; 
+        cursor: pointer;
+        margin-bottom: 50px;
+        color: rgba(200, 53, 53, 0.871);
+        
+    }
+    
+    .button {
+        background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.681) 0%, rgba(15, 15, 15, 1) 20%);
+        background-color:  var(--DeepBlack);
+    
+        border: none;
+        color: white; /* لون النص */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 12px; /* حواف مستديرة */
+        transition: transform 0.3s, box-shadow 0.3s;
+    
+    }
+    
+    .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(117, 11, 11, 0.336), 
+                        0 0 30px rgba(190, 44, 44, 0.4); /* تأثير الظلال التدريجي */}
+    
+    .MOAbouth3 h3{
+        margin-bottom: 30px;
+        color: white;
+        
+    }
+    .MoAboutContainer{
+        margin-bottom: 50px;
+    
+    width: auto;   display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    @media (max-width: 1300px) {
+        .icon-container {
+            flex-direction: column;
+            align-items: center;
+        }}

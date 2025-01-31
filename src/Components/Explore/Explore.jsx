@@ -1,6 +1,6 @@
 import "./Explore.css";
 import CustomSlider from "../Slider/Slider";
-import cardData from "../Data/toCardData";
+import { cardData, cardDataShows } from "../Data/toCardData";
 
 
 

@@ -12,22 +12,14 @@
 
 .card-group-zq,
 .card-group-zq1,
-.card-group-zq2,
-.card-group-zq3,
-.card-group-zq4,
-.card-group-zq5 {
+.card-group-zq2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.card-group-zq {
-    height: 454px !important;
-
-}
-
-.cards-container-zq  {
+.cards-container-zq {
     width: 100% !important;
     display: flex;
     flex-direction: column;
@@ -38,27 +30,25 @@
 .cards-container {
     width: 100%;
 }
- .cards-container > div {
+
+.cards-container>div {
     width: 100% !important;
-} 
+}
 
 .containers-container {
     width: 100%;
     padding: 50px;
     border: 1px solid var(--DarkGrayOne);
     border-radius: 12px;
-    margin-top: 50px;
-    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     gap: 100px;
     position: relative;
 }
 
-
 .Tabs-container {
-   
-    width: max-content;
+
+    width: 100%;
     max-height: 61px;
     padding: 8px;
     display: none;
@@ -70,45 +60,49 @@
 }
 
 .LActive {
-    padding: 12px 62px;
-    color:var(--White);
+    width: 50%;
+    padding: 12px 0;
+    color: var(--White);
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
-    background-color: var(--Darkblack) ;
+    background-color: var(--Darkblack);
     border: none;
     border-radius: 6px;
+    text-align: center;
 }
+
 .Dis-LActive {
-    padding:12px 63.5px;
+    width: 50%;
+    padding: 12px 0;
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
     color: var(--Gray);
     background-color: transparent;
     border: none;
+    text-align: center;
 }
- .displayDiv{
-    display: block;
- }
 
+.displayDiv {
+    display: flex;
+}
 
 @media (max-width:1440px) {
     .moviesNotButton {
         border-radius: 6px;
         padding: 8px 20px;
         top: -18px;
-}
+    }
 
     .moviesNotButtonText {
         line-height: 24px;
         font-size: 16px;
     }
-        
-    .containers-container  {
+
+    .containers-container {
         width: 100%;
         padding: 40px;
-        margin-top: 120px;
         gap: 80px;
     }
 }
@@ -116,24 +110,22 @@
 @media (max-width:991px) {
     .moviesNotButton {
         display: none;
-     }
-    
-      .Tabs-container{
-        display: flex;
-      }
-      
-    .containers-container   {
+    }
+
+    .containers-container {
         width: 100%;
         padding: 0;
-        margin-top: 120px;
         gap: 50px;
         border: none;
-        
     }
-    .displayDiv{
+
+    .Tabs-container {
+        display: flex;
+    }
+
+    .displayDiv {
         display: none;
     }
-    
 }
 
 @media (max-width:390px) {
@@ -143,7 +135,7 @@
         position: absolute;
         top: -20px;
     }
-   
+
     .moviesNotButtonText {
         line-height: 30px;
         font-size: 20px;
