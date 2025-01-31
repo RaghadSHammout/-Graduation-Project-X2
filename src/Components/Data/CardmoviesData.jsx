@@ -17,7 +17,20 @@ import img4 from "../../assets/photos/Movies & shows page images/Must Watch (4).
 
 import star4_5 from "../../assets/photos/Container(10).png";
 import star4 from "../../assets/photos/Container(12).png";
-
+import LQPhoto from "../../assets/photos/Movies open page images/doctor1.jpeg"
+import LQPhoto1 from "../../assets/photos/Movies open page images/Love Story.jpeg"
+import LQPhoto2 from "../../assets/photos/Movies open page images/The Crazy Family.jpeg"
+import LQPhoto3 from "../../assets/photos/Movies open page images/the north man.jpeg"
+import LQPhoto4 from "../../assets/photos/Movies open page images/The iron man.jpeg"
+import LQPhoto5 from "../../assets/photos/Movies open page images/kankarta.jpeg"
+import LQPhoto6 from "../../assets/photos/Movies open page images/pushpa.jpeg"
+import LQPhoto7 from "../../assets/photos/Movies open page images/blad.jpeg"
+import LQPhoto8 from "../../assets/photos/Movies open page images/Adipurush.jpeg"
+import LQPhoto9 from "../../assets/photos/Movies open page images/Barhamastra.jpeg"
+import LQPhoto10 from "../../assets/photos/Movies open page images/time bandats.jpeg"
+import LQPhoto11 from "../../assets/photos/Movies open page images/sin city.jpeg"
+import LQPhoto12 from "../../assets/photos/Movies open page images/war.jpeg"
+import LQPhoto13 from "../../assets/photos/Movies open page images/black panther.jpeg"
 import iconduration from "../../assets/photos/Movies & shows page images/Iconduration.png";
 import iconviews from "../../assets/photos/Movies & shows page images/Iconviews.png";
 
@@ -28,6 +41,8 @@ export const CardDataWatchMovies = [
       image: img1,
       sub1_width: "",
       duration: "1h 57min",
+      photo: LQPhoto5,
+      LqTitle: "KANTARA",
       sub2_width: "",
       star: star4_5,
       Date: "20K",
@@ -38,7 +53,8 @@ export const CardDataWatchMovies = [
       image: img2,
       sub1_width: "",
       duration: "1h 30min",
-      
+      photo: LQPhoto6,
+      LqTitle: "PUSHPA",
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -49,7 +65,8 @@ export const CardDataWatchMovies = [
       image: img3,
       sub1_width: "",
       duration: "1h 42min",
-     
+      photo: LQPhoto7,
+      LqTitle: "THE BLAD RUNNER",
       star: star4_5,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -60,7 +77,8 @@ export const CardDataWatchMovies = [
       image: img4,
       sub1_width: "",
       duration: "2h 10min",
-      
+      photo: LQPhoto8,
+      LqTitle: "ADIPURUSH",
       star: star4,
       Date: "20K",
       routePath:"/MoviesPageOpenR/movie/"
@@ -242,14 +260,19 @@ export const cardsDataTrendingMovies = [
     duration: "1h 30min",
     iconViews: iconviews,
     views: "2K",
+    LqTitle: "DOCTOR STRANGER",
+    photo:LQPhoto, 
     routePath: "/MoviesPageOpenR/movie/"
+    
   },
   {
     id: 6,
     image: imagcard2,
     iconDuration: iconduration,
     duration: "1h 57min",
+    photo:LQPhoto1,
     iconViews: iconviews,
+    LqTitle: "LOVE STORY",
     views: "1.5K",
     routePath: "/MoviesPageOpenR/movie/"
   },
@@ -259,6 +282,8 @@ export const cardsDataTrendingMovies = [
     iconDuration: iconduration,
     duration: "2h 10min",
     iconViews: iconviews,
+    photo:LQPhoto2,
+    LqTitle: "THE CRAZY FAMILY",
     views: "1.8K",
     routePath: "/MoviesPageOpenR/movie/"
   },
@@ -268,6 +293,8 @@ export const cardsDataTrendingMovies = [
     iconDuration: iconduration,
     duration: "2h 20min",
     iconViews: iconviews,
+    photo:LQPhoto3,
+    LqTitle: "THE NORTH MAN",
     views: "3K",
     routePath: "/MoviesPageOpenR/movie/"
   },
@@ -277,6 +304,8 @@ export const cardsDataTrendingMovies = [
     iconDuration: iconduration,
     duration: "1h 42min",
     iconViews: iconviews,
+    photo:LQPhoto4,
+    LqTitle: "THE IRON MAN",
     views: "5K",
     routePath: "/MoviesPageOpenR/movie/"
   },
@@ -419,6 +448,8 @@ export const cardsDataTrendingMovies = [
 export const cardsDataReleasesMovies = [
   {
     id: 10,
+    photo:LQPhoto9,
+    LqTitle: "BARHAMASTRA",
     image: imagNewReleasescard1,
     releaseDate: "14 April 2023",
     routePath: "/MoviesPageOpenR/movie/"
@@ -428,23 +459,31 @@ export const cardsDataReleasesMovies = [
     id: 11,
     image: imagNewReleasescard2,
     releaseDate: "22 April 2023",
+    photo:LQPhoto10,
+    LqTitle: "TIME BANDATS",
     routePath: "/MoviesPageOpenR/movie/"
   },
   {
     id: 12,
     image: imagNewReleasescard3,
+    photo:LQPhoto11,
+    LqTitle: "SIN CITY",
     releaseDate: "13 April 2023",
     routePath: "/MoviesPageOpenR/movie/"
   },
   {
     id: 13,
     image: imagNewReleasescard4,
+    photo:LQPhoto12,
+    LqTitle: "THE WAR BEGINES",
     releaseDate: "19 April 2023",
     routePath: "/MoviesPageOpenR/movie/"
   },
   {
     id: 14,
     image: imagNewReleasescard5,
+    photo:LQPhoto13,
+    LqTitle: "MIS FIRE",
     releaseDate: "12 April 2023",
     routePath: "/MoviesPageOpenR/movie/"
   },

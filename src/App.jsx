@@ -64,6 +64,7 @@ export default function App() {
         </div>
       )}
 
+
       {!isErrorPage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
