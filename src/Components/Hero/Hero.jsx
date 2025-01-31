@@ -29,69 +29,68 @@ export default function HeroNew() {
   return (
     <section className='ma-all-layers'>
        <div className='one-layer-img ' >
-      <Row>
-      {
-        imgHero.map ((item1 , index)=>{
+        <Row>
+        {
+          imgHero.map ((item1 , index)=>{
+            return(
+              <Col>
+              <img key={index} src= {item1.heroImg} alt='' 
+          
+              className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
+              </Col> 
+                )
+              })
+          }
+        </Row>
+        <Row >
+        {
+          imgHero2.map ((item1 , index)=>{
           return(
-            <Col>
-            <img key={index} src= {item1.heroImg} alt='' 
-        
-            className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
-            </Col> 
+              <Col>
+              <img key={index} src= {item1.heroImg} alt='' 
+              className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
+              </Col> 
               )
             })
-        }
-      </Row>
-      <Row >
-      {
-        imgHero2.map ((item1 , index)=>{
-        return(
-            <Col>
-            <img key={index} src= {item1.heroImg} alt='' 
+          }
         
-            className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
-            </Col> 
-            )
-          })
+        </Row>
+        <Row >
+        {
+          imgHero3.map ((item1 , index)=>{
+            return(
+              <Col>
+              <img key={index} src= {item1.heroImg} alt='' 
+          
+              className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
+              </Col> 
+              )
+              })
+          }
+        </Row>
+        <Row>
+        {
+          imgHero4.map ((item1 , index)=>{
+            return(
+              <Col>
+              <img key={index} src= {item1.heroImg} alt='' 
+              className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
+              </Col> 
+              )
+              })
         }
-       
-      </Row>
-      <Row >
-      {
-        imgHero3.map ((item1 , index)=>{
-          return(
-            <Col>
-            <img key={index} src= {item1.heroImg} alt='' 
+        </Row>
         
-            className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
-            </Col> 
-            )
-            })
-        }
-      </Row>
-      <Row>
-      {
-        imgHero4.map ((item1 , index)=>{
-          return(
-            <Col>
-            <img key={index} src= {item1.heroImg} alt='' 
-            className= {`${item1.special ? 'marginImg' : ''} ${item1.distance ? 'marginImg1' : ''}`}/>  
-            </Col> 
-            )
-            })
-      }
-      </Row>
-    
     </div>
-      <div className='ma-topfadeout'></div>
-      <div  className='ma-bottomfadeout'></div>
-      <div>
-        <img src={playbutton} alt="" className='playbutton' />
-      </div>
-      <div className='spinningthingy'>
-        <RotatingImage src={spinningthingy} alt="" />
-      </div>
-      <div className='ma-box-title'>
+    <div className='ma-topfadeout'></div>
+    <div  className='ma-bottomfadeout'></div>
+    <div>
+      <img src={playbutton} alt="" className='playbutton' />
+    </div>
+    <div className='spinningthingy'>
+      <RotatingImage src={spinningthingy} alt="" />
+    </div>
+    <div className='ma-box-title'>
       <Title
         number = {118}
         maMargin = {'ma-50'}
@@ -105,8 +104,8 @@ export default function HeroNew() {
         show= {true}
         img={triangle}
         text = {" Start Watching Now"}/>
-      </div>
-    </section>
+    </div>
+  </section>
   )
 }
 
