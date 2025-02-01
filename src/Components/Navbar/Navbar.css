@@ -8,6 +8,7 @@
   z-index: 100000;
   position: fixed;
 }
+
 .ma-navbar .ma-links {
   display: flex;
   align-items: center;
@@ -17,9 +18,10 @@
   padding: 24px 40px;
   border: 4px solid var(--Darkblack);
   border-radius: 12px;
-  margin: 0px;
+  margin: 0;
   background-color: var(--DeepBlack);
 }
+
 .ma-navbar .ma-links li a {
   color: var(--SilverGray);
   font-size: 18px;
@@ -28,6 +30,7 @@
   font-weight: 400;
   font-family: "Manrope", serif;
 }
+
 .ma-navbar .ma-links li a.active {
   color: var(--White);
   border: 1px solid var(--VeryDarkGray);
@@ -38,11 +41,13 @@
 }
 
 .ma-navbar .ma-links li .ma-home.active {
- margin-left: -30px;
+  margin-left: -30px;
 }
+
 .ma-navbar .ma-links li .ma-Subscriptions.active {
- margin-right: -30px;
+  margin-right: -30px;
 }
+
 .ma-navbar .ma-icon {
   color: var(--White) !important;
   display: flex;
@@ -51,17 +56,20 @@
   gap: 30px;
   font-size: 25.5px;
 }
+
 .ma-navbar .ma-button {
   display: none;
 }
 
-.ma-img-search{
+.ma-img-search {
   width: 25.5px;
   height: 25.5px;
 }
+
 .ma-nav2 {
-  background-color: var( --DeepBlack);
+  background-color: var(--DeepBlack);
 }
+
 .ma-icon button {
   border: none;
   padding: 6px 19px;
@@ -71,7 +79,7 @@
   border-radius: 12px;
 }
 
-.ma-navbar .ma-button button{
+.ma-navbar .ma-button button {
   border: none;
   padding: 6px 19px;
   border: 4px solid var(--Darkblack);
@@ -80,13 +88,23 @@
   border-radius: 12px;
 }
 
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.567); 
+  z-index: 9999999999999; 
+}
+
+
 .signup-popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--Darkblack);
-  opacity: 0.9;
   color: var(--White);
   padding: 20px;
   border-radius: 8px;
@@ -157,29 +175,26 @@
   background-color: var(--SmokyGray);
 }
 
-
-
 @media (max-width: 1440px) {
-  .ma-navbar .ma-links{
+  .ma-navbar .ma-links {
     padding: 20px 30px;
     gap: 16px;
     border-radius: 10px;
     border: 3px solid var(--Darkblack);
   }
-  .ma-navbar .ma-links li a.active{
-    padding: 12px 20px ;
+  .ma-navbar .ma-links li a.active {
+    padding: 12px 20px;
   }
   .ma-navbar .ma-links li .ma-home.active {
     margin-left: -22px;
-   }
-   .ma-navbar .ma-links li .ma-Subscriptions.active {
+  }
+  .ma-navbar .ma-links li .ma-Subscriptions.active {
     margin-right: -22px;
-   }
-  .ma-navbar .ma-links li a{
+  }
+  .ma-navbar .ma-links li a {
     font-size: 14px;
     line-height: 21px;
   }
-
   .ma-navbar .ma-logo img {
     width: 165.83px;
     height: 50px;
@@ -188,17 +203,16 @@
     height: 98px;
     padding: 18px 5.555%;
   }
-  .ma-img-search{
+  .ma-img-search {
     width: 18px;
     height: 18px;
   }
-  .ma-navbar .ma-icon{
+  .ma-navbar .ma-icon {
     gap: 14px;
     width: 165.83px;
   }
-  .ma-navbar .ma-icon button
-  {  
-     padding: 3px 8px;
+  .ma-navbar .ma-icon button {
+    padding: 3px 8px;
   }
 }
 
@@ -216,19 +230,18 @@
     top: 4%;
     left: 40%;
   }
-
   .ma-navbar .ma-links,
   .ma-navbar .ma-icon {
     display: none;
   }
-  .ma-navbar .ma-icon button{
+  .ma-navbar .ma-icon button {
     display: flex;
   }
   .ma-navbar .ma-button {
     display: flex;
     gap: 10px;
   }
-  .ma-navbar .ma-button button{
+  .ma-navbar .ma-button button {
     padding: 5px 20px;
   }
   .ma-navbar .ma-button img {
@@ -240,12 +253,13 @@
     height: 35px;
   }
   .ma-nav2 {
-    padding: 10px 4.102564% ;
+    padding: 10px 4.102564%;
   }
 }
+
 @media (max-width: 390px) {
   .ma-navbar ul li a {
     font-size: 10px;
   }
 }
-
+ 
