@@ -1,4 +1,4 @@
-.zk-text3{
+.zk-text3 {
     font-family: Manrope;
     width: 1254px;
     height: 35px;
@@ -15,27 +15,29 @@
     margin-bottom: 10px;
 
 }
+
 @media (max-width: 1600px) {
 
-    .zk-text3{
+    .zk-text3 {
         margin-bottom: 30px;
-     width: 1000px;
-       
-    } 
+        width: 1000px;
+
+    }
 }
 
-
-@media (max-width: 1000px) {
-
-    .zk-text3{display: none;}
-   
-}
 @media (max-width: 1200px) {
-    .zk-text3{
+    .zk-text3 {
         margin-bottom: 45px;
-     width: 90%;
-       
-    } 
-   
-   
+        width: 90%;
+
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .zk-text3 {
+        display: none;
+    }
+
 }

@@ -1,91 +1,106 @@
-.plans{
+.plans {
     padding-top: 150px;
-    padding-bottom:123px ;
-} 
-.new-plans{
-    padding-top: 220px;
-    padding-bottom:150px ;
+    padding-bottom: 123px;
 }
-.Lq-component-container{
-    width:78.89%;
-} 
-.LQ-Title-Tab{
+
+.new-plans {
+    padding-top: 220px;
+    padding-bottom: 150px;
+}
+
+.Lq-component-container {
+    width: 78.89%;
+}
+
+.LQ-Title-Tab {
     margin-bottom: 80px;
-    
-}    
-.lq-tabs{
+
+}
+
+.lq-tabs {
     /* width: 14.85%;  */
     max-height: 75px;
     border: 1px solid var(--DarkGrayOne);
     border-radius: 10px;
-    background-color:var(--DeepBlack);
+    background-color: var(--DeepBlack);
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
 }
-.LQactive{
-    padding:14px 24px;
+
+.LQactive {
+    padding: 14px 24px;
     border-radius: 10px;
     background-color: var(--Darkblack);
     border: none;
-    color:var(--White);
+    color: var(--White);
     transition: 0.2s ease-in-out;
 }
-.dis-LQactive{
-    padding:14px 24px;
+
+.dis-LQactive {
+    padding: 14px 24px;
     border: none;
     border-radius: 100px;
     background-color: transparent;
-    color:var(--Gray);
+    color: var(--Gray);
 }
 
-  @media(max-width:1440px){
-    .plans{
+@media(max-width:1440px) {
+    .plans {
         padding-top: 120px;
         padding-bottom: 120px;
     }
-    .new-plans{
+
+    .new-plans {
         padding-top: 198px;
-        padding-bottom:120px ;
+        padding-bottom: 120px;
     }
-    .Lq-component-container{
+
+    .Lq-component-container {
         width: 76.5%;
     }
-    .LQ-Title-Tab{
-       margin-bottom:60px
-    } 
-    .lq-tabs{
-        padding:8px;
+
+    .LQ-Title-Tab {
+        margin-bottom: 60px
+    }
+
+    .lq-tabs {
+        padding: 8px;
         font-size: 14px;
         line-height: 21px;
     }
-    .LQactive , .dis-LQactive{
+
+    .LQactive,
+    .dis-LQactive {
         padding: 12px 20px;
     }
- } 
+}
 
- @media(max-width:992px){
-    .plans{
+@media(max-width:992px) {
+    .plans {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    .new-plans{
+
+    .new-plans {
         padding-top: 142px;
-        padding-bottom:80px ;
+        padding-bottom: 80px;
     }
-    .lq-father-card{
+
+    .lq-father-card {
         flex-direction: column;
         gap: 10px;
     }
-    .LQ-Title-Tab{
+
+    .LQ-Title-Tab {
         flex-wrap: wrap;
         justify-content: start;
         gap: 20px;
         margin-bottom: 40px;
-    } 
-    .lq-tabs{
+    }
+
+    .lq-tabs {
         max-height: 61px;
     }
 }
-

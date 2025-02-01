@@ -24,7 +24,7 @@ export default function ShowsPageOpenR() {
   return (
     <>
       <ShowOpenHero show = {show} />
-      <section className="ma-section-show Desktop-padding-left-right">
+      <section className="ma-section-show Desktop-padding-left-right explore-m-bot home-padding">
         <div className="ma-sec-div-one">
           <div className="ma-div-show ma-margin-30 ma-div-Seasons ">
             <Seasons />

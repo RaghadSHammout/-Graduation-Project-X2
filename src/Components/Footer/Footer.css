@@ -40,7 +40,7 @@
 }
 .conterfooter-zq {
   background-color: var(--DeepBlack);
-  padding: 150px 162px 50px 162px;
+  padding: 150px 8.4375% 50px 8.4375%;
 }
 
 .footerlink {
@@ -127,7 +127,7 @@
   width: 15.3648%;
 }
   .conterfooter-zq {
-    padding: 80px 80px 40px 80px;
+    padding: 80px 5.5556% 40px 5.5556%;
   }
 
   .footerlink {
@@ -151,9 +151,9 @@
   }
 }
 
-@media (max-width: 882px) {
+@media (max-width: 1000px) {
   .conterfooter-zq {
-    padding: 50px 16px 20px;
+    padding: 50px 4.1026% 20px 4.1026%;
   }
 
   .footerlink {

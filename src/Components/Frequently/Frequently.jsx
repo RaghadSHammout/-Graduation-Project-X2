@@ -86,7 +86,7 @@ const Frequently = () => {
   }, [location]);
    
   return (
-    <div className=" faq-container" id="FAQ">
+    <div className=" faq-container home-padding explore-m-bot" id="FAQ">
       <motion.div
           variants={fadeIn("up" , 0.2)}
           initial="hidden"

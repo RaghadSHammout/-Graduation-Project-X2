@@ -34,7 +34,7 @@ function CardsMoviesshows() {
 
   const [ActiveTab, setActiveTab] = useState("Movies");
   return (
-    <section className='cards-container-zq home-padding'>
+    <section className='cards-container-zq home-padding explore-m-bot'>
       <div className="Tabs-container">
         <button
           className={`${ActiveTab === "Movies" ? "LActive" : "Dis-LActive"}`}

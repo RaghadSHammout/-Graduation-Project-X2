@@ -31,7 +31,7 @@ export default function Plans({addPlans}) {
   }, [location]);
  
   return (
-    <section className={` Desktop-padding-left-right w-100 ${ addPlans? 'plans' : 'new-plans'}`} id="Pricing" >
+    <section className={` Desktop-padding-left-right w-100 ${ addPlans? 'home-padding explore-m-bot plans' : 'new-plans'}`} id="Pricing" >
       <motion.div
          variants={fadeIn("up" , 0.2)}
          initial="hidden"
