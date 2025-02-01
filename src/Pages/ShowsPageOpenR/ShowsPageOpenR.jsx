@@ -12,6 +12,8 @@ import ReleasedYear from "../../Components/ReleasedYear/ReleasedYear"
 import img11 from "../../assets/photos/Shows open page images/Director img.png"
 import img12 from "../../assets/photos/Shows open page images/Music img.png"
 import ShowOpenHero from '../../Components/ShowOpenHero/ShowOpenHero';
+import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 export default function ShowsPageOpenR() {
   const { id } = useParams();
   const show =
@@ -23,6 +25,7 @@ export default function ShowsPageOpenR() {
   if (!show) return <h2>Movie not found</h2>;
   return (
     <>
+        <Navbar />
       <ShowOpenHero show = {show} />
       <section className="ma-section-show Desktop-padding-left-right">
         <div className="ma-sec-div-one">
@@ -63,7 +66,7 @@ export default function ShowsPageOpenR() {
           </div>
         </div>
       </section>
-      
+      <Footer />
     </>
   );
 }

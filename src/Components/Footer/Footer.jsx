@@ -118,7 +118,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footerBar">
+      <div className="home-padding footerBar">
         <div className="SitePolicies-zq">
           <p>@2023 streamvib, All Rights Reserved</p>
         </div>

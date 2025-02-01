@@ -9,6 +9,18 @@
   position: fixed;
 }
 
+.username {
+  font-size: 15px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.username:hover {
+  color: var(--Red);
+}
+
 .ma-navbar .ma-links {
   display: flex;
   align-items: center;
@@ -57,6 +69,14 @@
   font-size: 25.5px;
 }
 
+.ma-navbar .ma-icon div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: end;
+}
+
+
 .ma-navbar .ma-button {
   display: none;
 }
@@ -73,10 +93,18 @@
 .ma-icon button {
   border: none;
   padding: 6px 19px;
-  border: 4px solid var(--Darkblack);
-  background-color: var(--Red);
-  color: var(--White);
+  border: 2px solid var(--Red);
+  background-color: transparent;
+  color: var(--Red);
   border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: .5s;
+
+}
+
+.ma-icon button:hover {
+  box-shadow: 0px 0px 10px var(--Red);
 }
 
 .ma-navbar .ma-button button {
@@ -182,15 +210,20 @@
     border-radius: 10px;
     border: 3px solid var(--Darkblack);
   }
+
   .ma-navbar .ma-links li a.active {
     padding: 12px 20px;
   }
+
   .ma-navbar .ma-links li .ma-home.active {
     margin-left: -22px;
   }
+
   .ma-navbar .ma-links li .ma-Subscriptions.active {
     margin-right: -22px;
   }
+
+
   .ma-navbar .ma-links li a {
     font-size: 14px;
     line-height: 21px;
@@ -199,28 +232,32 @@
     width: 165.83px;
     height: 50px;
   }
+
   .ma-navbar {
     height: 98px;
     padding: 18px 5.555%;
   }
+
   .ma-img-search {
     width: 18px;
     height: 18px;
   }
+
   .ma-navbar .ma-icon {
     gap: 14px;
-    width: 165.83px;
   }
+
   .ma-navbar .ma-icon button {
     padding: 3px 8px;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 991px) {
   .ma-navbar {
     height: 102px;
     padding: 40px 4.102564% 14px 4.102564%;
   }
+
   .ma-navbar .ma-links.ma-link-open {
     display: flex;
     flex-direction: column;
@@ -234,24 +271,45 @@
   .ma-navbar .ma-icon {
     display: none;
   }
+
   .ma-navbar .ma-icon button {
     display: flex;
   }
+
   .ma-navbar .ma-button {
     display: flex;
     gap: 10px;
   }
+
   .ma-navbar .ma-button button {
     padding: 5px 20px;
+    font-size: 14px;
+    border: none;
+    padding: 6px 19px;
+    border: 2px solid var(--Red);
+    transition: .5s;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--Red);
+    border-radius: 12px;
   }
+
+
+
+  .ma-navbar .ma-button button:hover {
+    box-shadow: 0px 0px 10px var(--Red);
+  }
+
   .ma-navbar .ma-button img {
     height: 48px;
     width: 48px;
   }
+
   .ma-navbar .ma-logo img {
     width: 116.08px;
     height: 35px;
   }
+
   .ma-nav2 {
     padding: 10px 4.102564%;
   }
@@ -262,4 +320,4 @@
     font-size: 10px;
   }
 }
- 
+

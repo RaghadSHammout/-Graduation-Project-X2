@@ -85,15 +85,17 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink to={'/AboutUs'}  onClick={listdown}>About US</NavLink>
-          </li>
-        </ul>
-        <div className='ma-icon'>
-          <img src={search} alt="" className='ma-img-search'/>
-          <img src={vector} alt="" className='ma-img-search' />
-          {isLogin ? (
-            <div>
-              <span>{username}</span>
-              <button onClick={handleLogout}>Log Out</button>
+        </li>
+    </ul>
+    <div className='ma-icon'>
+    <img src={search} alt=""  className='ma-img-search'/>
+    <img src={vector} alt="" className='ma-img-search' />
+    {isLogin ? (
+        <div>
+          <span className='username'> {username}</span>
+          <button onClick={handleLogout}>Log Out</button>
+
+         
             </div>
           ) : (
             <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover'>Sign Up</button>
@@ -105,6 +107,7 @@ export default function Navbar() {
         </div>  
       </nav>
       
+
       {showSignupPopup && (
         <>
           <div className="overlay2"></div>

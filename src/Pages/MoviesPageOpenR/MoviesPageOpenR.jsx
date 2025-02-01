@@ -11,6 +11,8 @@ import img11 from "../../assets/photos/Movies open page images/Director img.png"
 import img12 from "../../assets/photos/Movies open page images/Music img.png"
 import { CastImages } from "../../Components/Data/CardImages";
 import {  Outlet, useParams } from "react-router-dom";
+import Navbar from "../../Components/Navbar/Navbar"
+import Footer from "../../Components/Footer/Footer"
 
 export default function MoviesPageOpenR() {
   const { id } = useParams();
@@ -23,6 +25,7 @@ export default function MoviesPageOpenR() {
    if (!movie) return <h2>Movie not found</h2> ;
   return (
     <>
+    <Navbar />
     <MoviesOpenHero movie = {movie} />
     <section className="ma-sec-all Desktop-padding-left-right">
         <div className="ma-sec-left">
@@ -66,7 +69,7 @@ export default function MoviesPageOpenR() {
         </div>
       </section>
       <Outlet/>
-      
+      <Footer />
     </>
   )
 }
