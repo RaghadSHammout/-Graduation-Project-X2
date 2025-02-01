@@ -27,7 +27,7 @@ export default function MoviesPageOpenR() {
     <>
     <Navbar />
     <MoviesOpenHero movie = {movie} />
-    <section className="ma-sec-all Desktop-padding-left-right">
+    <section className="ma-sec-all Desktop-padding-left-right explore-m-bot">
         <div className="ma-sec-left">
           <div className="ma-Description ma-hover">
             <Description

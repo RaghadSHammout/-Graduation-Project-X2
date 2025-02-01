@@ -41,7 +41,7 @@ export default function StreamingDevices() {
   }, [location]);
 
   return (
-    <section className={"home-padding "} id='Devices'>
+    <section className="home-padding explore-m-bot" id='Devices'>
       
         <div className='MAContanair '>
 

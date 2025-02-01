@@ -6,7 +6,7 @@ import SlideComponent from '../../Components/SlideComponent/SlideComponent';
 export default function ShowOpenHero({show}) {
   return (
     <>
-     <div className="zk-container zk-hero  ">
+     <div className="zk-container zk-hero home-padding ">
        <div className="zk-carousel">
         <div className="Slide2">
         <SlideComponent 

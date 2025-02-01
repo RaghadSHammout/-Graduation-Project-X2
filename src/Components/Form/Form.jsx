@@ -33,7 +33,7 @@ export default function Form() {
   }, [location]);
 
   return (
-    <div className='ma-allbox' id="Contact-Us">
+    <div className='ma-allbox explore-m-bot' id="Contact-Us">
       <div className='ma-left-dev'>
         <Title
           title={'Welcome to our support page!'}

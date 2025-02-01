@@ -29,7 +29,7 @@ export default function ComparePlansTable() {
     };
   }, [location]);
   return (
-    <section className="subscription-padding w-100" id="features">
+    <section className="subscription-padding w-100 explore-m-bot" id="features">
       <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"

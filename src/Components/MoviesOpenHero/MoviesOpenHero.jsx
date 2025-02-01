@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import herobg2 from "../../assets/photos/Movies open page images/Hero bg.png"
 import triangle from "../../assets/photos/Home page images/triangle.png";
 import SlideComponent from '../../Components/SlideComponent/SlideComponent';
-export default function MoviesOpenHero({movie}) {
+export default function MoviesOpenHero({ movie }) {
   return (
     <>
-     <div className="zk-container zk-hero  ">
-       <div className="zk-carousel">
-        <div className="Slide2">
-         <SlideComponent 
+      <div className="zk-container zk-hero home-padding">
+        <div className="zk-carousel">
+          <div className="Slide2">
+            <SlideComponent
               imgHero={movie.photo}
               imgHeight={"img-hero"}
               title={movie.LqTitle}
@@ -23,9 +23,9 @@ export default function MoviesOpenHero({movie}) {
               show={true}
               caption={"zk-caption2"}
             />
-            </div>
-           </div>
-      </div> 
+          </div>
+        </div>
+      </div>
 
     </>
   );

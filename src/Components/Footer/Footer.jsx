@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div className="conter-zq">
+      <div className="conter-zq home-padding explore-m-bot">
         <div className="image-container">
           <img className="ImagFooter-zq" src={FooterImg} alt="footer image" />
           <div className="overlay"
