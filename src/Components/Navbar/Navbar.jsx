@@ -93,7 +93,7 @@ export default function Navbar() {
     <img src={vector} alt="" className='ma-img-search' />
     {isLogin ? (
         <div>
-          <span> {username}</span>
+          <span className='username'> {username}</span>
           <button onClick={handleLogout}>Log Out</button>
         </div>
       ) : (
@@ -105,7 +105,7 @@ export default function Navbar() {
     <div className='ma-button'>
         <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover' >Sign Up</button>
         <img src={button} alt="" onClick={listdown} />
-    </div>  
+    </div>
 </nav>
 
 
