@@ -1,62 +1,104 @@
-.containerMon{
+.containerMon {
+    margin-top: 150px;
+    padding: 80px 70px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkGrayTwo);
+}
 
-    padding: 162px !important;
-    
-    } 
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px; 
+    width: 100%;
+    margin: auto;
+}
+
+.icon {
+    font-size: 75px;
+    cursor: pointer;
+    color: var(--Red);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: var(--Semi-TransparentRed);
+}
+
+.button {
+    background: linear-gradient(to bottom left, var(--dark-red) 0%, var(--DeepBlack) 20%);
+    border: none;
+    color: var(--White);
+    padding: 12px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 5px 15px var(--Semi-TransparentRed);
+}
+
+.MOAbouth3 h3 {
+    margin-bottom: 15px;
+    color: var(--White);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.MoAboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--VeryDarkGray);
+    color: var(--SilverGray);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.MoAboutContainer:hover {
+    box-shadow: 0 5px 15px var(--DarkGrayOne);
+    transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
     .icon-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    
-    }
-    
-    .icon {
-        font-size: 70px; 
-        cursor: pointer;
-        margin-bottom: 50px;
-        color: rgba(200, 53, 53, 0.871);
-        
-    }
-    
-    .button {
-        background: linear-gradient(to bottom left, rgba(117, 11, 11, 0.681) 0%, rgba(15, 15, 15, 1) 20%);
-        background-color:  var(--DeepBlack);
-    
-        border: none;
-        color: white; /* لون النص */
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 12px; /* حواف مستديرة */
-        transition: transform 0.3s, box-shadow 0.3s;
-    
-    }
-    
-    .button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(117, 11, 11, 0.336), 
-                        0 0 30px rgba(190, 44, 44, 0.4); /* تأثير الظلال التدريجي */}
-    
-    .MOAbouth3 h3{
-        margin-bottom: 30px;
-        color: white;
-        
-    }
-    .MoAboutContainer{
-        margin-bottom: 50px;
-    
-    width: auto;   display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
     }
-    @media (max-width: 1300px) {
-        .icon-container {
-            flex-direction: column;
-            align-items: center;
-        }}
+
+    .containerMon {
+        padding: 60px 20px;
+    }
+
+    .icon {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .MoAboutContainer {
+        width: 90%;
+    }
+
+    .icon {
+        font-size: 60px;
+    }
+
+    .MOAbouth3 h3 {
+        font-size: 22px;
+    }
+}

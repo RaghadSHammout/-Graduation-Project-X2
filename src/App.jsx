@@ -12,6 +12,7 @@ import HashLoader from "react-spinners/HashLoader";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage.jsx";
 import AboutUs from "./Pages/AboutUs/AboutUs.jsx";
 import './App.css';
+
 export default function App() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -25,17 +26,15 @@ export default function App() {
 
   const color = "#e50000";
 
+  // تحديث شرط التحقق بحيث يتم استبعاد صفحة الخطأ بدقة
   const isErrorPage = ![
-    "/", 
-    "/MoviesAndShows", 
-    "/MoviesPageOpenR/movie/:id", 
-    "/ShowsPageOpenR/show/:id", 
-    "/Subscription", 
+    "/",
+    "/MoviesAndShows",
+    "/Subscription",
     "/Support",
-    "/AboutUs" 
-  ].includes(location.pathname);
+    "/AboutUs",
+  ].some(path => location.pathname === path || location.pathname.startsWith(path + "/"));
 
-  
   return (
     <>
       {loading && (
@@ -50,7 +49,6 @@ export default function App() {
           />
         </div>
       )}
-
 
       {!isErrorPage && <Navbar />}
       <Routes>
