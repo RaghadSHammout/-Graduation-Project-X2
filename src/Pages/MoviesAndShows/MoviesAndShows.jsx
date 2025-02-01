@@ -8,9 +8,9 @@ export default function MoviesAndShows() {
  
   return (
     <>
+    
      <Hero2/>
       <CardsMoviesshows/>
-      {/* <Outlet /> */}
     </>
 
   );
