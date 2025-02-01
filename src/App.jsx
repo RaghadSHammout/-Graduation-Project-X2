@@ -26,7 +26,6 @@ export default function App() {
 
   const color = "#e50000";
 
-  // تحديث شرط التحقق بحيث يتم استبعاد صفحة الخطأ بدقة
   const isErrorPage = ![
     "/",
     "/MoviesAndShows",
