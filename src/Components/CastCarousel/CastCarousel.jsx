@@ -51,7 +51,7 @@ const CastCarousel = (props) => {
             prevEl: ".lq-left-arrow",
             nextEl: ".lq-right-arrow",
           }}
-          slidesPerView={1} // One group per slide
+          slidesPerView={1} 
           loop={true}
         >
           {groupedImages.map((group, groupIndex) => (
