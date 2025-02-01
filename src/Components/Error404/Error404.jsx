@@ -10,7 +10,7 @@ export default function Error404() {
 </div>
 
 <div className="errorPage">
-  <h1>404</h1>
+  <span>404</span>
   <h2>Oops! Page Not Found</h2>
   <p>Sorry, but the page you’re looking for doesn’t exist or has been moved.</p>
 </div>

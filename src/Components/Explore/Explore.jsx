@@ -2,9 +2,6 @@ import "./Explore.css";
 import CustomSlider from "../Slider/Slider";
 import { cardData, cardDataShows } from "../Data/toCardData";
 
-
-
-
 function Explore() {
     return (
         <section className="bg-color home-padding explore-m-bot">

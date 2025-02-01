@@ -32,7 +32,7 @@ export default function App() {
     "/Subscription",
     "/Support",
     "/AboutUs",
-  ].some(path => location.pathname === path || location.pathname.startsWith(path + "/"));
+    ].some(path => location.pathname === path || location.pathname.startsWith(path + "/"));
 
   return (
     <>
