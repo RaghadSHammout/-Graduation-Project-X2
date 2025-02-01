@@ -20,6 +20,7 @@
 .username:hover {
   color: var(--Red);
 }
+
 .ma-navbar .ma-links {
   display: flex;
   align-items: center;
@@ -29,7 +30,7 @@
   padding: 24px 40px;
   border: 4px solid var(--Darkblack);
   border-radius: 12px;
-  margin: 0px;
+  margin: 0;
   background-color: var(--DeepBlack);
 }
 
@@ -75,6 +76,7 @@
   justify-content: end;
 }
 
+
 .ma-navbar .ma-button {
   display: none;
 }
@@ -114,13 +116,23 @@
   border-radius: 12px;
 }
 
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.567); 
+  z-index: 9999999999999; 
+}
+
+
 .signup-popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--Darkblack);
-  opacity: 0.9;
   color: var(--White);
   padding: 20px;
   border-radius: 8px;
@@ -191,8 +203,6 @@
   background-color: var(--SmokyGray);
 }
 
-
-
 @media (max-width: 1440px) {
   .ma-navbar .ma-links {
     padding: 20px 30px;
@@ -213,11 +223,11 @@
     margin-right: -22px;
   }
 
+
   .ma-navbar .ma-links li a {
     font-size: 14px;
     line-height: 21px;
   }
-
   .ma-navbar .ma-logo img {
     width: 165.83px;
     height: 50px;
@@ -257,7 +267,6 @@
     top: 4%;
     left: 40%;
   }
-
   .ma-navbar .ma-links,
   .ma-navbar .ma-icon {
     display: none;
@@ -311,3 +320,4 @@
     font-size: 10px;
   }
 }
+

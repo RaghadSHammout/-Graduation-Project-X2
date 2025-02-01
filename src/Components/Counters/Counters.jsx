@@ -61,21 +61,21 @@ export default function Counters() {
                     <div className='MoAboutContainer'>
                         <FaUser className="icon" />
                         <div className='MOAbouth3'>
-                            <h3>Movies: {users}</h3>
+                            <h3>{users}</h3>
                         </div>
                     </div>
 
                     <div className='MoAboutContainer'>
                         <FaFilm className="icon" />
                         <div className='MOAbouth3'>
-                            <h3>Shows: {films}</h3>
+                            <h3>{films}</h3>
                         </div>
                     </div>
 
                     <div className='MoAboutContainer'>
                         <FaEye className="icon" />
                         <div className='MOAbouth3'>
-                            <h3>Users: {views}</h3>
+                            <h3> {views}</h3>
                         </div>
                     </div>
                 </div>
