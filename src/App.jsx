@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import {  Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import MoviesAndShows from "./Pages/MoviesAndShows/MoviesAndShows";
 import Subscription from "./Pages/Subscription/Subscription";
@@ -12,7 +12,7 @@ import HashLoader from "react-spinners/HashLoader";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage.jsx";
 import AboutUs from "./Pages/AboutUs/AboutUs.jsx";
 import './App.css';
-
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.jsx";
 export default function App() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -49,7 +49,8 @@ export default function App() {
         </div>
       )}
 
-      {!isErrorPage && <Navbar />}
+<ScrollToTop />
+    {!isErrorPage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MoviesAndShows" element={<MoviesAndShows />} />
@@ -63,5 +64,6 @@ export default function App() {
 
       {!isErrorPage && <Footer />}
     </>
+
   );
 }

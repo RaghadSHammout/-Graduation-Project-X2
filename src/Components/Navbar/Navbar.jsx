@@ -48,48 +48,35 @@ export default function Navbar() {
 
   useEffect(() => {
     const mahandleScroll = () => {
-      if (window.scrollY > 50) {
-        masetScroll(true);
-      } else {
-        masetScroll(false);
-      }
+      masetScroll(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', mahandleScroll);
-    return () => {
-      window.removeEventListener('scroll', mahandleScroll);
-    };
+    return () => window.removeEventListener('scroll', mahandleScroll);
   }, []);
 
   return (
     <>
       <nav className={`ma-navbar ${mascroll ? 'ma-nav2' : ''}`}>
-        <Link to={'/'} >
+        <Link to={'/'}>
           <div className='ma-logo'>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logo" />
           </div>
         </Link>
         <ul className={`ma-links ${maisopen ? 'ma-link-open' : ''}`}>
+          <li><NavLink to={'/'} className='ma-home' onClick={listdown}>Home</NavLink></li>
           <li>
-            <NavLink to={'/'} className='ma-home' onClick={listdown}>Home</NavLink>
+            <NavLink to={'/MoviesAndShows'} onClick={listdown} className={isMoviceAndShowActive ? 'active' : ''}>
+              Movies & Shows
+            </NavLink>
           </li>
-          <li>
-            <NavLink to={'/MoviesAndShows'} onClick={listdown } 
-            className={isMoviceAndShowActive ? 'active' : ''}>Movies & Shows</NavLink>
-          </li>
-          <li>
-            <NavLink to={'/Support'} onClick={listdown}>Support </NavLink>
-          </li>
-          <li>
-            <NavLink to={'/Subscription'} className='ma-Subscriptions' onClick={listdown}>Subscriptions</NavLink>
-          </li>
-          <li>
-            <NavLink to={'/AboutUs'}  onClick={listdown}>About us</NavLink>
-          </li>
+          <li><NavLink to={'/Support'} onClick={listdown}>Support</NavLink></li>
+          <li><NavLink to={'/Subscription'} onClick={listdown}>Subscriptions</NavLink></li>
+          <li><NavLink to={'/AboutUs'} onClick={listdown}>About us</NavLink></li>
         </ul>
         <div className='ma-icon'>
-          <img src={search} alt="" className='ma-img-search'/>
-          <img src={vector} alt="" className='ma-img-search' />
+          <img src={search} alt="Search" className='ma-img-search' />
+          <img src={vector} alt="Vector" className='ma-img-search' />
           {isLogin ? (
             <div>
               <span>{username}</span>
@@ -100,9 +87,15 @@ export default function Navbar() {
           )}
         </div>
         <div className='ma-button'>
-          <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover'>Sign Up</button>
-          <img src={button} alt="" onClick={listdown} />
-        </div>  
+          {!maisopen && ( 
+            isLogin ? (
+              <button onClick={handleLogout} className='ma-btn-hover'>Log Out</button>
+            ) : (
+              <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover'>Sign Up</button>
+            )
+          )}
+          <img src={button} alt="Menu" onClick={listdown} />
+        </div>
       </nav>
       
       {showSignupPopup && (
@@ -115,46 +108,31 @@ export default function Navbar() {
                 e.preventDefault();
                 handleLogin();
               }}>
-                {isLogin ? (
+                <label htmlFor='Username'>Username:</label>
+                <input
+                  id='Username'
+                  type="text"
+                  placeholder="Enter username"
+                  value={loginUsername}
+                  onChange={(e) => setLoginUsername(e.target.value)}
+                />
+                {!isLogin && (
                   <>
-                    <label htmlFor='Username'>Username:</label>
-                    <input
-                      id='Username'
-                      type="text"
-                      placeholder="Enter username"
-                      value={loginUsername}
-                      onChange={(e) => setLoginUsername(e.target.value)}
-                    />
-                    <label htmlFor='Password'>Password:</label>
-                    <input
-                      id='Password'
-                      type="password"
-                      placeholder="Enter password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                  </>
-                ) : (
-                  <>
-                    <label htmlFor='Username2'>Username:</label>
-                    <input
-                      id='Username2'
-                      type="text"
-                      placeholder="Enter username"
-                      value={loginUsername}
-                      onChange={(e) => setLoginUsername(e.target.value)}
-                    />
                     <label htmlFor='Email'>Email:</label>
-                    <input type="email" placeholder="Enter email" id='Email'/>
-                    <label htmlFor='Password2'>Password:</label>
-                    <input
-                      id='Password2'
-                      type="password"
-                      placeholder="Enter password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <label htmlFor='Confirm Password'>Confirm Password:</label>
+                    <input type="email" placeholder="Enter email" id='Email' />
+                  </>
+                )}
+                <label htmlFor='Password'>Password:</label>
+                <input
+                  id='Password'
+                  type="password"
+                  placeholder="Enter password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                {!isLogin && (
+                  <>
+                    <label htmlFor='ConfirmPassword'>Confirm Password:</label>
                     <input type="password" placeholder="Confirm password" id='ConfirmPassword' />
                   </>
                 )}
@@ -163,10 +141,7 @@ export default function Navbar() {
               </form>
               <p>
                 {isLogin ? "Don't have an account?" : "Already have an account?"}
-                <span
-                  className="toggle-popup"
-                  onClick={() => setIsLogin(!isLogin)}
-                >
+                <span className="toggle-popup" onClick={() => setIsLogin(!isLogin)}>
                   {isLogin ? " Sign Up" : " Log In"}
                 </span>
               </p>
