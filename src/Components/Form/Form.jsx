@@ -84,7 +84,7 @@ export default function Form() {
             </span>
             <label htmlFor="">I agree with Terms of Use and Privacy Policy</label>
           </div>
-          <div className='ma-button'>
+          <div className='ma-button send-message'>
             <Button
               text={'Send Message'}
             />

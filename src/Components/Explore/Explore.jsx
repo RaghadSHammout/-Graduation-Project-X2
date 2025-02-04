@@ -4,7 +4,7 @@ import { cardData, cardDataShows } from "../Data/toCardData";
 
 function Explore() {
     return (
-        <section className="bg-color home-padding explore-m-bot">
+        <section className="bg-color home-padding explore-m-bot" id="Categories">
             <div className="carousel-container">
                 <CustomSlider
                     cardData={cardData}
