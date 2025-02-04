@@ -3,14 +3,18 @@ import Title from "../Title/Title";
 import "./ComparePlansTable.css";
 import { TableData } from "../Data/TableData";
 import { TableDataOnMobile } from "../Data/TableDataOnMobile";
-//import framer-motion library
-import { motion } from "framer-motion";
-//import Animation.js
-import { fadeIn } from "../../Animation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
+
 export default function ComparePlansTable() {
   const [ActiveTab, setActiveTab] = useState("Standard");
   const location = useLocation();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   useEffect(() => {
     const handleScrollToHash = () => {
       const hash = window.location.hash;
@@ -28,13 +32,11 @@ export default function ComparePlansTable() {
       window.removeEventListener("hashchange", handleScrollToHash);
     };
   }, [location]);
+
   return (
     <section className="subscription-padding home-padding w-100 explore-m-bot" id="features">
-      <motion.div
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+      <div
+        data-aos="fade-up"
         className="Lq-title-container"
       >
         <Title
@@ -46,8 +48,8 @@ export default function ComparePlansTable() {
             "StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you"
           }
         />
-      </motion.div>
-      <table className="Table">
+      </div>
+      <table className="Table" data-aos="fade-up">
         <thead className="Lq-row-bg">
           <tr>
             <th className="lq-head">Features</th>
@@ -63,7 +65,7 @@ export default function ComparePlansTable() {
         </thead>
         <tbody>
           {TableData.map((row) => (
-            <tr key={row.id}>
+            <tr key={row.id} data-aos="fade-right">
               <td className="lq-data">{row.feature}</td>
               <td className="lq-data">{row.basic}</td>
               <td className="lq-data">{row.standard}</td>
@@ -72,7 +74,7 @@ export default function ComparePlansTable() {
           ))}
         </tbody>
       </table>
-      <div className="Lq-mobile">
+      <div className="Lq-mobile" data-aos="fade-up">
         <div className="LQ-three-Tabs">
           <button
             className={` basic-btn ${

@@ -31,6 +31,8 @@
   border-radius: 12px;
   margin: 0px;
   background-color: var(--DeepBlack);
+  z-index: 10001;
+
 }
 
 .ma-navbar .ma-links li a {
@@ -49,6 +51,7 @@
   padding: 14px 24px;
   border-radius: 8px;
   font-weight: 500;
+  
 }
 
 .ma-navbar .ma-links li .ma-home.active {
@@ -251,6 +254,9 @@
 }
 
 @media (max-width: 991px) {
+  .ma-icon span {
+    display: none;
+  }
   .ma-navbar {
     height: 102px;
     padding: 40px 4.102564% 14px 4.102564%;
@@ -262,8 +268,8 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 4%;
-    left: 40%;
+    top: 8%;
+    right: 5%;
   }
 
   .ma-navbar .ma-links,
@@ -276,9 +282,10 @@
   }
 
   .ma-navbar .ma-button {
-    display: flex;
+    display: flex !important;
     gap: 10px;
   }
+ 
 
   .ma-navbar .ma-button button {
     padding: 5px 20px;

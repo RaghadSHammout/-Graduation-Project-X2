@@ -87,15 +87,13 @@ export default function Navbar() {
           )}
         </div>
         <div className='ma-button'>
-          {!maisopen && ( 
-            isLogin ? (
-              <button onClick={handleLogout} className='ma-btn-hover'>Log Out</button>
-            ) : (
-              <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover'>Sign Up</button>
-            )
-          )}
-          <img src={button} alt="Menu" onClick={listdown} />
-        </div>
+  {isLogin ? (
+    <button onClick={handleLogout} className='ma-btn-hover'>Log Out</button>
+  ) : (
+    <button onClick={() => setShowSignupPopup(true)} className='ma-btn-hover'>Sign Up</button>
+  )}
+  <img src={button} alt="Menu" onClick={listdown} />
+</div>
       </nav>
       
       {showSignupPopup && (
