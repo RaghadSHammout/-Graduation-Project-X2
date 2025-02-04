@@ -7,10 +7,12 @@
   border-top: 1px;
   transition: all 0.3s ease;
 }
+
 .faq-toggle.active {
   padding: 0px;
   background-color: transparent;
 }
+
 .faq-item.active {
   align-items: center;
   padding: 24px;
@@ -83,9 +85,11 @@
   justify-content: space-between;
   gap: 16px;
 }
+
 .faq-header .faq-question {
   color: white;
 }
+
 .faq-item-small.active {
   align-items: normal;
   height: 140px;
@@ -93,6 +97,7 @@
   padding: 20px 10px;
   background-color: transparent;
 }
+
 .faq-item-small .faq-answer {
   font-size: 14px;
   color: var(--Gray);
@@ -103,25 +108,26 @@
 
 .line {
   border: 1px solid transparent;
-  border-image-source: linear-gradient(
-    90deg,
-    rgba(229, 0, 0, 0) 0%,
-    #e50000 16.67%,
-    rgba(229, 0, 0, 0) 100%
-  );
+  border-image-source: linear-gradient(90deg,
+      rgba(229, 0, 0, 0) 0%,
+      #e50000 16.67%,
+      rgba(229, 0, 0, 0) 100%);
   border-image-slice: 1;
   width: 100%;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @media (max-width: 1440px) {
   .faq-item {
     padding: 24px;
@@ -129,9 +135,11 @@
     height: min-content;
     align-items: baseline;
   }
+
   .faq-item.active {
     padding: 20px;
   }
+
   .faq-number {
     border-radius: 8px;
     padding: 16px;
@@ -141,19 +149,23 @@
     font-size: 16px;
     line-height: 21.86px;
   }
+
   .faq-toggle {
     width: 466px;
     gap: 14px;
   }
+
   .faq-question {
     font-size: 20px;
     line-height: 30px;
   }
+
   .faq-answer {
     font-size: 16px;
     line-height: 24px;
     color: var(--Gray);
   }
+
   .faq-icon {
     width: 24px;
     height: 24px;
@@ -162,6 +174,7 @@
     color: var(--White);
   }
 }
+
 @media (max-width: 992px) {
   .faq-number {
     border-radius: 6px;
@@ -172,16 +185,24 @@
     font-size: 16px;
     line-height: 21.86px;
   }
+
   .faq-question {
     font-size: 18px;
     line-height: 27px;
     color: var(--White);
     width: 240px;
   }
+
   .faq-icon {
     width: 24px;
     height: 24px;
     font-weight: 500;
     font-size: 22px;
+  }
+}
+
+@media (max-width: 389px) {
+  .faq-question {
+    width: 100%;
   }
 }

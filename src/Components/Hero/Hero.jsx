@@ -18,9 +18,9 @@ export default function HeroNew() {
     useEffect(() => {
       if (imageRef.current) {
         gsap.to(imageRef.current, {
-          rotation: 720,
-          duration: 2.5,
-          ease: "power1.inOut", 
+          rotation: 360,
+          duration: 2,
+          ease: "power1.inOut", // Smooth ease-in-out effect
         });
       }
     }, []);

@@ -54,17 +54,17 @@ function Footer() {
           <div className="Movies">
             <h5 className="heading-zq">Movies</h5>
             <Link to="/MoviesAndShows#genres" className="links">
-            Genres
-          </Link>
-          <Link to="/MoviesAndShows#trending" className="links">
-            Trending
-          </Link>
-          <Link to="/MoviesAndShows#new-release" className="links">
-            New Release
-          </Link>
-          <Link to="/MoviesAndShows#popular" className="links">
-            Popular
-          </Link>
+              Genres
+            </Link>
+            <Link to="/MoviesAndShows#trending" className="links">
+              Trending
+            </Link>
+            <Link to="/MoviesAndShows#new-release" className="links">
+              New Release
+            </Link>
+            <Link to="/MoviesAndShows#popular" className="links">
+              Popular
+            </Link>
           </div>
           <div className="Shows">
             <h5 className="heading-zq">Shows</h5>
@@ -78,23 +78,23 @@ function Footer() {
               New Release
             </Link>
             <Link to="/MoviesAndShows#popular-Shows" className="links">
-              FAQ
+              Popular
             </Link>
           </div>
           <div className="Support">
             <h5 className="heading-zq">Support</h5>
             <Link to="/Support#Contact-Us" className="links">
-            Contact Us
+              Contact Us
             </Link>
           </div>
           <div className="Subscription">
             <h5 className="heading-zq"> Subscription</h5>
             <Link to="/Subscription#Pricing" className="links">
-            Plans
-          </Link>
-          <Link to="/Subscription#features" className="links">
-            Features
-          </Link>
+              Plans
+            </Link>
+            <Link to="/Subscription#features" className="links">
+              Features
+            </Link>
           </div>
           <div className="contecticonfooter">
             <h5 className="heading-zq">Connect With Us</h5>
@@ -118,7 +118,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footerBar">
+      <div className="home-padding footerBar">
         <div className="SitePolicies-zq">
           <p>@2023 streamvib, All Rights Reserved</p>
         </div>

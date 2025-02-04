@@ -79,7 +79,7 @@ export default function Navbar() {
           <img src={vector} alt="Vector" className='ma-img-search' />
           {isLogin ? (
             <div>
-              <span>{username}</span>
+              <span className='username'>{username}</span>
               <button onClick={handleLogout}>Log Out</button>
             </div>
           ) : (

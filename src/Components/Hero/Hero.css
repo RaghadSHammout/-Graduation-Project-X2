@@ -141,7 +141,11 @@
     .ma-all-layers .ma-box-title {
         width: 100%;
     }
-
+/* 
+    .ma-all-layers .one-layer-img img {
+        width: 134px;
+        height: 143px;
+    } */
 
     .ma-all-layers .spinningthingy img {
         width: 200px;

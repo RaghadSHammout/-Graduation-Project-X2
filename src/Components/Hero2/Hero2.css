@@ -17,11 +17,10 @@
     height: 100%;
     z-index: 1;
     position: absolute;
-    /* border-image-source: linear-gradient(180deg, #262626 0%, rgba(38, 38, 38, 0) 100%); */
     background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
 }
 
-.slide {
+.slide {    
     height: 100vh;
     width: 100%;
 
@@ -39,7 +38,7 @@
 .img-hero {
     object-fit: cover;
     margin-top: 150px;
-    border-radius: 12px;
+    border-radius: 10px;
     width: 100%;
     height: 80%;
 
@@ -55,6 +54,7 @@
 
 .zk-container {
     width: 100%;
+    height: 100vh;
     top: 170px;
     left: 164px;
     gap: 50px;
@@ -64,7 +64,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    border: 1px solid;
 }
 
 .zk-carousel {
@@ -78,7 +77,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 10px; */
 
 }
 
