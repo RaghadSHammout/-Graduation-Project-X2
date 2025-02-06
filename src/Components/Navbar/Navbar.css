@@ -55,11 +55,11 @@
 }
 
 .ma-navbar .ma-links li .ma-home.active {
-  margin-left: -30px;
+  margin-left: 0px;
 }
 
 .ma-navbar .ma-links li .ma-Subscriptions.active {
-  margin-right: -30px;
+  margin-right: 0px;
 }
 
 .ma-navbar .ma-icon {
@@ -217,11 +217,11 @@
   }
 
   .ma-navbar .ma-links li .ma-home.active {
-    margin-left: -22px;
+    margin-left: 0px;
   }
 
   .ma-navbar .ma-links li .ma-Subscriptions.active {
-    margin-right: -22px;
+    margin-right: 0px;
   }
 
   .ma-navbar .ma-links li a {
